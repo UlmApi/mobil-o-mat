@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Digital-O-Mat</title>
+
+		<!-- base -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<!-- twitter and facebook
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="{{twitter_account}}">
+		<meta name="twitter:creator" content="{{twitter_account}}">
+		<meta name="twitter:title" content="{{title}}">
+		<meta name="twitter:description" content="{{description}}">
+		<meta name="twitter:image" content="{{image}}">
+
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="{{title}}">
+		<meta property="og:title" content="{{title}}">
+		<meta property="og:image" content="{{image}}">
+		<meta property="og:description" content="{{description}}">
+		<meta property="og:locale" content="de_DE">
+		<meta property="article:author" content="{{creator}}">
+		-->
+
+		<script type="text/javascript" src="assets/data/data.js" defer></script>
+		<script type="text/javascript" src="assets/js/mustache.min.js" defer></script>
+		<script type="text/javascript" src="assets/js/zepto.min.js" defer></script>
+		<script type="text/javascript" src="assets/js/omat.js" defer></script>
+
+		<link type="text/css" rel="stylesheet" href="assets/fonts/icomoon/font.css">
+		<link type="text/css" rel="stylesheet" href="assets/fonts/raleway/font.css">
+		<link type="text/css" rel="stylesheet" href="assets/fonts/open-sans/font.css">
+
+		<link type="text/css" rel="stylesheet" href="assets/css/omat.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<a href="javascript:;" id="burger"><i class="icon-menu"></i></a>
+				<div id="menu">
+					<ul>
+						<li><a href="#questionaire" data-show="questionaire">Digital-O-Mat</a></li>
+						<li><a href="#orgs" data-show="orgs">Über uns</a></li>
+						<li><a href="#impressum" data-show="impressum">Impressum</a></li>
+						<li><a href="#privacy" data-show="privacy">Datenschutz</a></li>
+					</ul>
+				</div>
+				<ul id="social">
+					<li><a href="javascript:;" title="Twitter"><i class="icon-twitter"></i></a></li>
+					<li><a href="javascript:;" title="Facebook"><i class="icon-facebook"></i></a></li>
+				</ul>
+				<div id="logo">
+					<h1>Digital-o-mat</h1>
+					<p>Wissen kompakt</p>
+				</div>
+				<p>Ein Projekt der Koalition Freies Wissen</p>
+			</header>
+			<div id="app" class="show-intro">
+				<div class="app-item" id="intro">
+					<div class="row">
+						<h2>Digitale Politik in 10 Klicks!</h2>
+						<p>
+							Am 14. Mai wird in Nordrhein-Westfalen ein neuer Landtag gewählt. Und du willst mehr über die jeweiligen Positionen der Parteien zu digitalen Themen erfahren?
+						</p>
+						<p>
+							Bewerte einfach hier unsere 10 Thesen zur Digitalisierung und wir zeigen dir auf, mit welcher Partei deine Übereinstimmung wie groß ist.
+						</p>
+						<button id="activate">Zum Digital-O-Mat</button>
+					</div>
+					<div class="row">
+						<img src="assets/images/wahlblume.svg" alt="" title="">
+					</div>
+				</div>
+				<div class="app-item" id="questionaire">
+					<h2>Fragebogen zur Landtagswahl in Nordrhein-Westfalen</h2>
+					<p>Bewerte diese Thesen mit »stimme zu«, »teils – teils« oder »stimme nicht zu«:</p>
+
+					<form id="questions" method="post" action="javascript:;"></form>
+				
+					<button id="calculate">Übereinstimmung berechnen</button>
+
+					<div id="result"></div>
+
+				</div>
+				<div class="app-item" id="orgs">
+					<h2>Über uns</h2>
+					<p>
+						Mehr Infos über digitale Politik und wie du dich für digitale Bürgerrechte stark machen kannst, findest du auf unseren Partnerseiten.
+					</p>
+					<div class="org">
+						<h3><a href="https://buendnis-freie-bildung.de/" title="Bündnis Freie Bildung" rel="follow">Bündnis Freie Bildung</a></h3>
+						<img src="assets/images/orgs/logo_bfb_grau.svg">
+						<p>
+							Das B&uuml;ndnis Freie Bildung ist eine Vereinigung von Organisationen, die die Idee Freier Bildungsmaterialien (<a href="https://de.wikipedia.org/wiki/Open_Educational_Resources">Open Educational Resources</a>&nbsp;oder abgek&uuml;rzt OER) in Gesellschaft und Politik f&ouml;rdern m&ouml;chten. Dabei sind f&uuml;r uns nur solche Materialien &ldquo;frei&rdquo; und &ldquo;offen&rdquo;, die der <a href="http://opendefinition.org/od/2.0/de/">Open Definition</a>&nbsp;gen&uuml;gen.
+						</p>
+						<p>
+							<a href="https://buendnis-freie-bildung.de/" title="Bündnis Freie Bildung" rel="follow">https://buendnis-freie-bildung.de/</a>
+						</p>
+					</div>
+					<div class="org">
+						<h3><a href="https://ccc.de/" title="Chaos Computer Club" rel="follow">Chaos Computer Club</a></h3>
+						<img src="assets/images/orgs/logo_ccc_grau.svg">
+						<p>
+							Der Chaos Computer Club e. V. (CCC) ist die gr&ouml;&szlig;te europ&auml;ische Hackervereinigung und seit &uuml;ber drei&szlig;ig Jahren Vermittler im Spannungsfeld technischer und sozialer Entwicklungen. Die Aktivit&auml;ten des Clubs reichen von technischer Forschung und Erkundung am Rande des Technologieuniversums &uuml;ber <a href="https://www.ccc.de/de/campaigns">Kampagnen</a>, <a href="http://events.ccc.de/">Veranstaltungen</a>, Politikberatung, <a href="http://www.ccc.de/pressemitteilungen">Pressemitteilungen</a>&nbsp;und Publikationen bis zum Betrieb von Anonymisierungsdiensten und Kommunikationsmitteln.
+						</p>
+						<p>
+							<a href="https://ccc.de/" title="Chaos Computer Club" rel="follow">https://ccc.de/</a>
+						</p>
+					</div>
+					<div class="org">
+						<h3><a href="https://digiges.de/" title="Digitale Gesellschaft" rel="follow">Digitale Gesellschaft</a></h3>
+						<img src="assets/images/orgs/logo_digiges_grau.svg">
+						<p>
+							Digitale Gesellschaft e.V. wurde 2010 gegr&uuml;ndet. Die Idee ist, eine kampagnenorientierte Initiative f&uuml;r eine menschenrechts- und verbraucherfreundliche Netzpolitik zu schaffen. Wir wollen auf Erfahrungen aus anderen sozialen Bewegungen wie der Umweltbewegung aufbauen und diese digital weiterdenken. Auf nationaler und europ&auml;ischer Ebene gibt es zudem eine Vielzahl an Unternehmen und Verb&auml;nden, die f&uuml;r ihre jeweiligen Interessen werben. Was bisher allerdings fehlte, ist eine starke Nutzendenvertretung, die sich in aktuelle Gesetzgebungsprozesse einmischt, Stellungnahmen aus Nutzendensicht dazu verfasst und diese Interessen auch bei Anh&ouml;rungen und in Gespr&auml;chen mit Politikern nachdr&uuml;cklich vertritt. Daf&uuml;r gibt es nun uns.
+						</p>
+						<p>
+							<a href="https://digiges.de/" title="Digitale Gesellschaft" rel="follow">https://digiges.de/</a>
+						</p>
+					</div>
+					<div class="org">
+						<h3><a href="https://fsfe.org/" title="Free Software Foundation Europe" rel="follow">Free Software Foundation Europe</a></h3>
+						<img src="assets/images/orgs/logo_fsfe_grau.svg">
+						<p>
+							Die Free Software Foundation Europe ist ein gemeinn&uuml;tziger Verein, der Menschen im selbstbestimmten Umgang mit Technik unterst&uuml;tzt. Software ist in allen Aspekten unseres Lebens tief verankert. Es ist wichtig, dass diese Technologie uns hilft, statt uns einzuschr&auml;nken. <a href="https://fsfe.org/about/basics/freesoftware.de.html">Freie Software</a>&nbsp;gibt allen das Recht, Programme f&uuml;r jeden Zweck zu verwenden, zu verstehen, zu verbreiten und zu verbessern. Diese Rechte st&auml;rken andere Grundrechte wie die Redefreiheit, die Pressefreiheit und das Recht auf Privatsph&auml;re.
+						</p>
+						<p>
+							<a href="https://fsfe.org/" title="Free Software Foundation Europe" rel="follow">https://fsfe.org/</a>
+						</p>
+					</div>
+					<div class="org">
+						<h3><a href="https://freifunk.net/" title="Freifunk" rel="follow">Freifunk</a></h3>
+						<img src="assets/images/orgs/logo_freifunk_grau.svg">
+						<p>
+							Die freifunk-Community ist Teil einer globalen Bewegung f&uuml;r freie Infrastrukturen und offene Funkfrequenzen. Unsere Vision ist die Demokratisierung der Kommunikationsmedien durch freie Netzwerke. Die praktische Umsetzung dieser Idee nehmen freifunk-Communities in der ganzen Welt in Angriff. Alle Nutzenden im freifunk-Netz stellen ihre WLAN-Router f&uuml;r den Datentransfer der anderen Teilnehmenden zur Verf&uuml;gung. Im Gegenzug k&ouml;nnen dann &uuml;ber die Router der anderen dann ebenfalls Daten wie Text, Musik, Filme usw. &uuml;bertragen oder von Teilnehmenden eingerichtete Dienste genutzt werden, zum Beispiel um zu chatten, zu telefonieren oder gemeinsam Onlinegames zu spielen. Daf&uuml;r nutzen wir <a href="https://freifunk.net/worum-geht-es/technik-der-community-netzwerke/">Mesh Netzwerke</a>. Viele stellen zudem ihren Internetzugang zur Verf&uuml;gung und erm&ouml;glichen anderen den Zugang zum weltweiten Netz.
+						</p>
+						<p>
+							<a href="https://freifunk.net/" title="Freifunk" rel="follow">https://freifunk.net/</a>
+						</p>
+					</div>
+					<div class="org">
+						<h3><a href="https://okfn.de/" title="Open Knowledge Foundation" rel="follow">Open Knowledge Foundation Deutschland</a></h3>
+						<img src="assets/images/orgs/logo_okfde_grau.svg">
+						<p>
+							Der Open Knowledge Foundation Deutschland e.V. ist der deutsche Zweig der Open Knowledge Foundation, eines <a href="https://okfn.org/network/">weltweit aktiven Netzwerks</a>&nbsp;von Aktivisten, Entwicklern, Policy-Spezialisten und Wissenschaftlern, die sich f&uuml;r die F&ouml;rderung offenen Wissens und offener Daten einsetzen. Wir verstehen uns als aktiver Teil der deutschen und europ&auml;ischen Zivilgesellschaft und f&ouml;rdern und st&auml;rken die Grundrechte. Besonders setzen wir uns daf&uuml;r ein, dass B&uuml;rgerinnen und B&uuml;rger ihre Rechte auch online wahrnehmen k&ouml;nnen. Freies Wissen hilft B&uuml;rgerinnen und B&uuml;rgern, sich zu informieren und f&uuml;hrt zu einer aufgekl&auml;rten Meinungsbildung.
+						</p>
+						<p>
+							<a href="https://okfn.de/" title="Open Knowledge Foundation" rel="follow">https://okfn.de/</a>
+						</p>
+					</div>
+					<div class="org">
+						<h3><a href="https://wikimedia.de/" title="Wikimedia" rel="follow">Wikimedia Deutschland e.V.</a></h3>
+						<img src="assets/images/orgs/logo_wikimedia_grau.svg">
+						<p>
+							Wikimedia Deutschland ist ein gemeinn&uuml;tziger Verein, der sich der F&ouml;rderung <a href="https://de.wikipedia.org/wiki/Wissensallmende">Freien Wissens</a>&nbsp;verschrieben hat und den freien Zugang zu Wissen als Teil eines Grundrechts auf Bildung und Kulturteilhabe versteht. Daf&uuml;r gen&uuml;gt es nicht, Wissen nur konsumieren zu k&ouml;nnen. Menschen m&uuml;ssen auch selber Wissen beitragen und formen d&uuml;rfen. Seit unserer Gr&uuml;ndung im Jahre 2004 haben wir deshalb zahlreiche Wikimedia-Projekte unterst&uuml;tzt. Eines der wichtigsten ist die <a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Wikipedia</a>, die freie Online-Enzyklop&auml;die. Ihre Inhalte und die aller anderen <a href="https://www.wikimedia.org/">Wikimedia-Projekte</a>&nbsp;werden von Freiwilligen erstellt, verbessert und verbreitet. Ein internationales Netzwerk aus Wikimedia-Organisationen hilft ihnen dabei.
+						</p>
+						<p>
+							<a href="https://wikimedia.de/" title="Wikimedia" rel="follow">https://wikimedia.de/</a>
+						</p>
+					</div>
+				</div>
+				<div class="app-item" id="impressum">
+					<h2>Diensteanbieter</h2>
+					<p>
+						Wikimedia Deutschland &ndash; Gesellschaft zur F&ouml;rderung Freien Wissens e. V.<br>
+						Tempelhofer Ufer 23/24<br>
+						10963 Berlin
+					</p>
+					<p>
+						E-Mail: <a href="mailto:info@wikimedia.de">info@wikimedia.de</a>
+					</p>
+					<p>
+						Telefon: <a href="tel:+4930219158260">+49 (0)30-219 15 826-0</a><br>
+						Fax: +49 (0)30-219 158 26-9
+					</p>
+					<p>
+						Gesch&auml;ftsf&uuml;hrender Vorstand:&nbsp;Abraham Taherivand
+					</p>
+					<p>
+						Eingetragen im Vereinsregister des Amtsgerichts Charlottenburg, VR 23855. Inhaltlich Verantwortlicher gem&auml;&szlig; &sect; 55 Abs. 2 RStV: Abraham Taherivand (Anschrift wie oben).
+					</p>
+				</div>
+				<div class="app-item" id="privacy">
+					<h2>Datenschutzerkl&auml;rung</h2>
+					<p>
+						Personenbezogene Daten werden auf dieser Webseite nur im technisch notwendigen Umfang erhoben. In keinem Fall werden die erhobenen Daten verkauft oder aus anderen Gr&uuml;nden an Dritte weitergegeben. Im Folgenden erhalten Sie einen &Uuml;berblick &uuml;ber die von uns im Rahmen dieser Website erhobenen Daten.
+					</p>
+					<h3>Log-Files</h3>
+					<p>
+						Bei der Nutzung dieses Angebots werden die von Ihrem Browser an den Server &uuml;bermittelten Daten erfasst und gespeichert. Dies umfasst &uuml;blichweise Informationen &uuml;ber den Typ und die Version des von Ihnen verwendeten Browsers, das verwendete Betriebssystem, die Referrer URL (die Webseite, von der aus Sie zu dieser Website gelangt sind), den Hostnamen des zugreifenden Rechners (die IP Adresse) sowie die Uhrzeit der Serveranfrage. In der Regel lassen sich diese Daten nicht bestimmten Personen &ndash; und damit auch nicht Ihnen &ndash; zuordnen. Weder wird zu diesem Zweck ein Abgleich der Daten mit anderen Daten vorgenommen, noch werden sie hierf&uuml;r mit anderen Daten zusammengef&uuml;hrt. Die Daten werden regelm&auml;&szlig;ig nach einer statistischen Auswertung gel&ouml;scht.
+					</p>
+					<h3>Cookies</h3>
+					<p>
+						Diese Website verwendet an mehreren Stellen Cookies. Cookies sind kleine Textdateien, die Ihr Browser speichert und die dazu dienen, die Benutzung einer Website einfacher, effektiver und sicherer zu machen. Cookies richten auf Ihrem Rechner keinen Schaden an, nehmen minimalen Speicherplatz in Anspruch und enthalten keine Viren.
+					</p>
+					<h3>Haftung f&uuml;r Inhalte</h3>
+					<p>
+						Die Inhalte unserer Seiten wurden mit gr&ouml;&szlig;ter Sorgfalt erstellt. F&uuml;r die Richtigkeit, Vollst&auml;ndigkeit und Aktualit&auml;t der Inhalte k&ouml;nnen wir jedoch keine Gew&auml;hr &uuml;bernehmen. Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+					</p>
+					<h3>Haftung f&uuml;r Links</h3>
+					<p>
+						Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+					</p>
+					<h3>Urheberrecht</h3>
+					<p>
+						Sofern nicht anders angegeben und mit Ausnahme der hier verwendeten Logos, stehen die Inhalte dieser Seite unter Creative-Commons-Lizenz Namensnennung 4.0 International (<a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC BY-SA 4.0</a>). Die Software des Digital-O-Maten ist verf&uuml;gbar unter [Lizenz] auf [Ort].
+					</p>
+				</div>
+			</div>
+			<footer>
+				<p>
+					Ein Kooperationsprojekt von:
+				</p>
+				<ul class="orgs">
+					<li><a href="http://buendnis-freie-bildung.de/" title="Bündnis Freie Bildung" rel="follow"></a></li>
+					<li><a href="https://ccc.de/" title="Chaos Computer Club" rel="follow"></a></li>
+					<li><a href="https://digitalegesellschaft.de/" title="Digitale Gesellschaft" rel="follow"></a></li>
+					<li><a href="https://freifunk.net/" title="Freifunk" rel="follow"></a></li>
+					<li><a href="https://fsfe.org/" title="Free Software Foundation Europe" rel="follow"></a></li>
+					<li><a href="https://okfn.de/" title="Open Knowledge Foundation DE" rel="follow"></a></li>
+					<li><a href="https://wikimedia.de/" title="Wikimedia Deutschland" rel="follow"></a></li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+	<script id="tmpl-questions" type="x-tmpl-mustache">
+		{{#question}}
+		<div class="question" data-q="{{id}}" id="q{{id}}">
+			<div class="label">
+				<span>{{num}}</span>
+				<h3><span>{{num}}</span> {{label}}</h3>
+				<p>{{question}}</p>
+			</div>
+			<ul>
+				<li>
+					<input type="radio" id="q{{id}}a0" name="q{{id}}a" value="2">
+					<label for="q{{id}}a0"><span>Stimme zu</span></label>
+				</li>
+				<li>
+					<input type="radio" id="q{{id}}a1" name="q{{id}}a" value="1">
+					<label for="q{{id}}a1"><span>Neutral</span></label>
+				</li>
+				<li>
+					<input type="radio" id="q{{id}}a2" name="q{{id}}a" value="0">
+					<label for="q{{id}}a2"><span>Stimme nicht zu</span></label>
+				</li>
+			</ul>
+		</div>
+		{{/question}}
+	</script>
+	<script id="tmpl-result" type="x-tmpl-mustache">
+		<div id="comparison">
+			<h2>Dein Ergebnis im Überblick</h2>
+			<ol>
+			{{#comparison}}
+				<li>
+					<h4 title="{{party_long}}">{{party_short}}</h4>
+					<p class="percentage">
+						<span class="percentage-bar" style="width: {{width}}%;"></span>
+						<span class="percentage-label">{{percent}} %</span>
+					</p>
+				</li>		
+			{{/comparison}}
+			</ol>
+		</div>
+		<div id="detail">
+			<h2>Die Antworten im Detail</h2>
+			<ul class="detail-table">
+			{{#detail}}
+				<li id="detail-{{id}}">
+					<h3><span>{{num}}</span> {{label}}</h3>
+					<p>{{question}}</p>
+					<ul class="answers">
+						{{#answers}}
+							<li class="answer{{#selected}} selected{{/selected}}">
+								<h4 class="type-{{answer_type}}">{{answer_label}}</h4>
+								{{#selected}}
+								<span class="you">Deine Meinung</span>
+								{{/selected}}
+								<ul class="parties">
+									{{#parties}}
+										<li class="party {{#has_explanation}}explanation{{/has_explanation}}">
+											<h5 title="{{party_long}}">{{party_short}}{{#has_explanation}} <i class="icon-bubble" title="Erläuterung"></i>{{/has_explanation}}</h5>
+											{{#has_explanation}}
+											<blockquote>
+												{{explanation}}
+											</blockquote>
+											{{/has_explanation}}
+											{{^has_explanation}}
+											<p>
+												<em>Die Partei vertritt diese Position, hat für diese aber keine weitere Erläuterung geliefert.</em>
+											</p>
+											{{/has_explanation}}
+										</li>
+									{{/parties}}
+									{{^parties}}
+									<li class="party no-party">
+										<em>Keine Partei vertritt diese Position.</em>
+									</li>
+									{{/parties}}
+								</ul>
+							</li>
+						{{/answers}}
+					</ul>
+				</li>
+			{{/detail}}
+			</ul>
+		</div>
+	</script>
+</html>
