@@ -206,5 +206,11 @@ $(document).ready(function(){
 		},1000);
 	});
 	*/
+
+	$("a","#social").click(function(evt){
+		if (mobile) return;
+		evt.preventDefault();
+		window.open($(this).attr("href"),"share","width=500,height=300,status=no,scrollbars=no,resizable=no,menubar=no,toolbar=no");
+	});
 	
 });
