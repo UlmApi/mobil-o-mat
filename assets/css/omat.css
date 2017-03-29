@@ -706,8 +706,6 @@ body {
 		
 }
 
-/* HERE */
-
 @media (min-width: 960px) { 
 
 	header {
@@ -1206,7 +1204,7 @@ body {
 			
 			#detail .answers .answer blockquote,
 			#detail .answers .answer p {
-				display: block;
+				display: none;
 				position: relative;
 				margin: 0;
 				padding: 0;
@@ -1216,6 +1214,12 @@ body {
 				line-height: 18px;
 				color: #5b6672;
 			}
+			
+			#detail .answers .answer .show-explanation blockquote,
+			#detail .answers .answer .show-explanation p {
+				display: block;
+			}
+			
 		
 			#detail .parties {
 				display: block;
@@ -1231,7 +1235,11 @@ body {
 				position: relative;
 
 			}
-		
+
+			#detail .parties .party.explanation {
+				cursor: pointer;
+			}
+			
 			#detail .parties .party h5 {
 				display: block;
 				position: relative;
@@ -1245,7 +1253,10 @@ body {
 			}
 			
 			#detail .parties .party h5 i {
-				display: none;
+				position: relative;
+				font-size: .8em;
+				opacity: .7;
+				top: -.2em;
 			}
 
 		#orgs {}
