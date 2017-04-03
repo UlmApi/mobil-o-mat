@@ -703,7 +703,7 @@ body {
 		width: 30vw !important;
 		height: 20vw !important;
 	}
-		
+
 }
 
 @media (min-width: 960px) { 
@@ -1397,4 +1397,14 @@ footer {
 		footer .orgs a[title^='Mozilla'] { background-image: url(../images/orgs/logo_mozilla_weiss.svg); }
 		footer .orgs a[title^='Open'] { background-image: url(../images/orgs/logo_okfde_weiss.svg); }
 		footer .orgs a[title^='Wikimedia'] { background-image: url(../images/orgs/logo_wikimedia_weiss.svg); }
-		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }		
+		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
+		
+	footer .copyright-notice {
+		font-size: 10px;
+		color: #ccc;
+		padding-bottom: 2em;
+	}
+
+	footer .copyright-notice a {
+		color: #ddd;
+	}
