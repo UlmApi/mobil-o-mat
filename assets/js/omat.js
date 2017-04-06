@@ -179,6 +179,9 @@ $(document).ready(function(){
 			$(this).parent().toggleClass("show-explanation");
 		});
 		
+		// ping for stats, no data whatsoever.
+		$.get("calculated", function(){});
+		
 		if (typeof fn === "function") fn();
 		
 	};
