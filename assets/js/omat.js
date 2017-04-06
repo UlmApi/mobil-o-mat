@@ -15,7 +15,7 @@ $(document).ready(function(){
 		"spd": ["SPD","Sozialdemokratische Partei Deutschlands"]
 	};
 	
-	var keys = ["Ablehnung","Teils, teils","Zustimmung"];
+	var keys = ["Ablehnung","Neutral","Zustimmung"];
 
 	// caches
 	var $window = $(window);
