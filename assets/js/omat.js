@@ -197,16 +197,6 @@ $(document).ready(function(){
 		}.bind(this), 10);
 	};
 	
-	
-	/* TESTING */
-	/*
-	calculate(function(){
-		setTimeout(function(){
-			scroll($("#detail").offset().top, 200);
-		},1000);
-	});
-	*/
-
 	$("a","#social").click(function(evt){
 		if (mobile) return;
 		evt.preventDefault();
