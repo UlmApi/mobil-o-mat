@@ -551,6 +551,8 @@ body {
 		#detail .answers .answer blockquote,
 		#detail .answers .answer p {
 			display: none;
+			opacity: 0;
+			transition: .5s opacity;
 		}
 		
 		#detail .parties .party.explanation.show-explanation {
@@ -568,6 +570,7 @@ body {
 			font-weight: 500; 
 			line-height: 18px;
 			color: #5b6672;
+			opacity: 1;
 		}
 		
 		#detail .parties {
@@ -612,11 +615,19 @@ body {
 		}
 
 		#detail .parties .party.explanation h5 i {
+			display: inline-block;
 			position: relative;
-			font-size: .8em;
 			opacity: .7;
-			top: -.2em;
+			transition: .5s transform;
 		}
+		
+		#detail .parties .party.explanation.show-explanation h5 i {
+			-webkit-transform: rotate(-180deg);
+			-moz-transform: rotate(-180deg);
+			-ms-transform: rotate(-180deg);
+			-o-transform: rotate(-180deg);
+			transform: rotate(-180deg);
+		}	
 		
 	#orgs {
 		
@@ -1252,11 +1263,19 @@ body {
 				color: #5b6672;
 			}
 			
-			#detail .parties .party h5 i {
+			#detail .parties .party.explanation h5 i {
+				display: inline-block;
 				position: relative;
-				font-size: .8em;
 				opacity: .7;
-				top: -.2em;
+				transition: .5s transform;
+			}
+			
+			#detail .parties .party.explanation.show-explanation h5 i {
+				-webkit-transform: rotate(-180deg);
+				-moz-transform: rotate(-180deg);
+				-ms-transform: rotate(-180deg);
+				-o-transform: rotate(-180deg);
+				transform: rotate(-180deg);
 			}
 
 		#orgs {}
