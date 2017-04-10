@@ -331,15 +331,15 @@ body {
 				}
 			
 				#questions ul li input:checked[value="2"]+label {
-					background-image: url(../images/radio_x.svg);
+					background-image: url(../images/radio_ja.svg);
 				}
 			
 				#questions ul li input:checked[value="1"]+label {
-					background-image: url(../images/radio_x.svg);
+					background-image: url(../images/radio_teils.svg);
 				}
 			
 				#questions ul li input:checked[value="0"]+label {
-					background-image: url(../images/radio_x.svg);
+					background-image: url(../images/radio_nein.svg);
 				}
 			
 				#questions ul li label span {
@@ -997,15 +997,15 @@ body {
 					}
 				
 					#questions ul li input:checked[value="2"]+label {
-						background-image: url(../images/radio_x.svg);
+						background-image: url(../images/radio_ja.svg);
 					}
 				
 					#questions ul li input:checked[value="1"]+label {
-						background-image: url(../images/radio_x.svg);
+						background-image: url(../images/radio_teils.svg);
 					}
 				
 					#questions ul li input:checked[value="0"]+label {
-						background-image: url(../images/radio_x.svg);
+						background-image: url(../images/radio_nein.svg);
 					}
 				
 					#questions ul li label span {
