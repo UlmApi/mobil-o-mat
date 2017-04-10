@@ -63,6 +63,14 @@ $(document).ready(function(){
 		if (mobile) scroll(($("#"+$(this).attr("data-show")).offset().top-70), 200);
 	});
 	
+	// logo to home
+	$("#logo").click(function(evt){
+		evt.preventDefault();
+		$("#header").removeClass("show-menu");
+		$("#app").attr("class","show-intro");
+		if (mobile) scroll(($("#intro").offset().top-70), 200);
+	});
+	
 	// activate button
 	$("#activate").click(function(evt){
 		evt.preventDefault();

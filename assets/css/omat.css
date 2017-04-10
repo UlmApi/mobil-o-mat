@@ -83,6 +83,7 @@ body {
 		top: 0;
 		height: 3em;
 		width: 50vw;
+		cursor: pointer;
 	}
 	
 	#logo::after {
@@ -840,6 +841,7 @@ body {
 			padding: 0;
 			height: 180px;
 			max-height: 30vw;
+			cursor: pointer;
 		}
 	
 			#logo::after {
