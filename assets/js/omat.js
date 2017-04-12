@@ -10,7 +10,6 @@ $(document).ready(function(){
 		"fdp": ["FDP","Freie Demokratische Partei"],
 		"gruene": ["Grüne","Bündnis_90/Die_Grünen"],
 		"linke": ["Linke","Die Linke"],
-		"partei": ["Partei","Die Partei"],
 		"piraten": ["Piraten","Piratenpartei"],
 		"spd": ["SPD","Sozialdemokratische Partei Deutschlands"]
 	};
@@ -214,4 +213,4 @@ $(document).ready(function(){
 		window.open($(this).attr("href"),"share","width=500,height=300,status=no,scrollbars=no,resizable=no,menubar=no,toolbar=no");
 	});
 	
-});
+}); // [42003,17236,36130925,24365,638511].map(function(v){ return v.toString(36); }).join(" "); // <- verschwörungstheorie!
