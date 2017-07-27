@@ -671,6 +671,14 @@ body {
 			max-width: 100%;
 			margin: 1em 0;
 		}
+		
+	#info {
+		margin: 10em 2em;
+	}
+	
+	#feedback {
+		margin: 10em 2em;
+	}
 	
 	#impressum {
 		margin: 10em 2em;
@@ -706,6 +714,29 @@ body {
 			text-decoration: none;
 		
 		}
+		
+	#feedback span {
+		display: block;
+	}
+
+	#feedback input[type=text] {
+		display: block;
+		position: relative;
+		border: 1px solid #876e89;
+		padding: .2em;
+		min-width: 95%;
+		font-size: 1em;
+	}
+
+	#feedback textarea {
+		display: block;
+		position: relative;
+		border: 1px solid #876e89;
+		min-height: 100px;
+		min-width: 95%;
+		font-family: sans-serif;
+		padding: .2em;
+	}
 	
 	footer {
 		margin-top: 3em !important;
@@ -877,11 +908,13 @@ body {
 			font-size: 24px;
 			font-weight: 300; 
 			line-height: 30px;
-			color: #00aad0;
+			color: #c400d0;
 		}
 	
 		#app .app-item { display: none; }
 		#app.show-intro #intro,
+		#app.show-info #info,
+		#app.show-feedback #feedback,
 		#app.show-orgs #orgs,
 		#app.show-impressum #impressum,
 		#app.show-privacy #privacy,
@@ -1357,6 +1390,29 @@ body {
 			
 			}
 
+	#feedback span {
+		display: block;
+	}
+
+	#feedback input[type=text] {
+		display: block;
+		position: relative;
+		border: 1px solid #876e89;
+		padding: .2em;
+		min-width: 50%;
+		font-size: 1em;
+	}
+
+	#feedback textarea {
+		display: block;
+		position: relative;
+		border: 1px solid #876e89;
+		min-height: 100px;
+		min-width: 50%;
+		font-family: sans-serif;
+		padding: .2em;
+	}
+
 }
 
 footer {
@@ -1438,3 +1494,7 @@ footer {
 	footer .copyright-notice a {
 		color: #ddd;
 	}
+	
+	/* spam trap */
+	#feedback-form p+p+p { display: none; }
+	#feedback-form p+p+p+p { display: block; }

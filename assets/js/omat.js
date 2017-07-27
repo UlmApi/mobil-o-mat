@@ -218,4 +218,28 @@ $(document).ready(function(){
 		window.open($(this).attr("href"),"share","width=500,height=300,status=no,scrollbars=no,resizable=no,menubar=no,toolbar=no");
 	});
 	
+	// feedback from
+	var $feedback = $('#feedback-form');
+	$feedback.submit(function(evt){
+		evt.preventDefault();
+		
+		$.ajax({
+			type: "POST",
+			url: 'feedback',
+			data: $feedback.serialize(),
+			success: function(resp,status,xhr){
+				$feedback[0].reset();
+				$("#feedback-submit").hide();
+				var $msg = $("<p>").attr("id","feedback-message").text("Danke für Ihr Feedback!").appendTo($feedback);
+				setTimeout(function(){
+					$msg.remove();
+					$("#feedback-submit").show();
+				},5000);
+			},
+			error: function(xhr, type){
+				alert("Das Formular konnte leider nicht abgesendet werden.");
+			}
+		})
+	});
+	
 }); // [42003,17236,36130925,24365,638511].map(function(v){ return v.toString(36); }).join(" "); // <- verschwörungstheorie!

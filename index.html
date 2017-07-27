@@ -41,6 +41,8 @@
 					<ul>
 						<li><a href="#questionaire" data-show="questionaire">Digital-O-Mat</a></li>
 						<li><a href="#orgs" data-show="orgs">Über uns</a></li>
+						<li><a href="#info" data-show="info">Info</a></li>
+						<li><a href="#feedback" data-show="feedback">Feedback</a></li>
 						<li><a href="#impressum" data-show="impressum">Impressum</a></li>
 						<li><a href="#privacy" data-show="privacy">Datenschutz</a></li>
 					</ul>
@@ -65,18 +67,6 @@
 							Einfach die 8 Positionen in unserem Digital-O-Maten für sich selbst bewerten und erfahren, mit welcher Partei die Übereinstimmung wie groß ist.
 						</p>
 						<button id="activate">Zum Digital-O-Maten</button>
-						<p>
-							Digitale Themen kommen in der allgemeinen Wahl-Berichterstattung oft zu kurz. Hier setzt der Digital-O-Mat als zusätzliche Informationsquelle für die Wahlberechtigten an.
-						</p>
-						<p>
-							Im Frühjahr 2017 haben wir uns an alle Parteien gewandt, die bereits im NRW-Landtag verteten sind oder realistische Chancen haben, dieses Jahr hineingewählt zu werden. Ihnen haben wir eine vorab festgelegte Reihe von aus unserer Sicht wichtigen Fragen zu digitalen Themen gestellt. Wir haben jedoch nicht nur um Antworten gebeten, sondern auch um Belege für die in ihren Antworten enthaltenen Positionen (Partei-Beschlüsse, Initiativen, Wahlprogramme etc.).
-						</p>
-						<p>
-							Aus den Antworten der Parteien, den Belegen und teils weiteren durch die Parteien übersandten Aussagen ergab sich dann jeweils die Information, wie die Parteien zu den von uns ausgewählten digitalen Themen positioniert sind. Die inhaltlichen Aussagen der Parteien sind am Ende der Auswertung des Digital-O-Maten unter "Die Positionen im Detail" durch Klick auf den Pfeil nach unten nachzulesen. An wenigen Stellen mussten wir aus Relevanzgründen kürzen, was jeweils durch "(...)" kenntlich gemacht wird.
-						</p>
-						<p>
-							Der Digital-O-Mat wird von einer Gruppe von NGOs zur Verfügung gestellt, die sich mit Netzthemen befassen und für digitale Freiheitsrechte eintreten. Details zu uns siehe "Über uns".
-						</p>
 					</div>
 					<div class="row">
 						<img src="assets/images/wahlblume.svg" alt="" title="">
@@ -90,6 +80,45 @@
 					<form id="questions" method="post" action="javascript:;"></form>
 					<button id="calculate">Übereinstimmung berechnen</button>
 					<div id="result"></div>
+				</div>
+				<div class="app-item" id="info">
+					<h2>Info</h2>
+					<p>
+						Digitale Themen kommen in der allgemeinen Wahl-Berichterstattung oft zu kurz. Hier setzt der Digital-O-Mat als zusätzliche Informationsquelle für die Wahlberechtigten an.
+					</p>
+					<p>
+						Im Frühjahr 2017 haben wir uns an alle Parteien gewandt, die bereits im NRW-Landtag verteten sind oder realistische Chancen haben, dieses Jahr hineingewählt zu werden. Ihnen haben wir eine vorab festgelegte Reihe von aus unserer Sicht wichtigen Fragen zu digitalen Themen gestellt. Wir haben jedoch nicht nur um Antworten gebeten, sondern auch um Belege für die in ihren Antworten enthaltenen Positionen (Partei-Beschlüsse, Initiativen, Wahlprogramme etc.).
+					</p>
+					<p>
+						Aus den Antworten der Parteien, den Belegen und teils weiteren durch die Parteien übersandten Aussagen ergab sich dann jeweils die Information, wie die Parteien zu den von uns ausgewählten digitalen Themen positioniert sind. Die inhaltlichen Aussagen der Parteien sind am Ende der Auswertung des Digital-O-Maten unter "Die Positionen im Detail" durch Klick auf den Pfeil nach unten nachzulesen. An wenigen Stellen mussten wir aus Relevanzgründen kürzen, was jeweils durch "(...)" kenntlich gemacht wird.
+					</p>
+					<p>
+						Der Digital-O-Mat wird von einer Gruppe von NGOs zur Verfügung gestellt, die sich mit Netzthemen befassen und für digitale Freiheitsrechte eintreten. Details zu uns siehe "Über uns".
+					</p>
+				</div>
+				<div class="app-item" id="feedback">
+					<h2>Feedback</h2>
+					<form action="javascript:;" method="POST" id="feedback-form">
+						<p>
+							<span>Name</span>
+							<input type="text" id="feedback-name" name="name" value="" placeholder="Name" required>
+						</p>
+						<p>
+							<span>E-Mail</span>
+							<input type="text" id="feedback-email" name="email" value="" placeholder="E-Mail" required>
+						</p>
+						<p>
+							<span>Homepage</span>
+							<input type="text" id="feedback-url" name="url" value="" placeholder="http://">
+						</p>
+						<p>
+							<span>Feedback</span>
+							<textarea id="feedback-text" name="text" required></textarea>
+						</p>
+						<p>
+							<button id="feedback-submit">Senden</button>
+						</p>
+					</form>
 				</div>
 				<div class="app-item" id="orgs">
 					<h2>Über uns</h2>
@@ -253,7 +282,7 @@
 			<div class="label">
 				<span>{{num}}</span>
 				<h3><span>{{num}}</span> {{label}}</h3>
-				<p>{{question}}</p>
+				<p>{{question}} {{#link}}<a href="{{{.}}}" class="more">Mehr Info</a>{{/link}}</p>
 			</div>
 			<ul>
 				<li>
