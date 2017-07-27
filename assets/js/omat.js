@@ -228,13 +228,17 @@ $(document).ready(function(){
 			url: 'feedback',
 			data: $feedback.serialize(),
 			success: function(resp,status,xhr){
-				$feedback[0].reset();
-				$("#feedback-submit").hide();
-				var $msg = $("<p>").attr("id","feedback-message").text("Danke für Ihr Feedback!").appendTo($feedback);
-				setTimeout(function(){
-					$msg.remove();
-					$("#feedback-submit").show();
-				},5000);
+				if (resp === true || resp === "true") {
+					$feedback[0].reset();
+					$("#feedback-submit").hide();
+					var $msg = $("<p>").attr("id","feedback-message").text("Danke für Ihr Feedback!").appendTo($feedback);
+					setTimeout(function(){
+						$msg.remove();
+						$("#feedback-submit").show();
+					},5000);
+				} else {
+					alert("Die eingegebenen Daten sind ungültig.");
+				}
 			},
 			error: function(xhr, type){
 				alert("Das Formular konnte leider nicht abgesendet werden.");

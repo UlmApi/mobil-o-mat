@@ -52,7 +52,7 @@ app.post("/feedback", function(req, res){
 	var data = {
 		name: smclean.string(req.body.name, { keepNewLines: false, keepHTML: true, maxLength: 256 }),
 		email: smclean.email(req.body.email),
-		text: smclean.string(req.body.name, { keepNewLines: true, keepHTML: true, maxLength: 4096 }),
+		text: smclean.string(req.body.text, { keepNewLines: true, keepHTML: true, maxLength: 4096 }),
 		time: moment().format("YYYY-MM-DD HH:mm:ss")
 	}
 	
