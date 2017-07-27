@@ -1,0 +1,22 @@
+{
+  "name": "omat",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.dsst.io:datasciencestories/digitalomat.git"
+  },
+  "author": "yetzt <node@yetzt.me>",
+  "license": "Unlicense",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ellipse": "^0.5.5",
+    "moment": "^2.18.1",
+    "nodemailer": "^4.0.1",
+    "nsa": "^0.1.4"
+  }
+}
