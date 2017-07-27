@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 	// render questions
 	$("#questions").html(Mustache.render(tmpl.questions, { question: window.omatdata.questions.map(function(data,id){
-		return { id: id, label: data[0], question: data[1], num: (id+1) };
+		return { id: id, label: data[0], question: data[1], link: data[2], num: (id+1) };
 	}) } ));
 	
 	// activate questions
@@ -53,6 +53,11 @@ $(document).ready(function(){
 		}
 	});
 
+	// activate more-links
+	$("a.more","#questions").click(function(evt){
+		window.open($(this).attr("href"), '_blank');
+		evt.preventDefault();
+	});
 
 	// menu
 	$("a", "#menu").click(function(evt){

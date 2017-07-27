@@ -1,7 +1,7 @@
 window.omatdata = {
 	"questions": [
-		["Bildung","Lehrkräfte des Landes NRW sollten dazu angehalten und dabei unterstützt werden, selbst erstellte Lehrmaterialien freizugeben, sodass jede/r sie nutzen, bearbeiten und weitergeben darf. Es sollte also nicht jeder Lehrkraft selbst überlassen sein, über eine solche Freigabe zu entscheiden."],
-		["Staatliches Hacking","Die Ermittlungsbehörden sollten grundsätzlich nicht, auch nicht mit Durchsuchungsbeschluss, mittels Schadsoftware, Sicherheitslücken oder ähnlicher Verfahren heimlich auf digitale Endgeräte Einzelner zugreifen dürfen."],
+		["Bildung","Lehrkräfte des Landes NRW sollten dazu angehalten und dabei unterstützt werden, selbst erstellte Lehrmaterialien freizugeben, sodass jede/r sie nutzen, bearbeiten und weitergeben darf. Es sollte also nicht jeder Lehrkraft selbst überlassen sein, über eine solche Freigabe zu entscheiden.","http://www.example.org/"],
+		["Staatliches Hacking","Die Ermittlungsbehörden sollten grundsätzlich nicht, auch nicht mit Durchsuchungsbeschluss, mittels Schadsoftware, Sicherheitslücken oder ähnlicher Verfahren heimlich auf digitale Endgeräte Einzelner zugreifen dürfen.","http://www.example.org/"],
 		["Vorhersagende Polizeiarbeit","Die Ermittlungsbehörden sollten auch anlasslos auf Informationen aus sozialen Netzwerken zugreifen und Voraussagen über das Gefahrenpotenzial von Einzelpersonen oder Gruppen, wie etwa Geflüchtete, treffen dürfen."],
 		["Software","Das Land NRW sollte verstärkt Computerprogramme einsetzen und fördern, die für die Allgemeinheit zur kostenfreien Nutzung und Bearbeitung freigegeben sind (Freie und Open-Source-Software)."],
 		["Internetzugang","Kommunen in NRW sollten nur nicht-kommerzielle Anbieter berücksichtigen, wenn es darum geht, im öffentlichen Stadtraum offene WLAN-Netze zur Verfügung zu stellen."],

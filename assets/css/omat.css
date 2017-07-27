@@ -952,6 +952,15 @@ body {
 			#questions .label h3 span {
 				display: none;
 			}
+			
+			#questions .label p a {
+				color: #876e89;
+				text-decoration: none;
+			}
+
+			#questions .label p a:hover {
+				color: #c400d0;
+			}
 
 			#questions ul {
 				display: block;
