@@ -285,6 +285,16 @@ body {
 			padding: 0;
 		}
 		
+		#questions .label p a {
+			color: #876e89;
+			text-decoration: none;
+		}
+
+		#questions .label p a:hover {
+			color: #c400d0;
+		}
+		
+		
 		#questions ul {
 			display: block;
 			position: absolute;
