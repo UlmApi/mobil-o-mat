@@ -16,7 +16,7 @@ var fs = require("fs");
 require(path.resolve(__dirname,"excepto.js"));
 
 // stats
-var stats = { spam: 0, sent: 0, inv: 0, fail: 0 };
+var stats = { spam: 0, sent: 0, fail: 0 };
 
 // config
 var config = {
@@ -56,7 +56,7 @@ app.post("/feedback", function(req, res){
 		time: moment().format("YYYY-MM-DD HH:mm:ss")
 	}
 	
-	if (!data.name || !data.email || !data.text) return stats.inv++, res.status(200).json(false);
+	if (!data.name || !data.email || !data.text) return stats.fail++, res.status(200).json(false);
 	
 	mailer.sendMail({
 		from: "Digital-O-Mat <mailout@dst.io>",
