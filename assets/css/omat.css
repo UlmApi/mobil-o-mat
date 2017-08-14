@@ -683,10 +683,6 @@ body {
 			max-width: 100%;
 			margin: 1em 0;
 		}
-		
-	#info {
-		margin: 10em 2em;
-	}
 	
 	#feedback {
 		margin: 10em 2em;
@@ -1455,7 +1451,7 @@ body {
 	#feedback span {
 		display: block;
 	}
-
+	
 	#feedback input[type=text] {
 		display: block;
 		position: relative;
