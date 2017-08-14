@@ -43,6 +43,7 @@ body {
 	color: #5b6672;
 }
 
+#app .goto-feedback,
 #app button {
 	display: inline-block;
 	position: relative;
@@ -56,6 +57,7 @@ body {
 	background-color: #876e89;
 	font-size: 14px;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 @media (max-width: 959px) { 
@@ -962,11 +964,15 @@ body {
 			line-height: 30px;
 			color: #c400d0;
 		}
+		
+		#app p+h2 {
+			margin-top: 3em;
+		}
 	
 		#app .app-item { display: none; }
 		#app.show-intro #intro,
-		#app.show-info #info,
 		#app.show-feedback #feedback,
+		#app.display-feedback #feedback,
 		#app.show-orgs #orgs,
 		#app.show-impressum #impressum,
 		#app.show-privacy #privacy,
@@ -1471,6 +1477,8 @@ body {
 
 }
 
+#feedback .show-when-answered { display: none; }
+.show-questionaire.display-feedback #feedback .show-when-answered { display: block; }
 
 footer {
 	background-color: #876e89;
@@ -1555,3 +1563,26 @@ footer {
 	/* spam trap */
 	#feedback-form p+p+p { display: none; }
 	#feedback-form p+p+p+p { display: block; }
+	
+	.show-questionaire.display-feedback #feedback {
+		padding-top: 3em;
+	}
+	
+	#questions .label p a.more {
+		color: #fff;
+		background-color: #8c0095;
+		border-radius: .3em;
+		text-decoration: none;
+		padding: .1em .2em;
+		margin: -.1em 0;
+		white-space: nowrap;
+		font-size: .9em;
+		opacity: .7;
+	}
+	
+	#questions .label p a.more:hover {
+		color: #fff;
+		background-color: #c400d0;
+		opacity: 1;
+	}
+	

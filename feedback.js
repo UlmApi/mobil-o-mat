@@ -53,26 +53,42 @@ app.post("/feedback", function(req, res){
 		name: smclean.string(req.body.name, { keepNewLines: false, keepHTML: true, maxLength: 256 }),
 		email: smclean.email(req.body.email),
 		text: smclean.string(req.body.text, { keepNewLines: true, keepHTML: true, maxLength: 4096 }),
-		time: moment().format("YYYY-MM-DD HH:mm:ss")
-	}
+		answers: (req.body.hasOwnProperty("answers") && /^[012\-]+$/.test(req.body.answers)) ? req.body.answers.split("") : [],
+		time: moment().format("YYYY-MM-DD HH:mm:ss"),
+		instance: (smclean.string(req.body.instance, { keepNewLines: false, keepHTML: true, maxLength: 256 }) || "https://bund.digital-o-mat.de/")
+	};
 	
 	if (!data.name || !data.email || !data.text) return stats.fail++, res.status(200).json(false);
 	
+	var aidx = {
+		"0": "Stimme nicht zu",
+		"1": "Neutral",
+		"2": "Stimme zu",
+		"-": "Nicht beantwortet"
+	};
+	
 	mailer.sendMail({
-		from: "Digital-O-Mat <mailout@dst.io>",
-		sender: "mailout@dst.io",
+		from: "Digital-O-Mat <mailout@dsst.io>",
+		sender: "mailout@dsst.io",
 		to: "Sebastian Vollnhals <sv@dsst.io>",
 		replyTo: data.email,
 		subject: "[feedback] "+data.name+" "+data.time,
-		text: [
+		text: (function(a){
+			return a.concat(data.answers.reduce(function(p,c,i){
+				if (p.length === 0) p.push("Antworten"), p.push("");
+				p.push("Frage "+(i+1)+": "+aidx[c.toString()]);
+				return p;
+			},[]));
+		})([
+			"Instanz: "+data.instance,
 			"",
-			"Datum:  "+data.time,
-			"Name:   "+data.name,
-			"E-Mail: "+data.email,
+			"Datum:   "+data.time,
+			"Name:    "+data.name,
+			"E-Mail:  "+data.email,
 			"",
 			data.text,
 			"",
-		].join("\n")
+		]).join("\n")
 	}, function(err, info){
 		if (err) return stats.fail++, res.status(500).json(err)
 		return stats.sent++, res.status(200).json(true);

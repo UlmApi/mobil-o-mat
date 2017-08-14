@@ -118,6 +118,12 @@
 							<span>Feedback</span>
 							<textarea id="feedback-text" name="text" required></textarea>
 						</p>
+						<p class="show-when-answered">
+							<label for="feedback-answers">
+								<input type="checkbox" name="answers" id="feedback-answers" value="true">
+								Mein Digital-O-Mat Ergebnis mit übermitteln. 
+							</label>
+						</p>
 						<p>
 							<button id="feedback-submit">Senden</button>
 						</p>
@@ -318,6 +324,9 @@
 				</li>		
 			{{/comparison}}
 			</ol>
+			<p>
+				<a href="javascript:;" class="goto-feedback">Feedback senden</a>
+			</p>
 		</div>
 		<div id="detail">
 			<h2>Die Positionen im Detail</h2>
@@ -361,6 +370,9 @@
 				</li>
 			{{/detail}}
 			</ul>
+			<p>
+				<a href="javascript:;" class="goto-feedback">Feedback senden</a>
+			</p>
 		</div>
 	</script>
 </html>

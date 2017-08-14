@@ -191,6 +191,13 @@ $(document).ready(function(){
 			$(this).parent().toggleClass("show-explanation");
 		});
 		
+		// activate feedback
+		$(".goto-feedback","#result").click(function(evt){
+			evt.preventDefault();
+			$("#app").addClass("display-feedback");
+			scroll($("#feedback").offset().top, 200);
+		});
+		
 		// ping for stats, no data whatsoever.
 		$.get("calculated", function(){});
 		
@@ -223,10 +230,17 @@ $(document).ready(function(){
 	$feedback.submit(function(evt){
 		evt.preventDefault();
 		
+		var answers = ($("#feedback-answers")[0].checked) ? $("#questions").serializeArray().reduce(function(p,c){
+			p[parseInt(c.name.replace(/[^0-9]+/g,''),10)] = parseInt(c.value,10);
+			return p;
+		}, Array(window.omatdata.questions.length).fill(null)).map(function(v){
+			return (v===null)?"-":v;
+		}).join("") : null;
+				
 		$.ajax({
 			type: "POST",
 			url: 'feedback',
-			data: $feedback.serialize(),
+			data: $feedback.serialize().replace("&answers=true","&answers="+answers),
 			success: function(resp,status,xhr){
 				if (resp === true || resp === "true") {
 					$feedback[0].reset();
