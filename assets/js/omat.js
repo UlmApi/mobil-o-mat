@@ -249,6 +249,7 @@ $(document).ready(function(){
 					setTimeout(function(){
 						$msg.remove();
 						$("#feedback-submit").show();
+						$("#app").removeClass("display-feedback");
 					},5000);
 				} else {
 					alert("Die eingegebenen Daten sind ungültig.");
