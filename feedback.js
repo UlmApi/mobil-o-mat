@@ -53,7 +53,7 @@ app.post("/feedback", function(req, res){
 		name: smclean.string(req.body.name, { keepNewLines: false, keepHTML: true, maxLength: 256 }),
 		email: smclean.email(req.body.email),
 		text: smclean.string(req.body.text, { keepNewLines: true, keepHTML: true, maxLength: 4096 }),
-		answers: (req.body.hasOwnProperty("answers") && /^[012\-]+$/.test(req.body.answers)) ? req.body.answers.split("") : [],
+		answers: (req.body.answers && /^[012\-]+$/.test(req.body.answers)) ? req.body.answers.split("") : [],
 		time: moment().format("YYYY-MM-DD HH:mm:ss"),
 		instance: (smclean.string(req.body.instance, { keepNewLines: false, keepHTML: true, maxLength: 256 }) || "https://bund.digital-o-mat.de/")
 	};
