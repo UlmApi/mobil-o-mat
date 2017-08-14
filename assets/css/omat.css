@@ -54,10 +54,17 @@ body {
 	font-family: "Raleway", sans-serif;
 	font-weight: 500;
 	color: #fff;
-	background-color: #876e89;
+	background-color: #8c0095;
+	/*background-color: #876e89;*/
 	font-size: 14px;
 	cursor: pointer;
 	text-decoration: none;
+	transition: background-color 1s ; HERE
+}
+
+#app .goto-feedback:hover,
+#app button:hover {
+	background-color: #c400d0;
 }
 
 @media (max-width: 959px) { 
@@ -208,7 +215,6 @@ body {
 					font-size: .7em;
 					top: -.1em;
 				}
-				
 
 	header p {
 		display: none;
@@ -1580,4 +1586,4 @@ footer {
 		background-color: #c400d0;
 		opacity: 1;
 	}
-	
+		
