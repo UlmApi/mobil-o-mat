@@ -68,9 +68,9 @@ app.post("/feedback", function(req, res){
 	};
 	
 	mailer.sendMail({
-		from: "Digital-O-Mat <mailout@dsst.io>",
+		from: "Digital-O-Mat <noreply@dsst.io>",
 		sender: "mailout@dsst.io",
-		to: "Sebastian Vollnhals <sv@dsst.io>",
+		to: "Digital-O-Mat <digital-o-mat@wikimedia.de >",
 		replyTo: data.email,
 		subject: "[feedback] "+data.name+" "+data.time,
 		text: (function(a){
