@@ -213,9 +213,9 @@ $(document).ready(function(){
 	};
 	
 	$("a","#social").click(function(evt){
-		if (mobile) return;
+		if (mobile || !/^https?:\/\//.test($(this).attr("href"))) return;
 		evt.preventDefault();
-		window.open($(this).attr("href"),"share","width=500,height=300,status=no,scrollbars=no,resizable=no,menubar=no,toolbar=no");
+		window.open($(this).attr("href"),"share","width=500,height=400,status=no,scrollbars=no,resizable=no,menubar=no,toolbar=no");
 	});
 	
 	// feedback from
