@@ -190,7 +190,7 @@ body {
 	
 		#social li {
 			display: block;
-			float: right;
+			float: left;
 			position: relative;
 			margin: 0;
 			padding: 0;
@@ -892,9 +892,8 @@ body {
 		}
 
 			#social li {
-				display: block;
+				display: inline-block;
 				position: relative;
-				float: right;
 				font-family: "Raleway", sans-serif;
 				font-size: 20px;
 				line-height: 35px;
