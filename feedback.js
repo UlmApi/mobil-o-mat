@@ -74,9 +74,10 @@ app.post("/feedback", function(req, res){
 		replyTo: data.email,
 		subject: "[feedback] "+data.name+" "+data.time,
 		text: (function(a){
-			return a.concat(data.answers.reduce(function(p,c,i){
-				if (p.length === 0) p.push("Antworten"), p.push("");
+			return a.concat(data.answers.reduce(function(p,c,i,a){
+				if (p.length === 0) p.push("Antworten:"), p.push("");
 				p.push("Frage "+(i+1)+": "+aidx[c.toString()]);
+				if (i===(a.length-1)) p.push("");
 				return p;
 			},[]));
 		})([
@@ -85,6 +86,8 @@ app.post("/feedback", function(req, res){
 			"Datum:   "+data.time,
 			"Name:    "+data.name,
 			"E-Mail:  "+data.email,
+			"",
+			"Text:",
 			"",
 			data.text,
 			"",
