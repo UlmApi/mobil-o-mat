@@ -7,11 +7,11 @@ window.omatdata = {
 		["Öffentlich finanzierte Software-Entwicklungen","Es soll keine Vorgaben geben, dass von öffentlicher Hand finanzierte oder kofinanzierte Softwareentwicklungen auch als Freie und Open-Source-Software veröffentlicht werden müssen."],
 		["IT-Lösungen in den öffentlichen Verwaltungen","Öffentliche Verwaltungen sollen ihre IT schrittweise auf Freie und Open-Source-Software umstellen."],
 		["Recht auf Netzzugang","In der digitalen Gesellschaft hat jeder Mensch (nicht nur Bürger*innen) das Recht auf schnellen, unzensierten, nicht überwachten Zugang zu Kommunikationsnetzen wie dem Internet. Dies gilt zu Hause, aber auch in der Schule, in der Geflüchtetenunterkunft, im Bürgeramt oder im Jobcenter."],
-x		["Digitales Ehrenamt","Ehrenamtliches Engagement im digitalen Bereich - zum Beispiel das Betreiben von nicht-kommerzieller Kommunikationsinfrastruktur und Bereitstellen von offenen Internetzugängen - soll genauso gefördert werden wie anderes ehrenamtliches Engagement."],
+		["Digitales Ehrenamt","Ehrenamtliches Engagement im digitalen Bereich - zum Beispiel das Betreiben von nicht-kommerzieller Kommunikationsinfrastruktur und Bereitstellen von offenen Internetzugängen - soll genauso gefördert werden wie anderes ehrenamtliches Engagement."],
 		["Informationsfreiheitsgesetz","Das Informationsfreiheitsgesetz soll zu einem Transparenzgesetz weiterentwickelt werden. Wichtige Dokumente wie Verträge, Weisungen und Gutachten sollen aktiv von der Bundesverwaltung veröffentlicht werden."],
 		["Transparenzregister","Das Transparenzregister für wirtschaftliche Eigentümer soll nicht-öffentlich bleiben. Die Daten von Hinterleuten von Briefkastenfirmen können so nur von Behörden eingesehen werden, nicht von der Öffentlichkeit."],
 		["Upload-Filter für Nutzerinhalte","Plattformbetreiber sollten dazu verpflichtet sein, die von Nutzenden ihrer Plattformen erstellten Inhalte auf urheberrechtliche Verstöße hin zu überprüfen und gegebenenfalls bereits das Hochladen solcher Inhalte zu unterbinden. Die Erstentscheidung über die Rechtmäßigkeit hochgeladener Inhalte trifft hierbei der verantwortliche Plattformbetreiber auf Basis von Informationen der Rechteinhaber."],
-x		["Daten als Ware","Es sollte kein neues, dem Sacheigentum gleichgestelltes Eigentumsrecht an solchen faktischen Daten geschaffen werden, wie sie etwa aggregiert bei der Nutzung von vernetzten Kraftfahrzeugen anfallen."]
+		["Daten als Ware","Es sollte kein neues, dem Sacheigentum gleichgestelltes Eigentumsrecht an solchen faktischen Daten geschaffen werden, wie sie etwa aggregiert bei der Nutzung von vernetzten Kraftfahrzeugen anfallen."]
 	],
 	"parties": [
 		"cdu",
