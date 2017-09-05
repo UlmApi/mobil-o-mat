@@ -807,6 +807,11 @@ body {
 
 @media (min-width: 960px) { 
 
+	#wrapper {
+		background: #fff url(../images/update.svg) right 100px no-repeat;
+		background-size: 25%;
+	}
+
 	header {
 		display: block;
 		position: relative;
