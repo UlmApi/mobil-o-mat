@@ -43,6 +43,22 @@ body {
 	color: #5b6672;
 }
 
+#app ul {
+	margin: 2em 0;
+	padding-left: 1em;
+	font-size: 13px;
+}
+
+#app ul li {
+	margin: 1em 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 13px;
+	font-weight: 500; 
+	line-height: 18px;
+	color: #5b6672;
+}
+
 #app .goto-feedback,
 #app button {
 	display: inline-block;
