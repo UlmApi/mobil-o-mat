@@ -2,9 +2,8 @@
 <html lang="de">
 	<head>
 		<meta charset="utf-8">
-		<title>Digital-O-Mat</title>
-
-		<!-- base -->
+		<!-- <title>Digital-O-Mat</title> -->
+		<title>TESTSEITE</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 		<meta name="twitter:card" content="summary_large_image">
@@ -32,6 +31,8 @@
 		<link type="text/css" rel="stylesheet" href="assets/fonts/open-sans/font.css">
 
 		<link type="text/css" rel="stylesheet" href="assets/css/omat.css?0">
+
+		<link type="image/png" rel="icon" href="assets/images/favicon.png">
 	</head>
 	<body>
 		<div id="wrapper">
@@ -40,21 +41,18 @@
 				<div id="menu">
 					<ul>
 						<li><a href="#questionaire" data-show="questionaire">Digital-O-Mat</a></li>
-						<li><a href="#orgs" data-show="orgs">Hintergrund</a></li>
-						<!-- li><a href="#feedback" data-show="feedback">Feedback</a></li -->
+						<li><a href="#orgs" data-show="orgs">Über uns</a></li>
 						<li><a href="#impressum" data-show="impressum">Impressum</a></li>
 						<li><a href="#privacy" data-show="privacy">Datenschutz</a></li>
 					</ul>
 				</div>
 				<ul id="social">
-					<li><a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fbund.digital-o-mat.de%2F&amp;text=Der%20Digital-O-Mat%20ist%20da!%20Finde%20heraus%20wie%20die%20Parteien%20zur%20Bundestagswahl%20zu%20digitalen%20Themen%20stehen.%20In%2012%20Klicks%20wei%C3%9Ft%20du%20mehr." title="Twitter"><i class="icon-twitter"></i></a></li>
-					<li><a href="https://www.facebook.com/dialog/share?app_id=966242223397117&amp;display=popup&amp;href=https%3A%2F%2Fbund.digital-o-mat.de%2F" title="Facebook"><i class="icon-facebook"></i></a></li>
-					<!-- li><a href="https://example.org/notice/new?status_textarea=Der%20Digital-O-Mat%20ist%20da!%20Finde%20heraus%20wie%20die%20Parteien%20zur%20Bundestagswahl%20zu%20digitalen%20Themen%20stehen.%20In%2012%20Klicks%20wei%C3%9Ft%20du%20mehr.%20https%3A%2F%2Fbund.digital-o-mat.de%2F" title="GNU Social"><i class="icon-gnusocial"></i></a></li -->
-					<li><a href="https://share.diasporafoundation.org/?title=Der%20Digital-O-Mat%20ist%20da!%20Finde%20heraus%20wie%20die%20Parteien%20zur%20Bundestagswahl%20zu%20digitalen%20Themen%20stehen.%20In%2012%20Klicks%20wei%C3%9Ft%20du%20mehr.&amp;url=https%3A%2F%2Fbund.digital-o-mat.de%2F" title="Diaspora"><i class="icon-diaspora"></i></a></li>
-					<!-- li><a href="web+mastodon://share?text=Der%20Digital-O-Mat%20ist%20da!%20Finde%20heraus%20wie%20die%20Parteien%20zur%20Bundestagswahl%20zu%20digitalen%20Themen%20stehen.%20In%2012%20Klicks%20wei%C3%9Ft%20du%20mehr.%20https%3A%2F%2Fbund.digital-o-mat.de%2F" title="Mastodon"><i class="icon-mastodon"></i></a></li -->
+					<li><a href="https://twitter.com/" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+					<li><a href="https://joinmastodon.org/" target="_blank" title="Mastodon"><i class="icon-mastodon"></i></a></li>
 				</ul>
 				<div id="logo">
-					<h1>Digital-o-mat</h1>
+					<!-- <h1>Digital-O-Mat</h1> -->
+					<h1>TESTSEITE</h1>
 					<p>Digitaler Parteien-Check</p>
 				</div>
 			</header>
@@ -63,7 +61,7 @@
 					<div class="row">
 						<h2>Digitale Politik in 12 Klicks!</h2>
 						<p>
-							Am 24. September wird ein neuer Bundestag gewählt. Was sind die jeweiligen Positionen der Parteien zu wichtigen digitalen Themen? 
+							Am 26. Mai wird ein neues Europäisches Parlament gewählt. Was sind die jeweiligen Positionen der Parteien zu wichtigen digitalen Themen?
 						</p>
 						<p>
 							Einfach die 12 Positionen in unserem Digital-O-Maten für sich selbst bewerten und erfahren, mit welcher Partei die Übereinstimmung wie groß ist.
@@ -74,14 +72,15 @@
 								Der Digital-O-Mat benötigt JavaScript. 
 							</p>
 						</noscript>
-						<button id="activate">Zum Digital-O-Maten</button>
+						<button id="activate">Digital-O-Maten starten</button>
 					</div>
 					<div class="row">
 						<img src="assets/images/wahlland.svg" alt="" title="">
 					</div>
 				</div>
+
 				<div class="app-item" id="questionaire">
-					<h2>Digitale Themen bei der Bundestagswahl 2017</h2>
+					<h2>Digitale Themen bei der Europawahl 2019</h2>
 					<p>
 						Einfach jeweils mit »stimme zu«, »neutral« oder »stimme nicht zu« bewerten und erfahren, wie die Parteien dazu stehen und mit welchen die Übereinstimmung am größten ist:
 					</p>
@@ -89,55 +88,14 @@
 					<button id="calculate">Übereinstimmung berechnen</button>
 					<div id="result"></div>
 				</div>
-				<div class="app-item" id="feedback">
-					<h2>Feedback</h2>
-					<p>
-						Du hast einen Fehler entdeckt, Fragen zur Programmierung oder möchtest uns deine Sicht über digitale Themen näher schildern? Dann fülle einfach dieses Formular aus.
-					</p>
-					<form action="javascript:;" method="POST" id="feedback-form">
-						<p>
-							<span>Name</span>
-							<input type="text" id="feedback-name" name="name" value="" placeholder="Name" required>
-						</p>
-						<p>
-							<span>E-Mail</span>
-							<input type="text" id="feedback-email" name="email" value="" placeholder="E-Mail" required>
-						</p>
-						<p>
-							<span>Homepage</span>
-							<input type="text" id="feedback-url" name="url" value="" placeholder="http://">
-						</p>
-						<p>
-							<span>Feedback</span>
-							<textarea id="feedback-text" name="text" required></textarea>
-						</p>
-						<p class="show-when-answered">
-							<label for="feedback-answers">
-								<input type="checkbox" name="answers" id="feedback-answers" value="true">
-								Mein Digital-O-Mat Ergebnis mit übermitteln. 
-							</label>
-						</p>
-						<p>
-							<button id="feedback-submit">Senden</button>
-						</p>
-					</form>
-				</div>
+
 				<div class="app-item" id="orgs">
-					<h2>Community-Update vom 5.9.2017</h2>
-					<p>
-						Dank der Feedback-Funktion und reger Teilnahme haben uns viele Anregungen zu den Inhalten und zur Darstellung des Bundes-Digital-O-Maten erreicht. Einige davon haben wir in Form eines Updates umgesetzt:
-					</p>
-					<ul>	
-						<li>Methode und Parteienspektrum sind nun ausführlicher und auch direkt bei der Auswertungsansicht erklärt</li>
-						<li>einige der Positionen wurden als schwer verständlich wahrgenommen und sind nun sprachlich vereinfacht worden</li>
-						<li>es wurden zu allen Positionen weiterführende Links zum nachlesen eingefügt, meist auf passende Wikipedia-Artikel</li>
-					</ul>
-					<h2>Warum gibt es auch zur Bundestagswahl den Digital-O-Maten?</h2>
+					<h2>Warum gibt es auch zur Europawahl den Digital-O-Maten?</h2>
 					<p>
 						Digitale Themen kommen in der allgemeinen Wahlberichterstattung oft zu kurz. Hier setzt der Digital-O-Mat als zusätzliche Informationsquelle für die Wahlberechtigten an. Zur Landtagswahl in Nordrhein-Westfalen im Mai 2017 gab es bereits eine Pilotausgabe des Digital-O-Maten.
 					</p>
 					<p>
-						Im Sommer 2017 haben wir uns dann an alle Parteien gewandt, die zur Bundestagswahl antreten und die in allen Umfragen seit letztem Jahr durchgängig die 5%-Schwelle überschritten haben (alle antretenden Parteien abzufragen war für uns vom Aufwand her nicht möglich). Zurückgemeldet haben sich alle Parteien außer der AfD.
+						Im Sommer 2017 haben wir uns dann an alle Parteien gewandt, die zur Europawahl antreten und die in allen Umfragen seit letztem Jahr durchgängig die 5%-Schwelle überschritten haben (alle antretenden Parteien abzufragen war für uns vom Aufwand her nicht möglich). Zurückgemeldet haben sich alle Parteien außer der AfD.
 					</p>
 					<p>
 						Wir hatten den sechs Parteien einen Katalog von 12 Fragen geschickt nach dem Schema "Sind Sie für ..." bzw. "Wie ist ihre Parteiposition zu ...". Allein auf die Wahlprogramme konnten wir uns nicht stützen, weil wir feststellen mussten, dass darin fast in keinem Fall konkret genug formuliert wird für die von uns ausgewählten digitalen Themen.
@@ -148,7 +106,7 @@
 					<p>
 						Abschließend wurden die 12 von den Parteien beantworteten Fragen in Aussageform umformuliert, damit im Digital-O-Maten dann "stimme zu", "neutral" oder "stimme nicht zu" (oder auch gar nichts) angeklickt werden kann. Dabei haben wir bewusst dafür gesorgt, dass das positiv besetzte "stimme zu" nicht durchweg auf der Option liegt, die uns als Koalition Freies Wissen am liebsten wäre. Dadurch wollen wir eine inhaltliche Beeinflussung vermeiden und zum Nachdenken anregen.
 					</p>
-					<h2>Wer wir sind</h2>
+					<h2>Über uns</h2>
 					<p>
 						Weitere Informationen über wichtige Entwicklungen rund um digitale Themen und darüber, wie man sich für digitale Bürgerrechte einsetzen kann, gibt es auf den Websites der Kooperationspartner:
 					</p>
@@ -257,14 +215,14 @@
 					</p>
 					<h3>Haftung f&uuml;r Links</h3>
 					<p>
-						Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+						Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
 					</p>
 					<h3>Urheberrecht</h3>
 					<p>
 						Sofern nicht anders angegeben und mit Ausnahme der hier verwendeten Logos, stehen die Inhalte dieser Seite unter Creative-Commons-Lizenz Namensnennung 4.0 International (<a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC BY-SA 4.0</a>). Die Software des Digital-O-Maten wurde entwickelt von <a href="https://dsst.io/">Data Science &amp; Stories</a> und ist verf&uuml;gbar unter <a href="https://github.com/dsstio/digital-o-mat/blob/master/LICENSE.md">MIT License</a> auf <a href="https://github.com/dsstio/digital-o-mat">GitHub</a>.
 					</p>
 					<p>
-						“Digitalomat Logo” By ElioQoshi (Own work) <a href="http://creativecommons.org/licenses/by-sa/4.0)">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Digitalomat_Logo.svg">Wikimedia Commons</a>; 
+						"Digitalomat Logo" By ElioQoshi (Own work) <a href="http://creativecommons.org/licenses/by-sa/4.0)">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Digitalomat_Logo.svg">Wikimedia Commons</a>; 
 						<a href="https://icomoon.io/">Icomoon Free</a> by <a href="http://keyamoon.com/">KeyaMoon</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>);
 						<a href="http://www.entypo.com/">Entypo+</a> by <a href="http://www.danielbruce.se/">Daniel Bruce</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>);
 						<a href="http://www.opensans.com/">Open Sans</a> (Apache License 2.0);
@@ -284,7 +242,7 @@
 					</p>
 					<h3>Ihr Auswertungsergebnis</h3>
 					<p>
-						Ihre inhaltliche Auswahl zu den Positionen im Digital-O-Maten wird nicht an den Server zurück übermittelt, vielmehr läuft der Digital-O-Mat einschließlich der Auswertung vollständig im Arbeitsspeicher Ihres Endgeräts. Entsprechend sind für uns weder individuelle noch aggregierte Analysen der Präferenzen möglich. Sie haben aber die Möglichkeit, uns im Rahmen der Funktion "Feedback geben" (siehe Auswertungsseite) Ihr Ergebnis und damit auch Ihre eigene Auswahl zu den Positionen per E-Mail zu übermitteln. Wenn sie den entsprechenden Haken setzen, werden die Auswertungsdaten aus dem Speicher Ihres Endgeräts der unverschlüsselten E-Mail angehängt. Die gemailten Daten können dann durch die Betreibenden der E-Mail-Server mitgelesen werden, über die der Mailvorgang läuft. Wie diese mit solchen Daten verfahren, können wir nicht beeinflussen. Bei uns werden mitgeschickte Auswertungsdaten nicht über Oktober 2018 hinaus gespeichert und nicht an Dritte weitergegeben. Wir werten diese Daten nur aus, um die Antworten der Nutzenden des Digital-O-Maten ins Verhältnis zum letztendlichen Wahlergebnis zu setzen.
+						Ihre inhaltliche Auswahl zu den Positionen im Digital-O-Maten wird nicht an den Server zurück übermittelt, vielmehr läuft der Digital-O-Mat einschließlich der Auswertung vollständig im Arbeitsspeicher Ihres Endgeräts. Entsprechend sind für uns weder individuelle noch aggregierte Analysen der Präferenzen möglich.
 					</p>
 				</div>
 			</div>
@@ -346,15 +304,6 @@
 				</li>		
 			{{/comparison}}
 			</ol>
-			<p>
-				<a href="javascript:;" class="goto-feedback">Feedback geben</a>
-			</p>
-			<p>
-				Wir haben alle Parteien abgefragt, die zur Bundestagswahl antreten und in allen Umfragen seit letztem Jahr durchgängig die 5%-Schwelle überschritten haben. Von diesen sechs Parteien haben sich alle außer der AfD zurückgemeldet. Eine Auswertung allein der Wahlprogramme hat sich als zu unkonkret für die von uns ausgewählten digitalen Themen erwiesen
-			</p>
-			<p>
-				Die obige Auswahl per Klick ergibt im Hintergrund einen Zahlwert von 2 für Zustimmung, 1 für neutral und 0 für Ablehnung. Die prozentuale Übereinstimmung mit den Parteien errechnet sich dann im Verhältnis dazu, ob diese auf unsere Fragen mit Ja (2), neutral (1) oder Nein (0) geantwortet haben. Je mehr von den 12 Positionen geklickt werden, desto genauer ist am Ende der Prozentwert.
-			</p>
 		</div>
 		<div id="detail">
 			<h2>Die Positionen im Detail</h2>
@@ -398,9 +347,6 @@
 				</li>
 			{{/detail}}
 			</ul>
-			<p>
-				<a href="javascript:;" class="goto-feedback">Feedback geben</a>
-			</p>
 		</div>
 	</script>
 </html>

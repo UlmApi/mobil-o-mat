@@ -1,17 +1,23 @@
 $(document).ready(function(){
-
 	// number of maximum divergence
 	var MAXDIV = 2;
 
 	// party matrix
 	var parties = {
-		"afd": ["AfD","Alternative für Deutschland"],
-		"cdu": ["CDU","Christlich Demokratische Union"],
-		"fdp": ["FDP","Freie Demokratische Partei"],
-		"gruene": ["Grüne","Bündnis_90/Die_Grünen"],
-		"linke": ["Linke","Die Linke"],
-		"piraten": ["Piraten","Piratenpartei"],
-		"spd": ["SPD","Sozialdemokratische Partei Deutschlands"]
+		"afd": ["AfD", "Alternative für Deutschland"],
+		"cdu": ["CDU", "Christlich Demokratische Union Deutschland"],
+		"csu": ["CSU", "Christlich-Soziale Union in Bayern"],
+		"partei": ["Die PARTEI", "Die PARTEI"],
+		"piraten": ["Piraten", "Die Piraten"],
+		"familien": ["Familien-Partei", "Familien-Partei Deutschlands"],
+		"fdp": ["FDP", "Freie Demokratische Partei"],
+		"freie": ["FREIE WÄHLER", "Bundesvereinigung FREIE WÄHLER"],
+		"gruene": ["Grüne", "Bündnis 90/Die Grünen Deutschland"],
+		"linke": ["Linke", "Die Linke."],
+		"npd": ["NPD", "NPD"],
+		"oedp": ["ÖDP", "Ökologisch-Demokratische Partei"],
+		"spd": ["SPD", "Sozialdemokratische Partei Deutschlands"],
+		"tierschutz": ["Tierschutzpartei", "Partei Mensch Umwelt Tierschutz (Die Tierschutzpartei)"]
 	};
 	
 	var keys = ["Ablehnung","Neutral","Zustimmung"];
@@ -96,7 +102,6 @@ $(document).ready(function(){
 	});
 
 	function calculate(fn){
-
 		// prepare result array
 		var result = {
 
@@ -118,7 +123,6 @@ $(document).ready(function(){
 
 			// transform answer data to templatable data structure
 			detail: []
-			
 		};
 		
 		// calculate score
@@ -135,7 +139,6 @@ $(document).ready(function(){
 				// else calculate divergence
 				result.comparison[j] += (MAXDIV-Math.abs(a[0]-v));
 			});
-
 		});
 		
 		// calculate maximum score
@@ -190,19 +193,8 @@ $(document).ready(function(){
 			evt.preventDefault();
 			$(this).parent().toggleClass("show-explanation");
 		});
-		
-		// activate feedback
-		$(".goto-feedback","#result").click(function(evt){
-			evt.preventDefault();
-			$("#app").addClass("display-feedback");
-			scroll($("#feedback").offset().top, 200);
-		});
-		
-		// ping for stats, no data whatsoever.
-		$.get("calculated", function(){});
-		
+
 		if (typeof fn === "function") fn();
-		
 	};
 	
 	function scroll(to, duration) {
@@ -219,46 +211,9 @@ $(document).ready(function(){
 		}.bind(this), 10);
 	};
 	
-	$("a","#social").click(function(evt){
-		if (mobile || !/^https?:\/\//.test($(this).attr("href"))) return;
-		evt.preventDefault();
-		window.open($(this).attr("href"),"share","width=500,height=400,status=no,scrollbars=no,resizable=no,menubar=no,toolbar=no");
-	});
-	
-	// feedback from
-	var $feedback = $('#feedback-form');
-	$feedback.submit(function(evt){
-		evt.preventDefault();
-		
-		var answers = ($("#feedback-answers")[0].checked) ? $("#questions").serializeArray().reduce(function(p,c){
-			p[parseInt(c.name.replace(/[^0-9]+/g,''),10)] = parseInt(c.value,10);
-			return p;
-		}, Array(window.omatdata.questions.length).fill(null)).map(function(v){
-			return (v===null)?"-":v;
-		}).join("") : null;
-				
-		$.ajax({
-			type: "POST",
-			url: 'feedback',
-			data: $feedback.serialize().replace("&answers=true","&answers="+answers),
-			success: function(resp,status,xhr){
-				if (resp === true || resp === "true") {
-					$feedback[0].reset();
-					$("#feedback-submit").hide();
-					var $msg = $("<p>").attr("id","feedback-message").text("Danke für Ihr Feedback!").appendTo($feedback);
-					setTimeout(function(){
-						$msg.remove();
-						$("#feedback-submit").show();
-						$("#app").removeClass("display-feedback");
-					},5000);
-				} else {
-					alert("Die eingegebenen Daten sind ungültig.");
-				}
-			},
-			error: function(xhr, type){
-				alert("Das Formular konnte leider nicht abgesendet werden.");
-			}
-		})
-	});
-	
-}); // [42003,17236,36130925,24365,638511].map(function(v){ return v.toString(36); }).join(" "); // <- verschwörungstheorie!
+	// $("a","#social").click(function(evt){
+	// 	if (mobile || !/^https?:\/\//.test($(this).attr("href"))) return;
+	// 	evt.preventDefault();
+	// 	window.open($(this).attr("href"),"share","width=500,height=400,status=no,scrollbars=no,resizable=no,menubar=no,toolbar=no");
+	// });
+});
