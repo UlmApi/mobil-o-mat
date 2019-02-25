@@ -1,9 +1,19 @@
+:root {
+	--main-color: #1E448A;
+	--menu-color: #1E448A;
+	--header-color: #FDCB0B;
+	--button-color: #1E448A;
+	--body-color: rgba(202, 215, 238, 0.3);
+	--footer-color: #1E448A;
+	--social-hover: #1E448A;
+}
+
 body {
 	display: block;
 	position: relative;
 	margin: 0;
 	padding: 0;
-	background-color: #fbf2fc;
+	background-color: var(--body-color);
 	font-family: "Open Sans", sans-serif;
 }
 
@@ -16,21 +26,18 @@ body {
 	min-width: 320px;
 	background-color: #fff;
 	overflow-x: hidden;
-	
 }
-
-/* common definitions */
 
 #app h2 {
 	font-family: "Raleway", sans-serif;
 	font-weight: 300; 
-	color: #c400d0;
+	color: var(--main-color);
 }
 
 #app h3 {
 	font-family: "Raleway", sans-serif;
 	font-weight: 300;
-	color: #876e89;
+	color: var(--footer-color);
 }
 
 #app p {
@@ -59,32 +66,118 @@ body {
 	color: #5b6672;
 }
 
-#app .goto-feedback,
 #app button {
 	display: inline-block;
 	position: relative;
 	margin: 1.2em 0;
 	padding: .4em .8em;
 	border: none;
-	border-radius: .5em;
+	border-radius: 3px;
 	font-family: "Raleway", sans-serif;
 	font-weight: 500;
 	color: #fff;
-	background-color: #8c0095;
-	/*background-color: #876e89;*/
-	font-size: 14px;
+	background-color: var(--button-color);
+	font-size: 18px;
 	cursor: pointer;
 	text-decoration: none;
-	transition: background-color 1s ; HERE
+	transition: background-color 1s;
 }
 
-#app .goto-feedback:hover,
 #app button:hover {
-	background-color: #c400d0;
+	background-color: var(--main-color);
 }
+
+footer {
+	background-color: var(--footer-color);
+	margin: 0;
+	padding: 0;
+}
+
+	footer p {
+		color: #fff;
+		margin: 0;
+		padding: 1em 40px 0;
+		font-size: 13px;
+	}
+
+	footer .orgs {
+		display: block;
+		position: relative;
+		list-style: none;
+		margin: 0;
+		padding: 1.5vw;
+		text-align: center;
+	}
+
+		footer .orgs li {
+			display: inline-block;
+			position: relative;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		footer .orgs a {
+			display: block;
+			position: relative;
+			width: 12vw;
+			height: 8vw;
+			max-width: 120px;
+			max-height: 80px;
+			margin: 0;
+			padding: 0;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+			transform: scale(0.8);
+			opacity: .9;
+			transition: opacity .5s, transform .5s, background-color .5s, filter .5s;
+		}
+
+		footer .orgs a:hover {
+			opacity: 1;
+			transform: scale(0.9);
+			z-index: 5;
+		}
+
+		footer .orgs a[title^='Chaos'] { background-image: url(../images/orgs/logo_ccc_weiss.svg); }
+		footer .orgs a[title^='Digitale'] { background-image: url(../images/orgs/logo_digiges_weiss.svg); }
+		footer .orgs a[title^='Freifunk'] { background-image: url(../images/orgs/logo_freifunk_weiss.svg); }
+		footer .orgs a[title^='Free'] { background-image: url(../images/orgs/logo_fsfe_weiss.svg); }
+		footer .orgs a[title^='Mozilla'] { background-image: url(../images/orgs/logo_mozilla_weiss.svg); }
+		footer .orgs a[title^='Open'] { background-image: url(../images/orgs/logo_okfde_weiss.svg); }
+		footer .orgs a[title^='Wikimedia'] { background-image: url(../images/orgs/logo_wikimedia_weiss.svg); }
+		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
+
+	footer .copyright-notice {
+		font-size: 10px;
+		color: #ccc;
+		padding-bottom: 2em;
+	}
+
+		footer .copyright-notice a {
+			color: #ddd;
+		}
+
+#questions .label p a.more {
+	color: #fff;
+	background-color: var(--button-color);
+	border-radius: 3px;
+	text-decoration: none;
+	padding: .1em .2em;
+	margin: -.1em 0;
+	white-space: nowrap;
+	font-size: .9em;
+	opacity: .7;
+}
+
+	#questions .label p a.more:hover {
+		color: #fff;
+		background-color: var(--main-color);
+		opacity: 1;
+	}
 
 @media (max-width: 959px) { 
-
 	#wrapper {
 		margin-top: 3em;
 	}
@@ -97,8 +190,8 @@ body {
 		right: 0;
 		z-index: 20;
 		height: 3em;
-		background-color: #c400d0;
-		border-bottom: 3px solid #f2cbf5;
+		background-color: var(--main-color);
+		border-bottom: 3px solid var(--header-color);
 	}
 	
 	#logo {
@@ -127,7 +220,6 @@ body {
 	#logo p {
 		display: none;
 	}
-	
 
 	#burger {
 		display: block;
@@ -151,7 +243,7 @@ body {
 		top: 3em;
 		left: 0;
 		right: 0;
-		background-color: #c400d0;
+		background-color: var(--menu-color);
 		height: 0;
 		overflow: hidden;
 		opacity: 0;
@@ -291,7 +383,7 @@ body {
 			font-weight: 300;
 			font-size: 20px;
 			line-height: 24px;
-			color: #c400d0;
+			color: var(--main-color);
 			margin: 0;
 			padding: 0;
 		}
@@ -300,7 +392,7 @@ body {
 			font-family: "Open Sans", sans-serif;
 			font-weight: 300;
 			font-size: 1.2em;
-			color: #c400d0;
+			color: var(--main-color);
 			margin-right: .25em;
 		}
 		
@@ -311,12 +403,12 @@ body {
 		}
 		
 		#questions .label p a {
-			color: #876e89;
+			color: var(--footer-color);
 			text-decoration: none;
 		}
 
 		#questions .label p a:hover {
-			color: #c400d0;
+			color: var(--main-color);
 		}
 		
 		#questions ul {
@@ -389,7 +481,6 @@ body {
 					color: #5b6672;
 					text-align: center;
 					line-height: 1em;
-				
 				}
 	
 		#questions .question::after {
@@ -454,7 +545,7 @@ body {
 			left: 0;
 			top: 0;
 			bottom: 0;
-			background-color: #876e89;
+			background-color: var(--footer-color);
 			line-height: 18px;
 			margin: 0;
 			padding: 0;
@@ -492,7 +583,7 @@ body {
 			font-weight: 300;
 			font-size: 21px;
 			line-height: 24px;
-			color: #c400d0;
+			color: var(--main-color);
 			margin: 0;
 			padding: 0;
 		}
@@ -516,7 +607,6 @@ body {
 		}
 
 		#detail .answers .answer {
-
 			display: block;
 			position: relative;
 			vertical-align: top;
@@ -524,12 +614,11 @@ body {
 			padding: 10px;
 			box-shadow: 0 0 0 1px #f0f2f4 inset;
 			border-radius: 3px;
-
 		}
 	
 		#detail .answers .answer.selected {
 			background-color: #f5f6f7;
-			box-shadow: 0 0 0 1px #c400d0 inset;
+			box-shadow: 0 0 0 1px var(--main-color) inset;
 			border-radius: 3px;
 		}
 
@@ -548,11 +637,10 @@ body {
 			font-family: "Raleway", sans-serif;
 			font-weight: 700;
 		
-			background-color: #c400d0;
+			background-color: var(--main-color);
 			color: #fff;
 			
 			border-bottom-left-radius: 3px;
-			
 		}
 	
 		#detail .answers .answer h4 {
@@ -665,13 +753,10 @@ body {
 		}	
 		
 	#orgs {
-		
 		margin: 10em 2em;
-		
 	}
 	
 		#orgs .org {
-
 			display: block;
 			margin: 1em 0 3em;
 			position: relative;
@@ -690,12 +775,12 @@ body {
 		}
 	
 		#orgs .org h3 a {
-			color: #c400d0;
+			color: var(--main-color);
 			text-decoration: none;
 		}
 
 		#orgs .org p a {
-			color: #c400d0;
+			color: var(--main-color);
 			text-decoration: none;
 		}
 	
@@ -706,19 +791,13 @@ body {
 			margin: 1em 0;
 		}
 	
-	#feedback {
-		margin: 10em 2em;
-	}
-	
 	#impressum {
 		margin: 10em 2em;
 	}
 	
 		#impressum a {
-		
-			color: #c400d0;
+			color: var(--main-color);
 			text-decoration: none;
-		
 		}
 	
 	#privacy {
@@ -732,41 +811,16 @@ body {
 			font-weight: 300;
 			font-size: 18px;
 			line-height: 22px;
-			color: #876e89;
+			color: var(--footer-color);
 			margin: 1em 0 .5em;
 			padding: 0;
 		}
 	
 	
 		#privacy a {
-		
-			color: #c400d0;
+			color: var(--main-color);
 			text-decoration: none;
-		
 		}
-		
-	#feedback span {
-		display: block;
-	}
-
-	#feedback input[type=text] {
-		display: block;
-		position: relative;
-		border: 1px solid #876e89;
-		padding: .2em;
-		min-width: 95%;
-		font-size: 1em;
-	}
-
-	#feedback textarea {
-		display: block;
-		position: relative;
-		border: 1px solid #876e89;
-		min-height: 100px;
-		min-width: 95%;
-		font-family: sans-serif;
-		padding: .2em;
-	}
 	
 	footer {
 		margin-top: 3em !important;
@@ -776,22 +830,19 @@ body {
 		width: 30vw !important;
 		height: 20vw !important;
 	}
-
 }
 
-@media (max-width: 520px) { 
-	
+@media (max-width: 520px) {
 	#header #social {
 		display: block;
 		position: absolute;
-		background-color: ;
 		top: 48px;
 		left: 0;
 		right: 0;
 		width: 100%;
 		height: 1em;
 		line-height: 1em;
-		background-color: #f2cbf5;
+		background-color: var(--header-color);
 		text-align: center;
 		font-size: 1.6em;
 	}
@@ -818,16 +869,9 @@ body {
 	#app {
 		padding-top: 2em;
 	}
-
 }
 
-@media (min-width: 960px) { 
-
-	#wrapper {
-		background: #fff url(../images/update.svg) right 100px no-repeat;
-		background-size: 25%;
-	}
-
+@media (min-width: 960px) {
 	header {
 		display: block;
 		position: relative;
@@ -845,9 +889,9 @@ body {
 			display: block;
 			position: relative;
 			margin: 0;
-			padding: 30px 40px 0px;
+			padding: 0 40px 0px;
 			min-height: 35px;
-			background-color: #c400d0;
+			background-color: var(--menu-color);
 		}
 	
 			#menu p {
@@ -858,11 +902,9 @@ body {
 				padding: 0;
 				line-height: 35px;
 				min-height: 35px;
-			
 				font-family: "Raleway", sans-serif;
 				font-size: 14px;
 				color: #bfe9f3;
-			
 			}
 		
 			#menu ul {
@@ -913,7 +955,7 @@ body {
 			margin: 0;
 			padding: 0 40px 0;
 			min-height: 35px;
-			background-color: #f2cbf5;
+			background-color: var(--header-color);
 			list-style: none;
 			text-align: right;
 		}
@@ -930,14 +972,14 @@ body {
 			#social li a {
 				display: block;
 				text-decoration: none;
-				color: #c400d0;
+				color: var(--main-color);
 				border-bottom: 1px solid transparent;
 				transform: scale(1);
 				transition: color .5s, transform .5s;
 			}
 
 			#social li a:hover {
-				color: #9e00a8;
+				color: var(--social-hover);
 				transform: scale(1.1);
 			}
 		
@@ -961,11 +1003,11 @@ body {
 				right: 40px;
 				max-width: 300px;
 				min-width: 200px;
-				background: url(../images/logo_digitalomat.svg) left top no-repeat;
+				background: url(../images/Digitalomat_Logo.svg) left top no-repeat;
 				background-size: contain;
 			}
 	
-			#logo h1, 
+			#logo h1,
 			#logo p {
 				display: none;
 			}
@@ -984,7 +1026,7 @@ body {
 			font-size: 24px;
 			font-weight: 300; 
 			line-height: 30px;
-			color: #c400d0;
+			color: var(--main-color);
 		}
 		
 		#app p+h2 {
@@ -993,8 +1035,6 @@ body {
 	
 		#app .app-item { display: none; }
 		#app.show-intro #intro,
-		#app.show-feedback #feedback,
-		#app.display-feedback #feedback,
 		#app.show-orgs #orgs,
 		#app.show-impressum #impressum,
 		#app.show-privacy #privacy,
@@ -1051,7 +1091,7 @@ body {
 				font-weight: 300;
 				font-size: 56px;
 				line-height: .7em;
-				color: #c400d0;
+				color: var(--main-color);
 			}
 		
 			#questions .label h3 {
@@ -1061,7 +1101,7 @@ body {
 				font-weight: 300;
 				font-size: 21px;
 				line-height: 24px;
-				color: #c400d0;
+				color: var(--main-color);
 				margin: 0;
 				padding: 0;
 			}
@@ -1071,12 +1111,12 @@ body {
 			}
 			
 			#questions .label p a {
-				color: #876e89;
+				color: var(--footer-color);
 				text-decoration: none;
 			}
 
 			#questions .label p a:hover {
-				color: #c400d0;
+				color: var(--main-color);
 			}
 
 			#questions ul {
@@ -1147,7 +1187,6 @@ body {
 						color: #5b6672;
 						text-align: center;
 						line-height: 2em;
-					
 					}
 		
 			#questions .question::after {
@@ -1156,11 +1195,8 @@ body {
 				clear: both;
 			}
 		
-
 		#comparison {
-			
 			margin: 5em 0;
-			
 		}
 
 			#comparison ol {
@@ -1187,7 +1223,7 @@ body {
 				top: 0;
 				left: 0;
 				bottom: 0;
-				width: 80px;
+				width: 145px;
 				margin: 0;
 				padding: 0;
 				line-height: 18px;
@@ -1203,7 +1239,7 @@ body {
 				top: 0;
 				right: 0;
 				bottom: 0;
-				left: 80px;
+				left: 150px;
 				margin: 0;
 				padding: 0;
 				line-height: 18px;
@@ -1217,7 +1253,7 @@ body {
 				left: 0;
 				top: 0;
 				bottom: 0;
-				background-color: #876e89;
+				background-color: var(--footer-color);
 				line-height: 18px;
 				margin: 0;
 				padding: 0;
@@ -1255,7 +1291,7 @@ body {
 				font-weight: 300;
 				font-size: 21px;
 				line-height: 24px;
-				color: #c400d0;
+				color: var(--main-color);
 				margin: 0;
 				padding: 0;
 			}
@@ -1309,7 +1345,7 @@ body {
 				font-family: "Raleway", sans-serif;
 				font-weight: 700;
 			
-				background-color: #c400d0;
+				background-color: var(--main-color);
 				color: #fff;
 			}
 		
@@ -1369,10 +1405,8 @@ body {
 			}
 
 			#detail .parties .party {
-
 				display: block;
 				position: relative;
-
 			}
 
 			#detail .parties .party.explanation {
@@ -1427,12 +1461,12 @@ body {
 			}
 		
 			#orgs .org h3 a {
-				color: #c400d0;
+				color: var(--main-color);
 				text-decoration: none;
 			}
 
 			#orgs .org p a {
-				color: #c400d0;
+				color: var(--main-color);
 				text-decoration: none;
 			}
 		
@@ -1446,10 +1480,8 @@ body {
 		#impressum {}
 		
 			#impressum a {
-			
-				color: #c400d0;
+				color: var(--main-color);
 				text-decoration: none;
-			
 			}
 		
 		#privacy {}
@@ -1461,150 +1493,15 @@ body {
 				font-weight: 300;
 				font-size: 18px;
 				line-height: 22px;
-				color: #876e89;
+				color: var(--footer-color);
 				margin: 1em 0 .5em;
 				padding: 0;
 			}
 		
-		
 			#privacy a {
-			
-				color: #c400d0;
+				color: var(--main-color);
 				text-decoration: none;
-			
 			}
 
-	#feedback span {
-		display: block;
-	}
-	
-	#feedback input[type=text] {
-		display: block;
-		position: relative;
-		border: 1px solid #876e89;
-		padding: .2em;
-		min-width: 50%;
-		font-size: 1em;
-	}
 
-	#feedback textarea {
-		display: block;
-		position: relative;
-		border: 1px solid #876e89;
-		min-height: 100px;
-		min-width: 50%;
-		font-family: sans-serif;
-		padding: .2em;
-	}
-
-}
-
-#feedback .show-when-answered { display: none; }
-.show-questionaire.display-feedback #feedback .show-when-answered { display: block; }
-
-footer {
-	background-color: #876e89;
-	margin: 0;
-	padding: 0;
-}
-
-	footer p {
-		color: #fff;
-		margin: 0;
-		padding: 1em 40px 0;
-		font-size: 13px;
-	}
-
-	footer .orgs {
-	
-		display: block;
-		position: relative;
-		list-style: none;
-		margin: 0;
-		padding: 1.5vw;
-		text-align: center;
-	
-	}
-
-		footer .orgs li {
-			display: inline-block;
-			position: relative;
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-			
-		footer .orgs a {
-			display: block;
-			position: relative;
-		
-			width: 12vw;
-			height: 8vw;
-		
-			max-width: 120px;
-			max-height: 80px;
-
-			margin: 0;
-			padding: 0;
-		
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: contain;
-			transform: scale(0.8);
-
-			opacity: .9;
-			transition: opacity .5s, transform .5s, background-color .5s, filter .5s;
-		
-		}
-	
-		footer .orgs a:hover {
-			opacity: 1;
-			transform: scale(0.9);
-			z-index: 5;
-		}
-	
-		footer .orgs a[title^='Chaos'] { background-image: url(../images/orgs/logo_ccc_weiss.svg); }
-		footer .orgs a[title^='Digitale'] { background-image: url(../images/orgs/logo_digiges_weiss.svg); }
-		footer .orgs a[title^='Freifunk'] { background-image: url(../images/orgs/logo_freifunk_weiss.svg); }
-		footer .orgs a[title^='Free'] { background-image: url(../images/orgs/logo_fsfe_weiss.svg); }
-		footer .orgs a[title^='Mozilla'] { background-image: url(../images/orgs/logo_mozilla_weiss.svg); }
-		footer .orgs a[title^='Open'] { background-image: url(../images/orgs/logo_okfde_weiss.svg); }
-		footer .orgs a[title^='Wikimedia'] { background-image: url(../images/orgs/logo_wikimedia_weiss.svg); }
-		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
-		
-	footer .copyright-notice {
-		font-size: 10px;
-		color: #ccc;
-		padding-bottom: 2em;
-	}
-
-	footer .copyright-notice a {
-		color: #ddd;
-	}
-	
-	/* spam trap */
-	#feedback-form p+p+p { display: none; }
-	#feedback-form p+p+p+p { display: block; }
-	
-	.show-questionaire.display-feedback #feedback {
-		padding-top: 3em;
-	}
-	
-	#questions .label p a.more {
-		color: #fff;
-		background-color: #8c0095;
-		border-radius: .3em;
-		text-decoration: none;
-		padding: .1em .2em;
-		margin: -.1em 0;
-		white-space: nowrap;
-		font-size: .9em;
-		opacity: .7;
-	}
-	
-	#questions .label p a.more:hover {
-		color: #fff;
-		background-color: #c400d0;
-		opacity: 1;
-	}
 		
