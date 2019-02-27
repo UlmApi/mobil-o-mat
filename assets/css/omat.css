@@ -342,7 +342,7 @@ footer {
 		max-width: 400px;
 	}
 	
-	#questionaire {
+	#questionnaire {
 		display: block;
 		position: relative;
 		min-height: 100vh;
@@ -1036,7 +1036,7 @@ footer {
 		#app.show-orgs #orgs,
 		#app.show-impressum #impressum,
 		#app.show-privacy #privacy,
-		#app.show-questionaire #questionaire { display: block; }
+		#app.show-questionnaire #questionnaire { display: block; }
 	
 		#intro {
 			margin-bottom: 100px;

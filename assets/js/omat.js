@@ -84,8 +84,8 @@ $(document).ready(function(){
 	// activate button
 	$("#activate").click(function(evt){
 		evt.preventDefault();
-		$("#app").attr("class","show-questionaire");
-		scroll(($("#questionaire").offset().top-70), 200);
+		$("#app").attr("class","show-questionnaire");
+		scroll(($("#questionnaire").offset().top-70), 200);
 	});
 	
 	// calculate button
