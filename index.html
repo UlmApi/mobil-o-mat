@@ -21,7 +21,32 @@
 		<meta property="og:locale" content="de_DE">
 		<meta property="article:author" content="Bündnis freies Wissen">
 
-		<script type="text/javascript" src="assets/data/data.js?4" defer></script>
+		<!-- Matomo -->
+		<!-- <script type="text/javascript">
+			var _paq = window._paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(['disableCookies']); // TODO: check if needed (if yes: add message)
+			_paq.push(['setDocumentTitle', document.title]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function () {
+				var u = "//stats.wikimedia.de/";
+				_paq.push(['setTrackerUrl', u + 'piwik.php']);
+				// TODO: adjust id
+				_paq.push(['setSiteId', '5']);
+				var d = document,
+					g = d.createElement('script'),
+					s = d.getElementsByTagName('script')[0];
+				g.type = 'text/javascript';
+				g.async = true;
+				g.defer = true;
+				g.src = u + 'piwik.js';
+				s.parentNode.insertBefore(g, s);
+			})();
+		</script> -->
+		<!-- End Matomo Code -->
+
+		<script type="text/javascript" src="assets/data/data.js" defer></script>
 		<script type="text/javascript" src="assets/js/mustache.min.js" defer></script>
 		<script type="text/javascript" src="assets/js/zepto.min.js" defer></script>
 		<script type="text/javascript" src="assets/js/omat.js" defer></script>
@@ -30,7 +55,7 @@
 		<link type="text/css" rel="stylesheet" href="assets/fonts/raleway/font.css">
 		<link type="text/css" rel="stylesheet" href="assets/fonts/open-sans/font.css">
 
-		<link type="text/css" rel="stylesheet" href="assets/css/omat.css?0">
+		<link type="text/css" rel="stylesheet" href="assets/css/omat.css">
 
 		<link type="image/png" rel="icon" href="assets/images/favicon.png">
 	</head>
@@ -86,7 +111,12 @@
 						Einfach jeweils mit »stimme zu«, »neutral« oder »stimme nicht zu« bewerten und erfahren, wie die Parteien dazu stehen und mit welchen die Übereinstimmung am größten ist:
 					</p>
 					<form id="questions" method="post" action="javascript:;"></form>
+
 					<button id="calculate">Übereinstimmung berechnen</button>
+					<!-- TODO: activate for deployment -->
+					<!-- <button id="calculate" onclick="_paq.push(['trackEvent', 'Questionnaire', 'Evaluate']);">
+						Übereinstimmung berechnen
+					</button> -->
 					<div id="result"></div>
 				</div>
 
