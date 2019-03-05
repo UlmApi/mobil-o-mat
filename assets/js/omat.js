@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 	// render questions
 	$("#questions").html(Mustache.render(tmpl.questions, { question: window.omatdata.questions.map(function(data,id){
-		return { id: id, label: data[0], question: data[1], link: data[2], num: (id+1) };
+		return { id: id, label: data[0], question: data[1], link: window.omatdata.links[id], infotext: window.omatdata.infotext[id], num: (id+1) };
 	}) } ));
 	
 	// activate questions
@@ -99,6 +99,18 @@ $(document).ready(function(){
 	$("#burger").click(function(evt){
 		evt.preventDefault();
 		$("#header").toggleClass("show-menu");
+	});
+
+	// show more/less info
+	$(".more-info-button, .less-info-button").click(function (evt) {
+		evt.preventDefault();
+		$(this).parent().next().toggleClass("show-more-info");
+		if ($(this).attr("class") === 'more-info-button') {
+			$(this).next().css("display", "inline");
+		} else {
+			$(this).prev().css("display", "inline");
+		}
+		$(this).css("display", "none");
 	});
 
 	function calculate(fn){

@@ -46,7 +46,6 @@ body {
 	font-size: 13px;
 	font-weight: 500; 
 	line-height: 18px;
-	color: #5b6672;
 }
 
 #app ul {
@@ -62,7 +61,6 @@ body {
 	font-size: 13px;
 	font-weight: 500; 
 	line-height: 18px;
-	color: #5b6672;
 }
 
 #app button {
@@ -84,6 +82,20 @@ body {
 
 #app button:hover {
 	background-color: var(--main-color);
+}
+
+.questions-info-link {
+	text-decoration: none;
+	font-size: 13px;
+	color: var(--main-color)
+}
+
+.questions-info {
+	display: none;
+}
+
+.questions-info.show-more-info {
+	display: block;
 }
 
 footer {
@@ -158,19 +170,38 @@ footer {
 			color: #ddd;
 		}
 
-#questions .label p a.more {
+#questions .label p button.more-info-button {
 	color: #fff;
 	background-color: var(--button-color);
 	border-radius: 3px;
 	text-decoration: none;
-	padding: .1em .2em;
-	margin: -.1em 0;
+	padding: 0.2em 0.2em !important;
+	margin: 0 0 !important;
 	white-space: nowrap;
-	font-size: .9em;
+	font-size: 1em !important;
 	opacity: .7;
 }
 
-	#questions .label p a.more:hover {
+	#questions .label p button.more-info-button:hover {
+		color: #fff;
+		background-color: var(--main-color);
+		opacity: 1;
+	}
+
+	#questions .label p button.less-info-button {
+		color: #fff;
+		background-color: var(--button-color);
+		border-radius: 3px;
+		text-decoration: none;
+		padding: 0.2em 0.2em !important;
+		margin: 0 0 !important;
+		white-space: nowrap;
+		font-size: 1em !important;
+		opacity: .7;
+		display: none;
+	}
+
+	#questions .label p button.less-info-button:hover {
 		color: #fff;
 		background-color: var(--main-color);
 		opacity: 1;
@@ -424,7 +455,6 @@ footer {
 				margin: 0;
 				padding: 0;
 				list-style: none;
-				
 			}
 		
 				#questions ul li input {
@@ -469,7 +499,6 @@ footer {
 					font-family: "Open Sans", sans-serif;
 					font-weight: 300;
 					font-size: 11px;
-					color: #5b6672;
 					text-align: center;
 					line-height: 1em;
 				}
@@ -513,7 +542,6 @@ footer {
 			font-size: 18px;
 			font-family: "Open Sans", sans-serif;
 			font-weight: 500;
-			color: #5b6672;
 		}
 	
 		#comparison ol li p {
@@ -643,7 +671,6 @@ footer {
 			font-size: 13px;
 			font-weight: 500; 
 			line-height: 20px;
-			color: #5b6672;
 			padding-left: 27px;
 			background-position: left center;
 			background-size: 20px;
@@ -683,7 +710,6 @@ footer {
 			font-size: 13px;
 			font-weight: 500; 
 			line-height: 18px;
-			color: #5b6672;
 			opacity: 1;
 		}
 		
@@ -696,19 +722,15 @@ footer {
 		}
 
 		#detail .parties .party {
-
 			display: block;
 			position: relative;
 			margin: 0;
 			padding: 0;
-
 		}
 		
 		#detail .parties .party.no-party {
 			font-size: .8em;
-			color: #5b6672;
 			text-align: center;
-
 		}
 	
 		#detail .parties .party h5 {
@@ -720,7 +742,6 @@ footer {
 			line-height: 1.6em;
 			font-family: "Open Sans", sans-serif;
 			font-weight: 500;
-			color: #5b6672;
 		}
 
 		#detail .parties .party.explanation h5 {
@@ -1151,7 +1172,6 @@ footer {
 						font-family: "Open Sans", sans-serif;
 						font-weight: 300;
 						font-size: 11px;
-						color: #5b6672;
 						text-align: center;
 						line-height: 2em;
 					}
@@ -1197,7 +1217,6 @@ footer {
 				font-size: 18px;
 				font-family: "Open Sans", sans-serif;
 				font-weight: 500;
-				color: #5b6672;
 			}
 		
 			#comparison ol li p {
@@ -1323,7 +1342,6 @@ footer {
 				font-size: 13px;
 				font-weight: 500; 
 				line-height: 20px;
-				color: #5b6672;
 				padding-left: 27px;
 				background-position: left center;
 				background-size: 20px;
@@ -1352,12 +1370,12 @@ footer {
 				font-size: 13px;
 				font-weight: 500; 
 				line-height: 18px;
-				color: #5b6672;
 			}
 			
 			#detail .answers .answer .show-explanation blockquote,
 			#detail .answers .answer .show-explanation p {
 				display: block;
+				cursor: auto;
 			}
 		
 			#detail .parties {
@@ -1386,7 +1404,6 @@ footer {
 				font-size: 18px;
 				font-family: "Open Sans", sans-serif;
 				font-weight: 500;
-				color: #5b6672;
 			}
 			
 			#detail .parties .party.explanation h5 i {

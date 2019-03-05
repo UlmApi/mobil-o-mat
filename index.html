@@ -297,7 +297,20 @@
 			<div class="label">
 				<span>{{num}}</span>
 				<h3><span>{{num}}</span> {{label}}</h3>
-				<p>{{question}} {{#link}}<a href="{{{.}}}" class="more">Mehr Info</a>{{/link}}</p>
+				<p>{{question}}
+					{{#link}}
+						<button class="more-info-button">Mehr Info</button>
+						<button class="less-info-button">Info zuklappen</button>
+						<p class="questions-info">
+							<a class="questions-info-link" href="{{{.}}}" target="_blank">{{{.}}}</a>
+							{{#infotext}}
+								<!-- TODO: use tags and unambiguous classes -->
+								<br><br>
+								{{infotext}}
+							{{/infotext}}
+						</p>
+					{{/link}}
+				</p>
 			</div>
 			<ul>
 				<li>
