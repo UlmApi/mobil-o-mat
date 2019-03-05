@@ -69,7 +69,6 @@ body {
 	margin: 1.2em 0;
 	padding: .4em .8em;
 	border: none;
-	border-radius: 3px;
 	font-family: "Raleway", sans-serif;
 	font-weight: 500;
 	color: #fff;
@@ -78,10 +77,12 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 	transition: background-color 1s;
+	opacity: 0.9;
 }
 
 #app button:hover {
 	background-color: var(--main-color);
+	opacity: 1;
 }
 
 .questions-info-link {
@@ -173,13 +174,12 @@ footer {
 #questions .label p button.more-info-button {
 	color: #fff;
 	background-color: var(--button-color);
-	border-radius: 3px;
 	text-decoration: none;
 	padding: 0.2em 0.2em !important;
 	margin: 0 0 !important;
 	white-space: nowrap;
+	opacity: 0.9;
 	font-size: 1em !important;
-	opacity: .7;
 }
 
 	#questions .label p button.more-info-button:hover {
@@ -191,13 +191,12 @@ footer {
 	#questions .label p button.less-info-button {
 		color: #fff;
 		background-color: var(--button-color);
-		border-radius: 3px;
 		text-decoration: none;
 		padding: 0.2em 0.2em !important;
 		margin: 0 0 !important;
 		white-space: nowrap;
 		font-size: 1em !important;
-		opacity: .7;
+		opacity: 0.9;
 		display: none;
 	}
 
@@ -384,7 +383,6 @@ footer {
 			max-height: 500px;
 			min-height: 300px;
 			background-color: rgba(0,0,0,0.02);
-			border-radius: 3px;
 		}
 	
 		#questions .label {
@@ -628,17 +626,14 @@ footer {
 		#detail .answers .answer {
 			display: block;
 			position: relative;
-			vertical-align: top;
 			margin: 10px -10px;
 			padding: 10px;
 			box-shadow: 0 0 0 1px #f0f2f4 inset;
-			border-radius: 3px;
 		}
 	
 		#detail .answers .answer.selected {
 			background-color: #f5f6f7;
 			box-shadow: 0 0 0 1px var(--main-color) inset;
-			border-radius: 3px;
 		}
 
 		#detail .answers .answer.selected .you {
