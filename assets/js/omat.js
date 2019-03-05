@@ -70,7 +70,7 @@ $(document).ready(function(){
 		evt.preventDefault();
 		$("#header").removeClass("show-menu");
 		$("#app").attr("class","show-"+$(this).attr("data-show"));
-		if (mobile) scroll(($("#"+$(this).attr("data-show")).offset().top-70), 200);
+		if (mobile) scroll(($("#"+$(this).attr("data-show")).offset().top - 100), 200);
 	});
 	
 	// logo to home
@@ -78,14 +78,14 @@ $(document).ready(function(){
 		evt.preventDefault();
 		$("#header").removeClass("show-menu");
 		$("#app").attr("class","show-intro");
-		if (mobile) scroll(($("#intro").offset().top-70), 200);
+		if (mobile) scroll(($("#intro").offset().top - 90), 200);
 	});
 	
 	// activate button
 	$("#activate").click(function(evt){
 		evt.preventDefault();
 		$("#app").attr("class","show-questionnaire");
-		scroll(($("#questionnaire").offset().top-70), 200);
+		if (mobile) scroll(($("#questionnaire").offset().top - 70), 200);
 	});
 	
 	// calculate button

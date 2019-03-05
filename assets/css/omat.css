@@ -3,7 +3,6 @@
 	--menu-color: #1E448A;
 	--header-color: #FDCB0B;
 	--button-color: #1E448A;
-	--body-color: rgba(202, 215, 238, 0.3);
 	--footer-color: #1E448A;
 	--social: #fff;
 	--social-hover: #1E448A;
@@ -14,7 +13,6 @@ body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	background-color: var(--body-color);
 	font-family: "Open Sans", sans-serif;
 }
 
@@ -98,7 +96,7 @@ footer {
 		color: #fff;
 		margin: 0;
 		padding: 1em 40px 0;
-		font-size: 13px;
+		font-size: 14px;
 	}
 
 	footer .orgs {
@@ -132,13 +130,13 @@ footer {
 			background-size: contain;
 			transform: scale(0.8);
 			opacity: .9;
-			transition: opacity .5s, transform .5s, background-color .5s, filter .5s;
 		}
 
 		footer .orgs a:hover {
 			opacity: 1;
 			transform: scale(0.9);
 			z-index: 5;
+			transition: opacity .5s, transform .5s, background-color .5s, filter .5s;
 		}
 
 		footer .orgs a[title^='Chaos'] { background-image: url(../images/orgs/logo_ccc_weiss.svg); }
@@ -151,7 +149,7 @@ footer {
 		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
 
 	footer .copyright-notice {
-		font-size: 10px;
+		font-size: 12px;
 		color: #ccc;
 		padding-bottom: 2em;
 	}
@@ -217,11 +215,6 @@ footer {
 		background-size: contain;
 	}
 
-	#logo h1, 
-	#logo p {
-		display: none;
-	}
-
 	#burger {
 		display: block;
 		position: absolute;
@@ -234,7 +227,6 @@ footer {
 		font-size: 2em;
 		color: #fff;
 		text-decoration: none;
-		vertical-align: center;
 	}
 
 	#menu {
@@ -252,7 +244,7 @@ footer {
 	}
 	
 		.show-menu #menu {
-			height: 100vh;
+			height: max-content;
 			opacity: 1;
 			z-index: 10;
 		}
@@ -289,7 +281,7 @@ footer {
 	#social {
 		display: block;
 		position: absolute;
-		right: 1.5em;
+		right: 0;
 		top: 0;
 		width: 5em;
 		height: 1.5em;
@@ -298,7 +290,6 @@ footer {
 		font-size: 2em;
 		color: #fff;
 		text-decoration: none;
-		vertical-align: center;
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -470,7 +461,6 @@ footer {
 				}
 			
 				#questions ul li label span {
-			
 					display: block;
 					position: absolute;
 					left: 0;
@@ -715,7 +705,6 @@ footer {
 		}
 		
 		#detail .parties .party.no-party {
-
 			font-size: .8em;
 			color: #5b6672;
 			text-align: center;
@@ -817,7 +806,6 @@ footer {
 			padding: 0;
 		}
 	
-	
 		#privacy a {
 			color: var(--main-color);
 			text-decoration: none;
@@ -845,14 +833,13 @@ footer {
 		line-height: 1em;
 		background-color: var(--header-color);
 		text-align: center;
-		font-size: 1.6em;
 	}
 	
 	#header #social li {
-		display: inline-block;
 		width: 1em;
 		height: 1em;
-		float: none;
+		float: right;
+		right: 5px;
 	}
 	
 	#header #logo::after {
@@ -890,7 +877,7 @@ footer {
 			display: block;
 			position: relative;
 			margin: 0;
-			padding: 0 40px 0px;
+			padding: 30px 40px 0px;
 			min-height: 35px;
 			background-color: var(--menu-color);
 		}
@@ -926,6 +913,7 @@ footer {
 				position: relative;
 				float: left;
 				font-family: "Raleway", sans-serif;
+				font-size: 16px;
 			}
 
 			#menu ul li a {
@@ -955,7 +943,7 @@ footer {
 			position: relative;
 			margin: 0;
 			padding: 0 40px 0;
-			min-height: 35px;
+			min-height: 34px;
 			background-color: var(--header-color);
 			list-style: none;
 			text-align: right;
@@ -966,7 +954,7 @@ footer {
 				position: relative;
 				font-family: "Raleway", sans-serif;
 				font-size: 20px;
-				line-height: 35px;
+				line-height: 34px;
 				margin-left: .5em;
 			}
 
@@ -974,7 +962,6 @@ footer {
 				display: block;
 				text-decoration: none;
 				color: var(--social);
-				border-bottom: 1px solid transparent;
 			}
 
 			#social li a:hover {
@@ -983,38 +970,26 @@ footer {
 		
 		#logo {
 			display: block;
-			position: relative;
-			margin: 0;
-			padding: 0;
-			height: 180px;
-			max-height: 30vw;
+			position: absolute;
+			left: 10px;
+			top: 10px;
 			cursor: pointer;
 		}
-	
-			#logo::after {
-				display: block;
-				position: absolute;
-				content: "";
-				top: 30px;
-				left: 40px;
-				bottom: 30px;
-				right: 40px;
-				max-width: 300px;
-				min-width: 200px;
-				background: url(../images/Digitalomat_Logo.svg) left top no-repeat;
-				background-size: contain;
-			}
-	
-			#logo h1,
-			#logo p {
-				display: none;
-			}
+
+		#logo::after {
+			display: block;
+			content: "";
+			height: 3em;
+			width: 30vw;
+			background: url(../images/logo_digitalomat-mobil.svg) left top no-repeat;
+			background-size: contain;
+		}
 
 	#app {
 		margin: 0;
 		padding: 0;
 		min-height: 100vh;
-		padding: 0 40px 100px;	
+		padding: 40px 40px 100px;
 	}
 
 		#app h2 {
@@ -1054,14 +1029,9 @@ footer {
 				content: " ";
 				clear: both;
 			}
-			
-			#intro img {
-				margin-top: -7em;
-			}
-
 
 		#questions {}
-		
+
 			#questions .question {
 				display: block;
 				position: relative;
@@ -1173,7 +1143,6 @@ footer {
 					}
 				
 					#questions ul li label span {
-				
 						display: block;
 						position: absolute;
 						left: 0;
@@ -1313,14 +1282,12 @@ footer {
 			}
 
 			#detail .answers .answer {
-
 				display: inline-block;
 				position: relative;
 				vertical-align: top;
 				width: 260px;
 				margin: 0;
 				padding: 40px 15px 15px;
-
 			}
 		
 			#detail .answers .answer.selected {
@@ -1392,7 +1359,6 @@ footer {
 			#detail .answers .answer .show-explanation p {
 				display: block;
 			}
-			
 		
 			#detail .parties {
 				display: block;
@@ -1500,6 +1466,3 @@ footer {
 				color: var(--main-color);
 				text-decoration: none;
 			}
-
-
-		
