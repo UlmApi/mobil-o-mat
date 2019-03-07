@@ -6,18 +6,19 @@ $(document).ready(function(){
 	var parties = {
 		"afd": ["AfD", "Alternative für Deutschland"],
 		"cdu": ["CDU", "Christlich Demokratische Union Deutschland"],
-		"csu": ["CSU", "Christlich-Soziale Union in Bayern"],
+		"csu": ["CSU", "Christlich-Soziale Union in Bayern e.V."],
 		"partei": ["Die PARTEI", "Die PARTEI"],
-		"piraten": ["Piraten", "Die Piraten"],
+		"piraten": ["Piraten", "Piratenpartei Deutschland"],
 		"familien": ["Familien-Partei", "Familien-Partei Deutschlands"],
 		"fdp": ["FDP", "Freie Demokratische Partei"],
-		"freie": ["FREIE WÄHLER", "Bundesvereinigung FREIE WÄHLER"],
-		"gruene": ["Grüne", "Bündnis 90/Die Grünen Deutschland"],
-		"linke": ["Linke", "Die Linke."],
-		"npd": ["NPD", "NPD"],
-		"oedp": ["ÖDP", "Ökologisch-Demokratische Partei"],
+		"freie": ["Freie Wähler"],
+		"gruene": ["Grüne", "Bündnis 90/Die Grünen"],
+		"linke": ["Linke", "DIE LINKE."],
+		"npd": ["NPD", "Nationaldemokratische Partei Deutschlands"],
+		"oedp": ["ÖDP", "Ökologisch-Demokratische Partei"], 
 		"spd": ["SPD", "Sozialdemokratische Partei Deutschlands"],
-		"tierschutz": ["Tierschutzpartei", "Partei Mensch Umwelt Tierschutz (Die Tierschutzpartei)"]
+		"allianz": ["ALFA", "Allianz für Fortschritt und Aufbruch"],
+		"independent": ["Unabhängig", "Unabhängig"]
 	};
 	
 	var keys = ["Ablehnung","Neutral","Zustimmung"];
