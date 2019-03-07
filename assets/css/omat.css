@@ -43,9 +43,9 @@ body {
 	margin: 1em 0;
 	padding: 0;
 	font-family: "Open Sans", sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500; 
-	line-height: 18px;
+	line-height: 20px;
 }
 
 #app ul {
@@ -58,7 +58,7 @@ body {
 	margin: 1em 0;
 	padding: 0;
 	font-family: "Open Sans", sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500; 
 	line-height: 18px;
 }
@@ -87,7 +87,7 @@ body {
 
 .questions-info-link {
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 14px;
 	color: var(--main-color)
 }
 
@@ -109,7 +109,7 @@ footer {
 		color: #fff;
 		margin: 0;
 		padding: 1em 40px 0;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	footer .orgs {
@@ -162,7 +162,7 @@ footer {
 		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
 
 	footer .copyright-notice {
-		font-size: 12px;
+		font-size: 13px;
 		color: #ccc;
 		padding-bottom: 2em;
 	}
@@ -1162,9 +1162,9 @@ footer {
 						bottom: 0;
 						font-family: "Open Sans", sans-serif;
 						font-weight: 300;
-						font-size: 11px;
+						font-size: 12px;
 						text-align: center;
-						line-height: 2em;
+						line-height: 1.5em;
 					}
 		
 			#questions .question::after {
@@ -1326,7 +1326,7 @@ footer {
 				margin: 0;
 				padding: 0;
 				font-family: "Open Sans", sans-serif;
-				font-size: 13px;
+				font-size: 14px;
 				font-weight: 500; 
 				line-height: 20px;
 				padding-left: 27px;
@@ -1354,7 +1354,7 @@ footer {
 				margin: 0;
 				padding: 0;
 				font-family: "Open Sans", sans-serif;
-				font-size: 13px;
+				font-size: 14px;
 				font-weight: 500; 
 				line-height: 18px;
 			}
@@ -1363,6 +1363,7 @@ footer {
 			#detail .answers .answer .show-explanation p {
 				display: block;
 				cursor: auto;
+				margin-bottom: 2em;
 			}
 		
 			#detail .parties {
