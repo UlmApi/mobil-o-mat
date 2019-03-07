@@ -16,14 +16,13 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
-#wrapper {
+.wrapper {
 	display: block;
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
 	max-width: 960px;
 	min-width: 320px;
-	background-color: #fff;
 	overflow-x: hidden;
 }
 
@@ -207,8 +206,8 @@ footer {
 	}
 
 @media (max-width: 959px) { 
-	#wrapper {
-		margin-top: 3em;
+	.wrapper {
+		margin-top: 4em;
 	}
 
 	header {
@@ -1293,7 +1292,7 @@ footer {
 				vertical-align: top;
 				width: 260px;
 				margin: 0;
-				padding: 20px 15px 15px;
+				padding: 30px 15px 15px;
 			}
 		
 			#detail .answers .answer.selected {
