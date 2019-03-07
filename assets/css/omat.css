@@ -176,7 +176,7 @@ footer {
 	background-color: var(--button-color);
 	text-decoration: none;
 	padding: 0.2em 0.2em !important;
-	margin: 0 0 !important;
+	margin: 10px 0 !important;
 	white-space: nowrap;
 	opacity: 0.9;
 	font-size: 1em !important;
@@ -193,7 +193,7 @@ footer {
 		background-color: var(--button-color);
 		text-decoration: none;
 		padding: 0.2em 0.2em !important;
-		margin: 0 0 !important;
+		margin: 10px 0 !important;
 		white-space: nowrap;
 		font-size: 1em !important;
 		opacity: 0.9;
@@ -609,10 +609,6 @@ footer {
 			display: inline-block;
 			width: 1em;
 			font-family: "Open Sans", sans-serif;
-		}
-	
-		#detail .detail-table p {
-			max-width: 600px;
 		}
 	
 		#detail .answers {
@@ -1283,10 +1279,6 @@ footer {
 				font-family: "Open Sans", sans-serif;
 			}
 		
-			#detail .detail-table p {
-				max-width: 600px;
-			}
-		
 			#detail .answers {
 				display: block;
 				position: relative;
@@ -1301,7 +1293,7 @@ footer {
 				vertical-align: top;
 				width: 260px;
 				margin: 0;
-				padding: 40px 15px 15px;
+				padding: 20px 15px 15px;
 			}
 		
 			#detail .answers .answer.selected {
