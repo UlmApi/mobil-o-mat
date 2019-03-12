@@ -32,15 +32,16 @@
 		<!-- End Matomo Code -->
 
 		<script type="text/javascript" src="assets/data/data.js" defer></script>
+
 		<script type="text/javascript" src="assets/js/mustache.min.js" defer></script>
 		<script type="text/javascript" src="assets/js/zepto.min.js" defer></script>
-		<script type="text/javascript" src="assets/js/omat.js" defer></script>
+		<script type="text/javascript" src="assets/js/index.js" defer></script>
 
 		<link type="text/css" rel="stylesheet" href="assets/fonts/icomoon/font.css">
 		<link type="text/css" rel="stylesheet" href="assets/fonts/raleway/font.css">
 		<link type="text/css" rel="stylesheet" href="assets/fonts/open-sans/font.css">
 
-		<link type="text/css" rel="stylesheet" href="assets/css/omat.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
 		<link type="image/png" rel="icon" href="assets/images/favicon.png">
 	</head>
@@ -378,19 +379,53 @@
 				<span>{{num}}</span>
 				<h3><span>{{num}}</span> {{label}}</h3>
 				<p>{{question}}
-					{{#link}}
+					{{#anyInfo}}
 						<br>
 						<button class="more-info-button">Mehr Info</button>
 						<button class="less-info-button">Info zuklappen</button>
-						<p class="questions-info">
-							<a class="questions-info-link" href="{{{.}}}" target="_blank">Abstimmung auf votewatch</a>
+						
+						<div class="questions-info">
+							{{#terms}}
+								<p><b>{{#term}}{{term}} {{/term}}</b>{{explanation}}</p>
+							{{/terms}}
+
+							{{#links}}
+								<!-- TODO -->
+								{{#link}}
+								<a class="questions-info-link" href="{{link}}" target="_blank">
+									{{#title}}{{title}}{{/title}}
+									{{^title}}Abstimmung auf votewatch{{/title}}
+									{{#date}}({{date}}){{/date}}
+								</a>
+								{{/link}}
+							{{/links}}
+							</ul>
+
+							{{#hasInfotext}}
+								<br>
+								<p><b>Hintergrundinfo:</b></p>
+							{{/hasInfotext}}
+
 							{{#infotext}}
-								<!-- TODO: use tags and unambiguous classes -->
-								<br><br>
-								{{infotext}}
+								{{#link}}
+									<a class="questions-info-link" href="{{link}}">
+										{{#title}}{{title}}{{/title}}
+										{{^title}}{{link}}{{/title}}
+										{{#date}}({{date}}){{/date}}
+									</a>
+									<br>
+								{{/link}}
+								{{^link}}
+									{{#title}}
+										<p>{{title}}</p>
+									{{/title}}
+								{{/link}}
+								<br>
 							{{/infotext}}
-						</p>
-					{{/link}}
+
+						</div>
+
+					{{/anyInfo}}
 				</p>
 			</div>
 			<ul>
@@ -445,7 +480,11 @@
 											<h5 title="{{party_long}}">{{party_short}}{{#has_explanation}} <i class="icon-down" title="Erläuterung"></i>{{/has_explanation}}</h5>
 											{{#has_explanation}}
 											<blockquote>
-												{{explanation}}
+												Dafür gestimmt: {{explanation.results.for}} <br>
+												Dagegen gestimmt: {{explanation.results.against}} <br>
+												Enthalten: {{explanation.results.abstained}} <br>
+												Nicht beteiligt: {{explanation.results.absent}} <br>
+												Stimmen gesamt: {{explanation.delegates}}
 											</blockquote>
 											{{/has_explanation}}
 											{{^has_explanation}}
