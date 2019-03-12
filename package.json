@@ -1,10 +1,10 @@
 {
   "name": "omat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx http-server"
   },
   "repository": {
     "type": "git",
@@ -12,12 +12,5 @@
   },
   "author": "yetzt <node@yetzt.me>",
   "license": "Unlicense",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "ellipse": "^0.5.5",
-    "moment": "^2.18.1",
-    "nodemailer": "^4.0.1",
-    "nsa": "^0.1.4",
-    "smclean": "^1.0.1"
-  }
+  "dependencies": {}
 }
