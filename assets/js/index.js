@@ -41,18 +41,18 @@ $(document).ready(function(){
 	}));
 	
 	// activate questions
-	$("input[type=radio]", "#questions").click(function(evt){
-		// if all questions are answered
-		if ($("#questions").serializeArray().length === questions.length) {
-			// go straight to evaluation
-			calculate();
-			scroll($("#result").offset().top, 200);
-		} else if (mobile) {
-			// go to next question
-			var nxt = $(this).parents(".question").next();
-			if (nxt.length > 0) scroll(nxt.offset().top+(nxt.height()/2)-($window.height()/2),200);
-		}
-	});
+	// $("input[type=radio]", "#questions").click(function(evt){
+	// 	// if all questions are answered
+	// 	if ($("#questions").serializeArray().length === questions.length) {
+	// 		// go straight to evaluation
+	// 		calculate();
+	// 		scroll($("#result").offset().top, 200);
+	// 	} else if (mobile) {
+	// 		// go to next question
+	// 		var nxt = $(this).parents(".question").next();
+	// 		if (nxt.length > 0) scroll(nxt.offset().top+(nxt.height()/2)-($window.height()/2),200);
+	// 	}
+	// });
 
 	// activate more-links
 	$("a.more","#questions").click(function(evt){
