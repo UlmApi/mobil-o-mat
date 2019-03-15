@@ -479,12 +479,44 @@
 										<li class="party {{#has_explanation}}explanation{{/has_explanation}}">
 											<h5 title="{{party_long}}">{{party_short}}{{#has_explanation}} <i class="icon-down" title="Erläuterung"></i>{{/has_explanation}}</h5>
 											{{#has_explanation}}
-											<blockquote>
-												Dafür gestimmt: {{explanation.results.for}} <br>
-												Dagegen gestimmt: {{explanation.results.against}} <br>
-												Enthalten: {{explanation.results.abstained}} <br>
-												Nicht beteiligt: {{explanation.results.absent}} <br>
-												Stimmen gesamt: {{explanation.delegates}}
+											<blockquote style="color: gray">
+												<svg width='100%' height='60px'>
+												<g>
+													<rect fill='darkgrey' x='0%' y='0' width='1' height='28'></rect>
+													<rect fill='darkgrey' x='25%' y='0' width='1' height='28'></rect>
+													<rect fill='darkgrey' x='50%' y='0' width='1' height='28'></rect>
+													<rect fill='darkgrey' x='75%' y='0' width='1' height='28'></rect>
+													<rect fill='darkgrey' x='99.6%' y='0' width='1' height='28'></rect>
+												</g>
+												<g>
+													<rect fill='#a5a5a5' width={{abstained}} height='20'>
+														<title>
+															Enthalten: {{explanation.results.abstained}}
+														</title>
+													</rect>
+													<rect fill='#e2e2e2' width={{absent}} height='20'>
+														<title>
+															Nicht beteiligt: {{explanation.results.absent}}
+														</title>
+													</rect>
+													<rect fill='#cc6c5b' width={{against}} height='20'>
+														<title>
+															Dagegen gestimmt: {{explanation.results.against}}
+														</title>
+													</rect>
+													<rect fill='#9fd773' width={{pro}} height='20'>
+														<title>
+															Dafür gestimmt: {{explanation.results.for}}
+														</titl>
+													</rect>
+												</g>
+												<g>
+													<text fill='darkgrey' x='0' y='47'>0%</text>
+													<text fill='darkgrey' x='46%' y='47'>50%</text>
+													<text fill='darkgrey' x='86.6%' y='47'>100%</text>
+													</g>
+												</svg>
+												Stimmen: {{explanation.delegates}}
 											</blockquote>
 											{{/has_explanation}}
 											{{^has_explanation}}
