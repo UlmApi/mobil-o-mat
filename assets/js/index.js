@@ -192,18 +192,29 @@ $(document).ready(function(){
 						answer_label: keys[a],
 						answer_type: a,
 						parties: questions.map(function(question) {return question.answers})[i].map(function(party, j) {
-
 							if (party.voting.result.length > 0) {
+								var pro = Number(party.voting.results.for) / Number(party.voting.delegates) * 100;
+								pro = Math.round(pro * 100) / 100;
+								var absent = Number(party.voting.results.absent) / Number(party.voting.delegates) * 100;
+								absent = Math.round(absent * 100) / 100;
+								var abstained = Number(party.voting.results.abstained) / Number(party.voting.delegates) * 100;
+								abstained = Math.round(abstained * 100) / 100;
+								var against = Number(party.voting.results.against) / Number(party.voting.delegates) * 100;
+								against = Math.round(against * 100) / 100;
 								return {
 									answer: party.voting.result,
 									has_explanation: (party.voting.result.length > 0) ? true : false,
 									explanation: party.voting || null,
 									party: party.name,
 									party_short: parties[party.id - 1].short_name, // TODO
-									party_long: parties[party.id - 1].long_name // TODO
+									party_long: parties[party.id - 1].long_name, // TODO
+									// calculate for bar chart visualization
+									pro: pro + '%',
+									against: against + pro + '%',
+									absent: against + pro + absent + '%',
+									abstained: against + pro + absent + abstained + '%'
 								};
 							}
-
 						}).sort(function (a, b) {
 							return a.party_short.localeCompare(b.party_short, 'de', {
 								ignorePunctuation: true
