@@ -1,6 +1,6 @@
 :root {
 	--main-color: #1E448A;
-	--menu-color: #1E448A;
+	--menu-color: #1d3671;
 	--header-color: #FDCB0B;
 	--button-color: #1E448A;
 	--footer-color: #1E448A;
@@ -49,7 +49,7 @@ body {
 
 #app ul {
 	margin: 2em 0;
-	padding-left: 1em;
+	padding-left: 0em;
 	font-size: 13px;
 }
 
@@ -87,7 +87,9 @@ body {
 .questions-info-link {
 	text-decoration: none;
 	font-size: 14px;
-	color: var(--main-color)
+	color: var(--main-color);
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 }
 
 .questions-info {
@@ -375,26 +377,26 @@ footer {
 		position: relative;
 		min-height: 100vh;
 		padding: 1em 2em;
-		margin-bottom: 10em;
+		margin-bottom: 5em;
 	}
 	
 	#questions {}
 	
 		#questions .question {
-			display: block;
-			position: relative;
+			/* display: block; */
+			/* position: relative; */
 			width: 100%;
 			margin: 2em -10px;
-			padding: 0 10px;
-			height: 60vh;
-			max-height: 500px;
+			padding: 10px 10px;
+			/* height: 60vh; */
+			/* max-height: 500px; */
 			min-height: 300px;
-			background-color: rgba(0,0,0,0.02);
+			background-color: rgba(0, 0, 0, 0.04);
 		}
 	
 		#questions .label {
-			display: block;
-			position: absolute;
+			/* display: block; */
+			/* position: absolute; */
 			left: 20px;
 			right: 20px;
 			bottom: 40%;
@@ -405,8 +407,8 @@ footer {
 		}
 	
 		#questions .label h3 {
-			display: block;
-			position: relative;
+			/* display: block; */
+			/* position: relative; */
 			font-family: "Raleway", sans-serif;
 			font-weight: 300;
 			font-size: 20px;
@@ -414,6 +416,8 @@ footer {
 			color: var(--main-color);
 			margin: 0;
 			padding: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 
 		#questions .label h3 span {
@@ -425,9 +429,9 @@ footer {
 		}
 		
 		#questions .label p {
-			font-size: 12px;
+			/* font-size: 12px;
 			margin: .4em 0;
-			padding: 0;
+			padding: 0; */
 		}
 		
 		#questions .label p a {
@@ -440,15 +444,16 @@ footer {
 		}
 		
 		#questions ul {
-			display: block;
-			position: absolute;
-			top: 70%;
+			/* display: block; */
+			/* position: absolute; */
+			/* top: 70%;
 			left: 10px;
 			right: 10px;
 			margin: 0;
 			padding: 0;
 			list-style: none;
-			text-align: center;
+			text-align: center; */
+			margin-top: 2em;
 		}
 	
 			#questions ul li {
@@ -474,13 +479,11 @@ footer {
 					right: 0;
 					bottom: 0;
 					cursor: pointer;
-				
 					background-position: top center;
 					background-size: 30px;
 					background-repeat: no-repeat;
 					background-image: url(../images/radio_grau.svg);
 					transition: background-image .5s;
-				
 				}
 			
 				#questions ul li input:checked[value="2"]+label {
@@ -543,8 +546,8 @@ footer {
 			width: 80px;
 			margin: 0;
 			padding: 0;
-			line-height: 18px;
-			font-size: 18px;
+			line-height: 13px;
+			font-size: 13px;
 			font-family: "Open Sans", sans-serif;
 			font-weight: 500;
 		}
@@ -610,6 +613,8 @@ footer {
 			color: var(--main-color);
 			margin: 0;
 			padding: 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	
 		#detail .detail-table h3 span {
@@ -762,7 +767,7 @@ footer {
 		}	
 		
 	#orgs {
-		margin: 10em 2em;
+		margin: 5em 2em;
 	}
 	
 		#orgs .org {
@@ -801,7 +806,7 @@ footer {
 		}
 	
 	#impressum {
-		margin: 10em 2em;
+		margin: 5em 2em;
 	}
 	
 		#impressum a {
@@ -810,7 +815,7 @@ footer {
 		}
 	
 	#privacy {
-		margin: 10em 2em;
+		margin: 3em 2em;
 	}
 	
 		#privacy h3 {
@@ -902,7 +907,7 @@ footer {
 			margin: 0;
 			padding: 0px 40px;
 			min-height: 35px;
-			background-color: #1d3671;
+			background-color: var(--menu-color);
 		}
 	
 			#menu p {
@@ -1144,13 +1149,11 @@ footer {
 						right: 0;
 						bottom: 0;
 						cursor: pointer;
-					
 						background-position: top center;
 						background-size: 30px;
 						background-repeat: no-repeat;
 						background-image: url(../images/radio_grau.svg);
 						transition: background-image .5s;
-					
 					}
 				
 					#questions ul li input:checked[value="2"]+label {
@@ -1317,16 +1320,13 @@ footer {
 				left: 0;
 				top: 0;
 				right: 0;
-			
 				margin: 0;
 				padding: 0 15px;
-			
 				height: 20px;
 				line-height: 20px;
 				font-size: 13px;
 				font-family: "Raleway", sans-serif;
 				font-weight: 700;
-			
 				background-color: var(--main-color);
 				color: #fff;
 			}
