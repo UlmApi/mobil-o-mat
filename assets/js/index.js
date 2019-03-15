@@ -61,7 +61,7 @@ $(document).ready(function(){
 	});
 
 	// menu
-	$("a", "#menu").click(function(evt){
+	$("#menu .sub-pages a").click(function(evt) {
 		evt.preventDefault();
 		$("#header").removeClass("show-menu");
 		$("#app").attr("class","show-"+$(this).attr("data-show"));
