@@ -2374,22 +2374,28 @@ var questions = [{
 		"id": 10,
 		"name": "Chancengerechtigkeit in der digitalen Bildung",
 		"title": "Digitale Bildung",
-		"description": "Soll die Europäische Union Chancengerechtigkeit in der Entwicklung digitaler Kompetenzen zwischen Geschlechtern, Generationen und Menschen unterschiedlicher sozialer und regionaler Herkunft aktiv fördern, und zu diesem Zweck leicht zugängliche, bedarfsorientierte Qualifizierungs- und Finanzierungsmöglichkeiten schaffen?",
+		"description": "Die Europäische Union soll Chancengerechtigkeit in der Entwicklung digitaler Kompetenzen zwischen Geschlechtern, Generationen und Menschen unterschiedlicher sozialer und regionaler Herkunft aktiv fördern. Die Förderung soll zu diesem Zweck leicht zugängliche, bedarfsorientierte Qualifizierungs- und  Finanzierungsmöglichkeiten umfassen.",
 		"terms": [{
-			"term": "",
-			"explanation": "",
+			"term": "Digitale Kompetenzen/Digital Literacies",
+			"explanation": "sind notwendige Voraussetzungen, um in einer digital geprägten Welt souverän zu handeln und teilzuhaben. Sie umfassen Fähigkeiten wie: Daten und Informationen zu finden, zu hinterfragen, zu kontextualisieren oder zu bewerten; sich mit anderen auszutauschen, gemeinsam mit anderen Inhalte zu kreieren und an gesellschaftlichen Diskursen teilzuhaben. Zugleich geht es darum, ein Bewusstsein für die sich konstant ändernden Funktionsweisen digitaler Technologien zu entwickeln und kreativ Lösungen für individuelle Probleme und Herausforderungen zu finden.",
 			"link": ""
 		}],
 		"votewatch": [{
 			"title": "",
-			"link": "",
-			"date": ""
+			"link": "https://www.votewatch.eu/en/term8-education-in-the-digital-era-challenges-opportunities-and-lessons-for-eu-policy-design-motion-for-re.html",
+			"date": "11.12.2018"
 		}],
 		"background": [{
-			"title": "",
-			"link": "",
-			"date": ""
-		}],
+				"title": "Bericht über das Thema \"Bildung im digitalen Zeitalter: Herausforderungen, Chancen und Erkenntnisse für die Gestaltung der EU-Politik\"",
+				"link": "http://www.europarl.europa.eu/doceo/document/A-8-2018-0400_EN.html?redirect",
+				"date": ""
+			},
+			{
+				"title": "Zusammenfassung des vom Parlament angenommenen Texts",
+				"link": "https://oeil.secure.europarl.europa.eu/oeil/popups/summary.do?id=1566112&t=d&l=de",
+				"date": ""
+			}
+		],
 		"answers": [{
 				"id": 1,
 				"name": "afd",
