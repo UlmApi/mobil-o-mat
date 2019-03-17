@@ -236,6 +236,31 @@ $(document).ready(function(){
 		$(".party.explanation h5", "#detail").click(function(evt){
 			evt.preventDefault();
 			$(this).parent().toggleClass("show-explanation");
+
+			var el = $(this).next().find('canvas')[0];
+			var ctx = el.getContext('2d');
+
+			var myChart = new Chart(ctx, {
+				type: 'doughnut',
+				data: {
+					labels: [' Dafür gestimmt', ' Dagegen gestimmt', ' Nicht beteiligt', ' Enthalten'],
+					datasets: [{
+						data: [el.dataset.for, el.dataset.against, el.dataset.absent, el.dataset.abstained],
+						backgroundColor: [
+							'#9fd773',
+							'#cc6c5b',
+							'#e2e2e2',
+							'#a5a5a5'
+						],
+						borderWidth: 0
+					}]
+				},
+				options: {
+					legend: {
+						display: false
+					}
+				}
+			});
 		});
 
 		if (typeof fn === "function") fn();
@@ -260,4 +285,5 @@ $(document).ready(function(){
 	// 	evt.preventDefault();
 	// 	window.open($(this).attr("href"),"share","width=500,height=400,status=no,scrollbars=no,resizable=no,menubar=no,toolbar=no");
 	// });
+
 });

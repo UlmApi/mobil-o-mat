@@ -31,6 +31,8 @@
 		</script> -->
 		<!-- End Matomo Code -->
 
+		<!-- TODO include in project -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
 		<script type="text/javascript" src="assets/data/data.js" defer></script>
 
 		<script type="text/javascript" src="assets/js/mustache.min.js" defer></script>
@@ -480,6 +482,15 @@
 											<h5 title="{{party_long}}">{{party_short}}{{#has_explanation}} <i class="icon-down" title="Erläuterung"></i>{{/has_explanation}}</h5>
 											{{#has_explanation}}
 											<blockquote style="color: gray">
+
+											<canvas class="chart"
+												data-for={{explanation.results.for}} 
+												data-against={{explanation.results.against}}
+												data-abstained={{explanation.results.abstained}}
+												data-absent={{explanation.results.absent}}
+												style="margin-bottom: 1.5em"
+											></canvas>
+
 												<svg width='100%' height='60px' role='img'>
 													<g>
 														<rect fill='darkgrey' x='0%' y='0' width='1' height='27'></rect>
