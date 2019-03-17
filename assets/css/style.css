@@ -619,7 +619,6 @@ footer {
 	
 		#detail .detail-table h3 span {
 			display: inline-block;
-			width: 1em;
 			font-family: "Open Sans", sans-serif;
 		}
 	
@@ -1283,13 +1282,12 @@ footer {
 				font-size: 21px;
 				line-height: 24px;
 				color: var(--main-color);
-				margin: 0;
+				margin: 1.5em 0 0;
 				padding: 0;
 			}
 		
 			#detail .detail-table h3 span {
 				display: inline-block;
-				width: 1em;
 				font-family: "Open Sans", sans-serif;
 			}
 		
