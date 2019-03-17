@@ -248,7 +248,12 @@ $(document).ready(function () {
 			var el = $(this).next().find('canvas')[0];
 			var ctx = el.getContext('2d');
 
-			var myChart = new Chart(ctx, {
+			// return if chart is already rendered
+			if ($(this).next().find('canvas').hasClass('chartjs-render-monitor')) {
+				return;
+			}
+
+			new Chart(ctx, {
 				type: 'doughnut',
 				data: {
 					labels: [' Dafür gestimmt', ' Dagegen gestimmt', ' Nicht beteiligt', ' Enthalten'],
@@ -270,7 +275,6 @@ $(document).ready(function () {
 				}
 			});
 		});
-
 		if (typeof fn === "function") fn();
 	};
 
