@@ -237,6 +237,7 @@ $(document).ready(function(){
 			evt.preventDefault();
 			$(this).parent().toggleClass("show-explanation");
 
+			// find and render chart using chart.js
 			var el = $(this).next().find('canvas')[0];
 			var ctx = el.getContext('2d');
 
