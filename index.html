@@ -528,19 +528,14 @@
 														<text text-anchor='end' fill='darkgrey' x='100%' y='44'>100%</text>
 													</g>
 												</svg>
-												Stimmen: {{explanation.delegates}}
+												Abgeordnete: {{explanation.delegates}}
 											</blockquote>
-											{{/has_explanation}}
-											{{^has_explanation}}
-											<p>
-												<em>Die Partei vertritt diese Position, hat für diese aber keine weitere Erläuterung geliefert.</em>
-											</p>
 											{{/has_explanation}}
 										</li>
 									{{/parties}}
 									{{^parties}}
 									<li class="party no-party">
-										<em>Keine Partei vertritt diese Position.</em>
+										<em>Keine Partei vertrat mehrheitlich diese Position.</em>
 									</li>
 									{{/parties}}
 								</ul>
