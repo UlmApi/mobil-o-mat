@@ -31,13 +31,14 @@
 		</script> -->
 		<!-- End Matomo Code -->
 
-		<!-- TODO include in project -->
-		<script src="assets/js/Chart.bundle.min.js" defer></script>
 		<script src="assets/data/data.js" defer></script>
 
 		<script src="assets/js/mustache.min.js" defer></script>
 		<script src="assets/js/zepto.min.js" defer></script>
 		<script src="assets/js/index.js" defer></script>
+
+		<script src="assets/js/Chart.bundle.min.js" defer></script>
+		<script src="assets/js/chartjs-plugin-labels.min.js" defer></script>
 
 		<link type="text/css" rel="stylesheet" href="assets/fonts/icomoon/font.css">
 		<link type="text/css" rel="stylesheet" href="assets/fonts/raleway/font.css">
@@ -317,8 +318,9 @@
 						<a href="http://www.opensans.com/">Open Sans</a> (Apache License 2.0);
 						<a href="https://github.com/impallari/Raleway">Raleway</a> (SIL OFL 1.1);
 						<a href="http://zeptojs.com/">Zepto.js</a> (MIT License);
+						<a href="https://github.com/janl/mustache.js">Mustache.js</a> (MIT License);
 						<a href="https://www.chartjs.org/">Chart.js</a> (MIT License);
-						<a href="https://github.com/janl/mustache.js">Mustache.js</a> (MIT License).
+						<a href="https://github.com/emn178/chartjs-plugin-labels">chartjs-plugin-labels</a> (MIT License).
 					</p>
 				</div>
 				<div class="app-item" id="privacy">
@@ -499,12 +501,12 @@
 														<rect fill='darkgrey' x='100%' y='0' width='1' height='27' transform="translate(-1, 0)"></rect>
 													</g>
 													<g>
-														<rect fill='#a5a5a5' width={{abstained}} height='20'>
+														<rect fill='#e2e2e2' width={{abstained}} height='20'>
 															<title>
 																Enthalten: {{explanation.results.abstained}}
 															</title>
 														</rect>
-														<rect fill='#e2e2e2' width={{absent}} height='20'>
+														<rect fill='#a5a5a5' width={{absent}} height='20'>
 															<title>
 																Nicht beteiligt: {{explanation.results.absent}}
 															</title>

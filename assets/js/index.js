@@ -262,8 +262,8 @@ $(document).ready(function () {
 						backgroundColor: [
 							'#9fd773',
 							'#cc6c5b',
-							'#e2e2e2',
-							'#a5a5a5'
+							'#a5a5a5',
+							'#e2e2e2'
 						],
 						borderWidth: 0
 					}]
@@ -271,6 +271,14 @@ $(document).ready(function () {
 				options: {
 					legend: {
 						display: false
+					},
+					plugins: {
+						labels: {
+							fontColor: '#000'
+						}
+					},
+					animation: {
+						duration: 0
 					}
 				}
 			});
