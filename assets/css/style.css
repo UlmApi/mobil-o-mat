@@ -153,14 +153,14 @@ footer {
 			transition: opacity .5s, transform .5s, background-color .5s, filter .5s;
 		}
 
-		footer .orgs a[title^='Chaos'] { background-image: url(../images/orgs/logo_ccc_weiss.svg); }
+		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
+		footer .orgs a[title^='digitalcourage'] { background-image: url(../images/orgs/logo_dc_weiss.png); }
 		footer .orgs a[title^='Digitale'] { background-image: url(../images/orgs/logo_digiges_weiss.svg); }
 		footer .orgs a[title^='Freifunk'] { background-image: url(../images/orgs/logo_freifunk_weiss.svg); }
-		footer .orgs a[title^='Free'] { background-image: url(../images/orgs/logo_fsfe_weiss.svg); }
-		footer .orgs a[title^='Mozilla'] { background-image: url(../images/orgs/logo_mozilla_weiss.svg); }
 		footer .orgs a[title^='Open'] { background-image: url(../images/orgs/logo_okfde_weiss.svg); }
 		footer .orgs a[title^='Wikimedia'] { background-image: url(../images/orgs/logo_wikimedia_weiss.svg); }
-		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
+		footer .orgs a[title^='Mozilla'] { background-image: url(../images/orgs/logo_mozilla_weiss.svg); }
+		footer .orgs a[title^='Whistleblower'] { background-image: url(../images/orgs/logo_WBNW_weiss.png); }
 
 	footer .copyright-notice {
 		font-size: 13px;
@@ -800,7 +800,7 @@ footer {
 		#orgs .org img {
 			display: block;
 			position: relative;
-			max-width: 100%;
+			max-width: 75%;
 			margin: 1em 0;
 		}
 	
@@ -1453,6 +1453,8 @@ footer {
 				position: absolute;
 				left: 0;
 				top: 0;
+				max-width: 165px;
+				margin-top: 3px;
 			}
 		
 		#impressum {}
