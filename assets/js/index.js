@@ -271,6 +271,14 @@ $(document).ready(function () {
 				options: {
 					legend: {
 						display: false
+					},
+					plugins: {
+						labels: {
+							fontColor: '#000'
+						}
+					},
+					animation: {
+						duration: 0
 					}
 				}
 			});
