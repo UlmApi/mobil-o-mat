@@ -110,7 +110,6 @@ $(document).ready(function () {
 	function calculate(fn) {
 		// prepare result array
 		var result = {
-
 			// flatten answers
 			answers: $("#questions").serializeArray().reduce(function (p, c) {
 				p[parseInt(c.name.replace(/[^0-9]+/g, ''), 10)] = parseInt(c.value, 10);
@@ -136,7 +135,7 @@ $(document).ready(function () {
 			// ignore not-given answers
 			if (v === null) return;
 
-			var answers = questions.map(question => question.answers)
+			var answers = questions.map(question => question.answers);
 
 			answers[i].forEach(function (answer, j) {
 
@@ -198,15 +197,24 @@ $(document).ready(function () {
 						answer_type: a,
 						parties: questions.map(function (question) {
 								return question.answers
-							})[i].map(function (party, j) {
+							})[i].map(function (party) {
+
+								var votes_for = Number(party.voting.results.for);
+								var votes_against = Number(party.voting.results.against);
+								var abstained = Number(party.voting.results.abstained);
+								var abstentions = Number(party.voting.results.absent);
+
+								var delegates_total = votes_for + votes_against + abstained + abstentions;
+								var delegates_present = votes_for + votes_against + abstained;
+
 								if (party.voting.result.length > 0) {
-									var pro = Number(party.voting.results.for) / Number(party.voting.delegates) * 100;
+									var pro = votes_for / delegates_total * 100;
 									pro = Math.round(pro * 100) / 100;
-									var absent = Number(party.voting.results.absent) / Number(party.voting.delegates) * 100;
+									var absent = abstentions / delegates_total * 100;
 									absent = Math.round(absent * 100) / 100;
-									var abstained = Number(party.voting.results.abstained) / Number(party.voting.delegates) * 100;
+									var abstained = abstained / delegates_total * 100;
 									abstained = Math.round(abstained * 100) / 100;
-									var against = Number(party.voting.results.against) / Number(party.voting.delegates) * 100;
+									var against = votes_against / delegates_total * 100;
 									against = Math.round(against * 100) / 100;
 									return {
 										answer: party.voting.result,
@@ -219,7 +227,8 @@ $(document).ready(function () {
 										pro: pro + '%',
 										against: against + pro + '%',
 										absent: against + pro + absent + '%',
-										abstained: against + pro + absent + abstained + '%'
+										abstained: against + pro + absent + abstained + '%',
+										delegates: delegates_total
 									};
 								}
 							}).sort(function (a, b) {

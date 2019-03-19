@@ -36,7 +36,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -51,7 +51,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -66,7 +66,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			}, {
 				"id": 4,
@@ -80,7 +80,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			}, {
 				"id": 5,
@@ -94,7 +94,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -109,7 +109,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -124,7 +124,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -139,7 +139,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -154,7 +154,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -169,7 +169,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -184,7 +184,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -199,7 +199,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -214,7 +214,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -229,7 +229,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -244,7 +244,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			}
 		]
@@ -304,7 +304,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -319,7 +319,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -334,7 +334,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			}, {
 				"id": 4,
@@ -348,7 +348,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			}, {
 				"id": 5,
@@ -362,7 +362,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -377,7 +377,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -392,7 +392,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -407,7 +407,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -422,7 +422,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -437,7 +437,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -452,7 +452,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -467,7 +467,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -482,7 +482,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -497,7 +497,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -512,7 +512,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			}
 		]
@@ -554,8 +554,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "2"
+					}
 				}
 			},
 			{
@@ -569,8 +568,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "1",
 						"absent": "3"
-					},
-					"delegates": "29"
+					}
 				}
 			},
 			{
@@ -584,8 +582,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "5"
+					}
 				}
 			}, {
 				"id": 4,
@@ -598,8 +595,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			}, {
 				"id": 5,
@@ -612,8 +608,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -628,7 +623,7 @@ var questions = [{
 						"abstained": "",
 						"absent": ""
 					},
-					"delegates": ""
+
 				}
 			},
 			{
@@ -642,8 +637,7 @@ var questions = [{
 						"against": "3",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "3"
+					}
 				}
 			},
 			{
@@ -657,8 +651,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -672,8 +665,7 @@ var questions = [{
 						"against": "10",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "11"
+					}
 				}
 			},
 			{
@@ -687,8 +679,7 @@ var questions = [{
 						"against": "6",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "7"
+					}
 				}
 			},
 			{
@@ -702,8 +693,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -717,8 +707,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -732,8 +721,7 @@ var questions = [{
 						"against": "12",
 						"abstained": "2",
 						"absent": "1"
-					},
-					"delegates": "27"
+					}
 				}
 			},
 			{
@@ -747,8 +735,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "1",
 						"absent": "0"
-					},
-					"delegates": "5"
+					}
 				}
 			},
 			{
@@ -762,8 +749,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -777,8 +763,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			}
 		]
@@ -825,8 +810,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "1",
 						"absent": "0"
-					},
-					"delegates": "3"
+					}
 				}
 			},
 			{
@@ -840,8 +824,7 @@ var questions = [{
 						"against": "18",
 						"abstained": "4",
 						"absent": "3"
-					},
-					"delegates": "27"
+					}
 				}
 			},
 			{
@@ -855,8 +838,7 @@ var questions = [{
 						"against": "4",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "5"
+					}
 				}
 			}, {
 				"id": 4,
@@ -869,8 +851,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			}, {
 				"id": 5,
@@ -883,8 +864,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -898,8 +878,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -913,8 +892,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "1",
 						"absent": "0"
-					},
-					"delegates": "2"
+					}
 				}
 			},
 			{
@@ -928,8 +906,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -943,8 +920,7 @@ var questions = [{
 						"against": "2",
 						"abstained": "2",
 						"absent": "1"
-					},
-					"delegates": "13"
+					}
 				}
 			},
 			{
@@ -958,8 +934,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "2",
 						"absent": "2"
-					},
-					"delegates": "8"
+					}
 				}
 			},
 			{
@@ -973,8 +948,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -988,8 +962,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1003,8 +976,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "4",
 						"absent": "0"
-					},
-					"delegates": "27"
+					}
 				}
 			},
 			{
@@ -1018,8 +990,7 @@ var questions = [{
 						"against": "3",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "4"
+					}
 				}
 			},
 			{
@@ -1033,8 +1004,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1048,8 +1018,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			}
 		]
@@ -1101,8 +1070,7 @@ var questions = [{
 						"against": "5",
 						"abstained": "1",
 						"absent": "0"
-					},
-					"delegates": "7"
+					}
 				}
 			},
 			{
@@ -1116,8 +1084,7 @@ var questions = [{
 						"against": "26",
 						"abstained": "1",
 						"absent": "1"
-					},
-					"delegates": "29"
+					}
 				}
 			},
 			{
@@ -1131,8 +1098,7 @@ var questions = [{
 						"against": "4",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "5"
+					}
 				}
 			}, {
 				"id": 4,
@@ -1145,8 +1111,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "1"
+					}
 				}
 			}, {
 				"id": 5,
@@ -1159,8 +1124,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1174,8 +1138,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1189,8 +1152,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "3"
+					}
 				}
 			},
 			{
@@ -1204,8 +1166,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1219,8 +1180,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "11"
+					}
 				}
 			},
 			{
@@ -1234,8 +1194,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "7"
+					}
 				}
 			},
 			{
@@ -1249,8 +1208,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1264,8 +1222,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1279,8 +1236,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "1",
 						"absent": "3"
-					},
-					"delegates": "27"
+					}
 				}
 			},
 			{
@@ -1294,8 +1250,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1309,8 +1264,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1324,8 +1278,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			}
 		]
@@ -1378,8 +1331,7 @@ var questions = [{
 						"against": "2",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "4"
+					}
 				}
 			},
 			{
@@ -1393,8 +1345,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "1",
 						"absent": "1"
-					},
-					"delegates": "29"
+					}
 				}
 			},
 			{
@@ -1408,8 +1359,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "5"
+					}
 				}
 			}, {
 				"id": 4,
@@ -1422,8 +1372,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			}, {
 				"id": 5,
@@ -1436,8 +1385,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1451,8 +1399,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1466,8 +1413,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "3"
+					}
 				}
 			},
 			{
@@ -1481,8 +1427,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1496,8 +1441,7 @@ var questions = [{
 						"against": "10",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "11"
+					}
 				}
 			},
 			{
@@ -1511,8 +1455,7 @@ var questions = [{
 						"against": "7",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "7"
+					}
 				}
 			},
 			{
@@ -1526,8 +1469,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1541,8 +1483,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1556,8 +1497,7 @@ var questions = [{
 						"against": "3",
 						"abstained": "0",
 						"absent": "1"
-					},
-					"delegates": "27"
+					}
 				}
 			},
 			{
@@ -1571,8 +1511,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "3"
+					}
 				}
 			},
 			{
@@ -1586,8 +1525,7 @@ var questions = [{
 						"against": "1",
 						"abstained": "0",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			},
 			{
@@ -1601,8 +1539,7 @@ var questions = [{
 						"against": "0",
 						"abstained": "1",
 						"absent": "0"
-					},
-					"delegates": "1"
+					}
 				}
 			}
 		]
@@ -1655,8 +1592,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1670,8 +1606,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1685,8 +1620,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}, {
 				"id": 4,
@@ -1699,8 +1633,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}, {
 				"id": 5,
@@ -1713,8 +1646,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1728,8 +1660,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1743,8 +1674,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1758,8 +1688,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1773,8 +1702,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1788,8 +1716,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1803,8 +1730,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1818,8 +1744,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1833,8 +1758,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1848,8 +1772,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1863,8 +1786,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}
 		]
@@ -1911,8 +1833,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1926,8 +1847,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1941,8 +1861,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}, {
 				"id": 4,
@@ -1955,8 +1874,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}, {
 				"id": 5,
@@ -1969,8 +1887,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1984,8 +1901,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -1999,8 +1915,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2014,8 +1929,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2029,8 +1943,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2044,8 +1957,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2059,8 +1971,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2074,8 +1985,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2089,8 +1999,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2104,8 +2013,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2119,8 +2027,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}
 		]
@@ -2156,8 +2063,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2171,8 +2077,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2186,8 +2091,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}, {
 				"id": 4,
@@ -2200,8 +2104,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}, {
 				"id": 5,
@@ -2214,8 +2117,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2229,8 +2131,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2244,8 +2145,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2259,8 +2159,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2274,8 +2173,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2289,8 +2187,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2304,8 +2201,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2319,8 +2215,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2334,8 +2229,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2349,8 +2243,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2364,8 +2257,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}
 		]
@@ -2407,8 +2299,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2422,8 +2313,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2437,8 +2327,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}, {
 				"id": 4,
@@ -2451,8 +2340,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}, {
 				"id": 5,
@@ -2465,8 +2353,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2480,8 +2367,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2495,8 +2381,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2510,8 +2395,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2525,8 +2409,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2540,8 +2423,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2555,8 +2437,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2570,8 +2451,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2585,8 +2465,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2600,8 +2479,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			},
 			{
@@ -2615,8 +2493,7 @@ var questions = [{
 						"against": "",
 						"abstained": "",
 						"absent": ""
-					},
-					"delegates": ""
+					}
 				}
 			}
 		]
