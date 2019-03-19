@@ -2129,10 +2129,10 @@ var questions = [{
 		"id": 9,
 		"name": "Elektronisches Geld",
 		"title": "Anonymes Bezahlen mit elektronischem Geld",
-		"description": "Die Möglichkeit, mit E-Geld auf Guthabenkarten anonym im Internet einkaufen zu können, wird auf Kleinbeträge bis 150 € begrenzt.",
+		"description": "Die Möglichkeit, mit E-Geld auf Guthabenkarten anonym im Internet einkaufen zu können, wird auf Kleinbeträge bis 150 Euro begrenzt.",
 		"terms": [{
 			"term": "Elektronisches Geld, beziehungsweise E-Geld",
-			"explanation": "wird definiert in Richtlinie 2009/110/EG (https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110) als elektronisch, auch magnetisch, gespeicherten monetären Wert, der gegen Zahlung eines Geldbetrags ausgestellt wird, um damit Zahlungsvorgänge durchzuführen. In der Praxis sind damit Prepaid-Karten und Prepaid-Guthaben gemeint. Mit der Änderung der EU-Richtlinie 849 von 2015 (https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849) wurde 2018 mit der 5. Richtlinie zu Geldwäsche und Terrorismusfinanzierung (AMLD 5) (https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843) der Schwellwert zur Ermittlung der Inhaber von Prepaid-Karten von 250 € auf 150 € herabgesetzt.",
+			"explanation": "wird definiert in Richtlinie 2009/110/EG (https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110) als elektronisch, auch magnetisch, gespeicherten monetären Wert, der gegen Zahlung eines Geldbetrags ausgestellt wird, um damit Zahlungsvorgänge durchzuführen. In der Praxis sind damit Prepaid-Karten und Prepaid-Guthaben gemeint. Mit der Änderung der EU-Richtlinie 849 von 2015 (https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849) wurde 2018 mit der 5. Richtlinie zu Geldwäsche und Terrorismusfinanzierung (AMLD 5) (https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843) der Schwellwert zur Ermittlung der Inhaber von Prepaid-Karten von 250 auf 150 Euro herabgesetzt.",
 			"link": ""
 		}],
 		"votewatch": [{
