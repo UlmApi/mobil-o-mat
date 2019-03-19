@@ -547,7 +547,7 @@ var questions = [{
 				"id": 1,
 				"name": "afd",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -561,7 +561,7 @@ var questions = [{
 				"id": 2,
 				"name": "cdu",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "25",
@@ -575,7 +575,7 @@ var questions = [{
 				"id": 3,
 				"name": "csu",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "4",
@@ -588,7 +588,7 @@ var questions = [{
 				"id": 4,
 				"name": "partei",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -601,7 +601,7 @@ var questions = [{
 				"id": 5,
 				"name": "piraten",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -630,7 +630,7 @@ var questions = [{
 				"id": 7,
 				"name": "fdp",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -644,7 +644,7 @@ var questions = [{
 				"id": 8,
 				"name": "freie",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -658,7 +658,7 @@ var questions = [{
 				"id": 9,
 				"name": "gruene",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -672,7 +672,7 @@ var questions = [{
 				"id": 10,
 				"name": "linke",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -686,7 +686,7 @@ var questions = [{
 				"id": 11,
 				"name": "npd",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -700,7 +700,7 @@ var questions = [{
 				"id": 12,
 				"name": "oedp",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -714,7 +714,7 @@ var questions = [{
 				"id": 13,
 				"name": "spd",
 				"voting": {
-					"result": "1",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "12",
@@ -728,7 +728,7 @@ var questions = [{
 				"id": 14,
 				"name": "lkr",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "4",
@@ -742,7 +742,7 @@ var questions = [{
 				"id": 15,
 				"name": "independent",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -756,7 +756,7 @@ var questions = [{
 				"id": 16,
 				"name": "buendnis",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -803,7 +803,7 @@ var questions = [{
 				"id": 1,
 				"name": "afd",
 				"voting": {
-					"result": "1",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -817,7 +817,7 @@ var questions = [{
 				"id": 2,
 				"name": "cdu",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "2",
@@ -831,7 +831,7 @@ var questions = [{
 				"id": 3,
 				"name": "csu",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -844,7 +844,7 @@ var questions = [{
 				"id": 4,
 				"name": "partei",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -857,7 +857,7 @@ var questions = [{
 				"id": 5,
 				"name": "piraten",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -885,7 +885,7 @@ var questions = [{
 				"id": 7,
 				"name": "fdp",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -913,7 +913,7 @@ var questions = [{
 				"id": 9,
 				"name": "gruene",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "8",
@@ -927,7 +927,7 @@ var questions = [{
 				"id": 10,
 				"name": "linke",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "3",
@@ -941,7 +941,7 @@ var questions = [{
 				"id": 11,
 				"name": "npd",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -955,7 +955,7 @@ var questions = [{
 				"id": 12,
 				"name": "oedp",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -969,7 +969,7 @@ var questions = [{
 				"id": 13,
 				"name": "spd",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "22",
@@ -983,7 +983,7 @@ var questions = [{
 				"id": 14,
 				"name": "lkr",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -997,7 +997,7 @@ var questions = [{
 				"id": 15,
 				"name": "independent",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -1011,7 +1011,7 @@ var questions = [{
 				"id": 16,
 				"name": "buendnis",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1063,7 +1063,7 @@ var questions = [{
 				"id": 1,
 				"name": "afd",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -1077,7 +1077,7 @@ var questions = [{
 				"id": 2,
 				"name": "cdu",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -1091,7 +1091,7 @@ var questions = [{
 				"id": 3,
 				"name": "csu",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1117,7 +1117,7 @@ var questions = [{
 				"id": 5,
 				"name": "piraten",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -1145,7 +1145,7 @@ var questions = [{
 				"id": 7,
 				"name": "fdp",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "3",
@@ -1159,7 +1159,7 @@ var questions = [{
 				"id": 8,
 				"name": "freie",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1173,7 +1173,7 @@ var questions = [{
 				"id": 9,
 				"name": "gruene",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "10",
@@ -1187,7 +1187,7 @@ var questions = [{
 				"id": 10,
 				"name": "linke",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "7",
@@ -1201,7 +1201,7 @@ var questions = [{
 				"id": 11,
 				"name": "npd",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -1215,7 +1215,7 @@ var questions = [{
 				"id": 12,
 				"name": "oedp",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -1229,7 +1229,7 @@ var questions = [{
 				"id": 13,
 				"name": "spd",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "22",
@@ -1257,7 +1257,7 @@ var questions = [{
 				"id": 15,
 				"name": "independent",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -1271,7 +1271,7 @@ var questions = [{
 				"id": 16,
 				"name": "buendnis",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1324,7 +1324,7 @@ var questions = [{
 				"id": 1,
 				"name": "afd",
 				"voting": {
-					"result": "1",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "2",
@@ -1338,7 +1338,7 @@ var questions = [{
 				"id": 2,
 				"name": "cdu",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "27",
@@ -1352,7 +1352,7 @@ var questions = [{
 				"id": 3,
 				"name": "csu",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "5",
@@ -1365,7 +1365,7 @@ var questions = [{
 				"id": 4,
 				"name": "partei",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1378,7 +1378,7 @@ var questions = [{
 				"id": 5,
 				"name": "piraten",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1406,7 +1406,7 @@ var questions = [{
 				"id": 7,
 				"name": "fdp",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "3",
@@ -1420,7 +1420,7 @@ var questions = [{
 				"id": 8,
 				"name": "freie",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "1",
@@ -1434,7 +1434,7 @@ var questions = [{
 				"id": 9,
 				"name": "gruene",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1448,7 +1448,7 @@ var questions = [{
 				"id": 10,
 				"name": "linke",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1462,7 +1462,7 @@ var questions = [{
 				"id": 11,
 				"name": "npd",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1476,7 +1476,7 @@ var questions = [{
 				"id": 12,
 				"name": "oedp",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1490,7 +1490,7 @@ var questions = [{
 				"id": 13,
 				"name": "spd",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "23",
@@ -1504,7 +1504,7 @@ var questions = [{
 				"id": 14,
 				"name": "lkr",
 				"voting": {
-					"result": "2",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "3",
@@ -1518,7 +1518,7 @@ var questions = [{
 				"id": 15,
 				"name": "independent",
 				"voting": {
-					"result": "0",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
@@ -1532,7 +1532,7 @@ var questions = [{
 				"id": 16,
 				"name": "buendnis",
 				"voting": {
-					"result": "1",
+					"result": "",
 					"explanation": "",
 					"results": {
 						"for": "0",
