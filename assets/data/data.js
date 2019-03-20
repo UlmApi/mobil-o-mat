@@ -2257,6 +2257,20 @@ var data = {
 							"absent": null
 						}
 					}
+				},
+				{
+					"id": 16,
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": null,
+							"against": null,
+							"abstained": null,
+							"absent": null
+						}
+					}
 				}
 			]
 		},
@@ -2293,10 +2307,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 2,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -2307,10 +2321,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 25,
+							"against": 0,
+							"abstained": 3,
+							"absent": 1
 						}
 					}
 				},
@@ -2321,10 +2335,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 3,
+							"against": 0,
+							"abstained": 1,
+							"absent": 1
 						}
 					}
 				}, {
@@ -2334,10 +2348,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}, {
@@ -2347,10 +2361,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -2375,10 +2389,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 2,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -2389,10 +2403,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -2403,10 +2417,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 9,
+							"against": 0,
+							"abstained": 2,
+							"absent": 0
 						}
 					}
 				},
@@ -2417,10 +2431,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 5,
+							"against": 0,
+							"abstained": 0,
+							"absent": 2
 						}
 					}
 				},
@@ -2431,10 +2445,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -2445,10 +2459,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -2459,10 +2473,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 22,
+							"against": 0,
+							"abstained": 4,
+							"absent": 1
 						}
 					}
 				},
@@ -2473,10 +2487,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -2487,10 +2501,24 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 3,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"id": 16,
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}
