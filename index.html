@@ -511,16 +511,16 @@
 								{{/selected}}
 								<ul class="parties">
 									{{#parties}}
-										<li class="party {{#has_explanation}}explanation{{/has_explanation}}">
-											<h5 title="{{party_long}}">{{party_short}}{{#has_explanation}} <i class="icon-down" title="Erläuterung"></i>{{/has_explanation}}</h5>
-											{{#has_explanation}}
-											<blockquote style="color: gray">
+										<li class="party {{#has_data}}explanation{{/has_data}}">
+											<h5 title="{{party_long}}">{{party_short}}{{#has_data}} <i class="icon-down" title="Erläuterung"></i>{{/has_data}}</h5>
+											{{#has_data}}
 
+											<blockquote style="color: gray">
 											<canvas class="chart"
-												data-for={{explanation.results.for}} 
-												data-against={{explanation.results.against}}
-												data-abstained={{explanation.results.abstained}}
-												data-absent={{explanation.results.absent}}
+												data-for={{results.for}}
+												data-against={{results.against}}
+												data-abstained={{results.abstained}}
+												data-absent={{results.absent}}
 												style="margin-bottom: 1.5em"
 											></canvas>
 
@@ -535,22 +535,22 @@
 													<g>
 														<rect fill='#e2e2e2' width={{abstained}} height='20'>
 															<title>
-																Enthalten: {{explanation.results.abstained}}
+																Enthalten: {{results.abstained}}
 															</title>
 														</rect>
 														<rect fill='#a5a5a5' width={{absent}} height='20'>
 															<title>
-																Nicht beteiligt: {{explanation.results.absent}}
+																Nicht beteiligt: {{results.absent}}
 															</title>
 														</rect>
 														<rect fill='#cc6c5b' width={{against}} height='20'>
 															<title>
-																Dagegen gestimmt: {{explanation.results.against}}
+																Dagegen gestimmt: {{results.against}}
 															</title>
 														</rect>
 														<rect fill='#9fd773' width={{pro}} height='20'>
 															<title>
-																Dafür gestimmt: {{explanation.results.for}}
+																Dafür gestimmt: {{results.for}}
 															</titl>
 														</rect>
 													</g>
@@ -562,7 +562,7 @@
 												</svg>
 												Abgeordnete: {{delegates}}
 											</blockquote>
-											{{/has_explanation}}
+											{{/has_data}}
 										</li>
 									{{/parties}}
 									{{^parties}}
