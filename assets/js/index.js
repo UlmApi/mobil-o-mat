@@ -24,13 +24,13 @@ $(document).ready(function () {
 
 	// render questions
 	$("#questions").html(Mustache.render(tmpl.questions, {
-		question: questions.map(function (question, id) {
+		question: data.questions.map(function (question, id) {
 			return {
 				id: id,
 				label: question.title,
 				question: question.description,
 				links: question.votewatch,
-				anyInfo: question.votewatch[0].link.length || question.background[0].link.length,
+				anyInfo: question.votewatch[0].link || question.background[0].link,
 				hasInfotext: question.background.length,
 				infotext: question.background,
 				terms: question.terms,
@@ -39,21 +39,8 @@ $(document).ready(function () {
 		})
 	}));
 
-	// activate questions
-	// $("input[type=radio]", "#questions").click(function(evt){
-	// 	// if all questions are answered
-	// 	if ($("#questions").serializeArray().length === questions.length) {
-	// 		// go straight to evaluation
-	// 		calculate();
-	// 		scroll($("#result").offset().top, 200);
-	// 	} else if (mobile) {
-	// 		// go to next question
-	// 		var nxt = $(this).parents(".question").next();
-	// 		if (nxt.length > 0) scroll(nxt.offset().top+(nxt.height()/2)-($window.height()/2),200);
-	// 	}
-	// });
-
 	// activate more-links
+	// TODO
 	$("a.more", "#questions").click(function (evt) {
 		window.open($(this).attr("href"), '_blank');
 		evt.preventDefault();
@@ -107,20 +94,21 @@ $(document).ready(function () {
 		$(this).css("display", "none");
 	});
 
-	function calculate(fn) {
-		// prepare result array
-		var result = {
 
+	function calculate(fn) {
+		// prepare result object
+		var result = {
 			// flatten answers
 			answers: $("#questions").serializeArray().reduce(function (p, c) {
 				p[parseInt(c.name.replace(/[^0-9]+/g, ''), 10)] = parseInt(c.value, 10);
 				return p;
-			}, Array.apply(null, Array(questions.length)).map(function () {
+			}, Array.apply(null, Array(data.questions.length)).map(function () {
 				return null
 			})),
 
 			// empty comparison array
-			comparison: Array.apply(null, Array(parties.length)).map(function () {
+			// TODO
+			comparison: Array.apply(null, Array(data.parties.length)).map(function () {
 				return 0
 			}),
 
@@ -129,32 +117,29 @@ $(document).ready(function () {
 		};
 
 		// calculate score
-		result.answers.forEach(function (v, i) {
-
-			// TODO what's v?
-
+		result.answers.forEach(function (answer_user, i) {
 			// ignore not-given answers
-			if (v === null) return;
+			if (answer_user === null) return;
 
-			var answers = questions.map(question => question.answers)
+			var answers = data.questions.map(question => question.answers);
 
-			answers[i].forEach(function (answer, j) {
+			answers[i].forEach(function (answer, j) {				
+				// check if results are present for corresponding answer
+				var isEmpty = Object.values(answer.voting.results).every(x => (x === null || x === ''));
+				if (isEmpty) return;
 
-				// TODO check
-				if (answer.voting.result === null || answer.voting.result.length === 0) {
-					return;
-				}
+				// calc result of votings
+				var answer_party = calcResult(answer.voting.results);
 
-				var answer_party = Number(answer.voting.result);
+				console.log(`Party: ${answer.name}, Answer: ${answer_party}`)
 
 				// if no valid answer from party, use max divergence
 				// TODO check if needed
 				if (typeof answer_party !== "number" || answer_party < 0 || answer_party > MAXDIV) {
-					return (result.comparison[j] += MAXDIV);
+					return (result.comparison[j] = MAXDIV);
 				}
-
 				// else calculate divergence
-				result.comparison[j] += (MAXDIV - Math.abs(answer_party - v));
+				result.comparison[j] += (MAXDIV - Math.abs(answer_party - answer_user));
 			});
 		});
 
@@ -170,9 +155,9 @@ $(document).ready(function () {
 				score: c,
 				percent: (Math.round((c / max) * 100) || 0).toString(),
 				width: (((c / max) * 100) || 0).toFixed(1),
-				party: parties[i].name,
-				party_short: parties[i].short_name,
-				party_long: parties[i].long_name
+				party: data.parties[i].name,
+				party_short: data.parties[i].short_name,
+				party_long: data.parties[i].long_name
 			};
 		}).sort(function (a, b) {
 			return a.party_short.localeCompare(b.party_short, 'de', {
@@ -185,7 +170,7 @@ $(document).ready(function () {
 		// prepare detailed answers
 		// TODO use only parties that have voted
 		// TODO check calculation
-		result.detail = questions.map(function (question, i) {
+		result.detail = data.questions.map(function (question, i) {
 			return {
 				id: i,
 				num: (i + 1),
@@ -196,30 +181,45 @@ $(document).ready(function () {
 						selected: (result.answers[i] === a),
 						answer_label: keys[a],
 						answer_type: a,
-						parties: questions.map(function (question) {
+						parties: data.questions.map(function (question) {
 								return question.answers
-							})[i].map(function (party, j) {
-								if (party.voting.result.length > 0) {
-									var pro = Number(party.voting.results.for) / Number(party.voting.delegates) * 100;
+							})[i].map(function (party) {
+
+								console.log('test')
+
+								var votes_for = party.voting.results.for;
+								var votes_against = party.voting.results.against;
+								var abstained = party.voting.results.abstained;
+								var abstentions = party.voting.results.absent;
+
+								var delegates_total = votes_for + votes_against + abstained + abstentions;
+								var delegates_present = votes_for + votes_against + abstained;
+
+								var isEmpty = Object.values(party.voting.results).every(x => (x === null || x === ''));
+								if (!isEmpty) {
+									var pro = votes_for / delegates_total * 100;
 									pro = Math.round(pro * 100) / 100;
-									var absent = Number(party.voting.results.absent) / Number(party.voting.delegates) * 100;
+									var absent = abstentions / delegates_total * 100;
 									absent = Math.round(absent * 100) / 100;
-									var abstained = Number(party.voting.results.abstained) / Number(party.voting.delegates) * 100;
+									var abstained = abstained / delegates_total * 100;
 									abstained = Math.round(abstained * 100) / 100;
-									var against = Number(party.voting.results.against) / Number(party.voting.delegates) * 100;
+									var against = votes_against / delegates_total * 100;
 									against = Math.round(against * 100) / 100;
+									// TODO calc once
 									return {
-										answer: party.voting.result,
-										has_explanation: (party.voting.result.length > 0) ? true : false,
-										explanation: party.voting || null,
+										result: calcResult(party.voting.results),
+										has_data: !Object.values(party.voting.results).every(x => (x === null || x === '')),
+										explanation: party.voting.explanation,
+										results: party.voting.results,
 										party: party.name,
-										party_short: parties[party.id - 1].short_name, // TODO
-										party_long: parties[party.id - 1].long_name, // TODO
+										party_short: data.parties[party.id - 1].short_name, // TODO
+										party_long: data.parties[party.id - 1].long_name, // TODO
 										// calculate for bar chart visualization
 										pro: pro + '%',
 										against: against + pro + '%',
 										absent: against + pro + absent + '%',
-										abstained: against + pro + absent + abstained + '%'
+										abstained: against + pro + absent + abstained + '%',
+										delegates: delegates_total
 									};
 								}
 							}).sort(function (a, b) {
@@ -229,13 +229,14 @@ $(document).ready(function () {
 							})
 							.filter(function (party) { // TODO runs too often
 								if (!party) return;
-								return party.answer == a
+								return party.result == a
 							})
 					};
 				})
 			};
 		});
 
+		
 		// render result to document
 		$("#result").html(Mustache.render(tmpl.result, result));
 
@@ -299,5 +300,31 @@ $(document).ready(function () {
 			}
 		}.bind(this), 10);
 	};
+
+	function calcResult(results) {
+		var voters = results.for + results.against + results.abstained;
+		// if more delegates were absent than participated at the election return 1 ("no position")
+		if (results.absent > voters) return 1; 
+
+		var proportion_for = results.for / voters;
+		var proportion_against = results.against / voters;
+		var proportion_abstained = results.abstained / voters;
+
+		switch (true) {
+			case (proportion_against + proportion_for <= proportion_abstained) || (proportion_against === proportion_for):
+				return 1;
+				break;
+			case proportion_for > proportion_against:
+				return 2;
+				break;
+			case proportion_against > proportion_for:
+				return 0;
+				break;
+			default:
+				return null;
+				break;
+		}
+
+	}
 
 });
