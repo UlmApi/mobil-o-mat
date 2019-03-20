@@ -1558,10 +1558,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -1572,10 +1572,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 27,
+							"against": 0,
+							"abstained": 0,
+							"absent": 3
 						}
 					}
 				},
@@ -1586,10 +1586,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 4,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}, {
@@ -1599,10 +1599,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}, {
@@ -1612,10 +1612,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1640,10 +1640,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 3,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1654,10 +1654,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1668,10 +1668,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 8,
+							"abstained": 0,
+							"absent": 2
 						}
 					}
 				},
@@ -1682,10 +1682,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 5,
+							"abstained": 0,
+							"absent": 2
 						}
 					}
 				},
@@ -1696,10 +1696,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1710,10 +1710,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1724,10 +1724,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 26,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -1738,10 +1738,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 3,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1752,10 +1752,24 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 2,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"id": 16,
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}
@@ -2554,8 +2568,8 @@ var data = {
 		{
 			"id": 15,
 			"name": "independent",
-			"short_name": "Unabhängig",
-			"long_name": "Unabhängig"
+			"short_name": "Parteilos",
+			"long_name": "Parteilos"
 		},
 		{
 			"id": 16,
