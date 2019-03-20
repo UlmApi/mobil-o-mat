@@ -1813,10 +1813,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 2,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1827,10 +1827,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 27,
+							"abstained": 1,
+							"absent": 1
 						}
 					}
 				},
@@ -1841,10 +1841,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 3,
+							"abstained": 0,
+							"absent": 2
 						}
 					}
 				}, {
@@ -1854,10 +1854,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 0,
+							"abstained": 0,
+							"absent": 1
 						}
 					}
 				}, {
@@ -1867,10 +1867,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1895,10 +1895,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 2,
+							"abstained": 0,
+							"absent": 1
 						}
 					}
 				},
@@ -1909,10 +1909,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1923,10 +1923,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 8,
+							"against": 0,
+							"abstained": 0,
+							"absent": 3
 						}
 					}
 				},
@@ -1937,10 +1937,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 6,
+							"against": 0,
+							"abstained": 0,
+							"absent": 1
 						}
 					}
 				},
@@ -1951,10 +1951,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1965,10 +1965,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1979,10 +1979,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 23,
+							"against": 0,
+							"abstained": 4,
+							"absent": 0
 						}
 					}
 				},
@@ -1993,10 +1993,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 3,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -2007,10 +2007,24 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 2,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"id": 16,
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}
