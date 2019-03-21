@@ -6,37 +6,10 @@
 		<title>TESTSEITE</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-		<!-- Matomo -->
-		<!-- <script type="text/javascript">
-			var _paq = window._paq || [];
-			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-			_paq.push(['disableCookies']); // TODO: check if needed (if yes: add message)
-			_paq.push(['setDocumentTitle', document.title]);
-			_paq.push(['trackPageView']);
-			_paq.push(['enableLinkTracking']);
-			(function () {
-				var u = "//stats.wikimedia.de/";
-				_paq.push(['setTrackerUrl', u + 'piwik.php']);
-				// TODO: adjust id
-				_paq.push(['setSiteId', '5']);
-				var d = document,
-					g = d.createElement('script'),
-					s = d.getElementsByTagName('script')[0];
-				g.type = 'text/javascript';
-				g.async = true;
-				g.defer = true;
-				g.src = u + 'piwik.js';
-				s.parentNode.insertBefore(g, s);
-			})();
-		</script> -->
-		<!-- End Matomo Code -->
-
 		<script src="assets/data/data.js" defer></script>
-
 		<script src="assets/js/mustache.min.js" defer></script>
 		<script src="assets/js/zepto.min.js" defer></script>
 		<script src="assets/js/index.js" defer></script>
-
 		<script src="assets/js/Chart.bundle.min.js" defer></script>
 		<script src="assets/js/chartjs-plugin-labels.min.js" defer></script>
 
@@ -109,10 +82,6 @@
 					<form id="questions" method="post" action="javascript:;"></form>
 
 					<button id="calculate">Übereinstimmung berechnen</button>
-					<!-- TODO: activate for deployment -->
-					<!-- <button id="calculate" onclick="_paq.push(['trackEvent', 'Questionnaire', 'Evaluate']);">
-								Übereinstimmung berechnen
-							</button> -->
 					<div id="result"></div>
 				</div>
 
