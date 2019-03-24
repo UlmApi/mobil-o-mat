@@ -1265,7 +1265,7 @@ var data = {
 			"id": 6,
 			"name": "Auswirkungen von Massenüberwachungsprogrammen",
 			"title": "Auswirkungen von Massenüberwachungsprogrammen",
-			"description": "Die Verhandlungen mit den USA über ein Handels- und Investitionsschutz-Abkommen (TTIP) sollten ausgesetzt werden; Mindestens solange, wie die USA an ihren Programmen zur Massenüberwachung (z.B. PRISM, Echelon, etc.) festhalten.",
+			"description": "Die Verhandlungen mit den USA über ein Handels- und Investitionsschutz-Abkommen (TTIP) sollten ausgesetzt werden; mindestens solange, wie die USA an ihren Programmen zur Massenüberwachung (z.B. PRISM, Echelon, etc.) festhalten.",
 			"terms": [{
 					"term": "TTIP",
 					"explanation": "ist eine geplante Transatlantische Handels- und Investitionspartnerschaft zwischen der Europäischen Union und den USA. Kritik gibt es an der Intransparenz des Verhandlungsprozesses sowie an Umwelt-, Sozial- und Rechtsstaats-Standards.",
