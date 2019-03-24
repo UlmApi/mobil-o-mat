@@ -2431,10 +2431,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 9,
+							"for": 8,
 							"against": 0,
 							"abstained": 2,
-							"absent": 0
+							"absent": 1
 						}
 					}
 				},
