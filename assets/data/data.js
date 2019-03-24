@@ -239,7 +239,7 @@ var data = {
 			"id": 2,
 			"name": "ePrivacy",
 			"title": "Web-Tracking (ePrivacy)",
-			"description": "Anbieter von Websites sollen das Betrachten von Inhalten davon abhängig machen dürfen, ob Nutzende einer Verfolgung, Aufzeichnung und Auswertung ihres Verhaltens (Tracking) für Werbezwecke zustimmen.",
+			"description": "Anbieter von Websites sollen das Betrachten von Inhalten nicht davon abhängig machen dürfen, ob Nutzende einer Verfolgung, Aufzeichnung und Auswertung ihres Verhaltens (Tracking) für Werbezwecke zustimmen.",
 			"terms": [{
 					"term": "ePrivacy",
 					"explanation": "steht kurz für die EU-Verordnung über die Achtung des Privatlebens und den Schutz personenbezogener Daten in der elektronischen Kommunikation. Diese soll unter anderem Chat-Dienste, Instant Messenger, Tracking, Verschlüsselung sowie Vorgaben für Browser und Software regulieren.",
@@ -252,16 +252,10 @@ var data = {
 				}
 			],
 			"votewatch": [{
-					"title": null,
-					"link": "https://www.votewatch.eu/en/term8-european-electronic-communications-code-draft-legislative-resolution-provisional-agreement-amendment.html",
-					"date": null
-				},
-				{
-					"title": null,
-					"link": "https://www.votewatch.eu/en/term8-body-of-european-regulators-for-electronic-communications-draft-legislative-resolution-provisional-a.html",
-					"date": null
-				}
-			],
+				"title": null,
+				"link": "https://www.votewatch.eu/en/term8-respect-for-private-life-and-the-protection-of-personal-data-in-electronic-communications-and-repeal.html",
+				"date": null
+			}],
 			"background": [{
 					"title": "EDRi: \"e-Privacy: What happened and what happens next\"",
 					"link": "https://edri.org/e-privacy-what-happened-and-what-happens-next/",
