@@ -1268,7 +1268,7 @@ var data = {
 			"description": "Die Verhandlungen mit den USA über ein Handels- und Investitionsschutz-Abkommen (TTIP) sollten ausgesetzt werden; Mindestens solange, wie die USA an ihren Programmen zur Massenüberwachung (z.B. PRISM, Echelon, etc.) festhalten.",
 			"terms": [{
 					"term": "TTIP",
-					"explanation": "ist eine geplante Transatlantische Handels- und Investitionspartnerschaft  zwischen der Europäischen Union und den USA. Kritik gibt es an der Intransparenz des Verhandlungsprozesses sowie an Umwelt-, Sozial- und Rechtsstaats-Standards.",
+					"explanation": "ist eine geplante Transatlantische Handels- und Investitionspartnerschaft zwischen der Europäischen Union und den USA. Kritik gibt es an der Intransparenz des Verhandlungsprozesses sowie an Umwelt-, Sozial- und Rechtsstaats-Standards.",
 					"link": null
 				},
 				{
@@ -1283,16 +1283,10 @@ var data = {
 				}
 			],
 			"votewatch": [{
-					"title": null,
-					"link": "https://www.votewatch.eu/en/us-nsa-surveillance-programme-surveillance-bodies-in-various-member-states-and-impact-on-eu-citizens-6.html",
-					"date": null
-				},
-				{
-					"title": "Abstimmung auf votewatch",
-					"link": "https://www.votewatch.eu/en/term8-negotiations-for-the-transatlantic-trade-and-investment-partnership-ttip-motion-for-resolution-vote-.html",
-					"date": "08.07.2015"
-				}
-			],
+				"title": null,
+				"link": "https://www.votewatch.eu/en/term8-follow-up-to-the-european-parliament-resolution-of-12-march-2014-on-the-electronic-mass-surveillance-13.html",
+				"date": null
+			}],
 			"background": [{
 				"title": "Pressemitteilung des Europäischen Parlaments vom 12.03.2014",
 				"link": "http://www.europarl.europa.eu/news/de/press-room/20140307IPR38203/parlament-droht-mit-konsequenzen-falls-usa-massenuberwachung-nicht-einstellt",
