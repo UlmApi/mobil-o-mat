@@ -285,10 +285,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 0,
+							"abstained": 0,
+							"absent": 1
 						}
 					}
 				},
@@ -299,10 +299,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 28,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -313,10 +313,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 4,
+							"abstained": 0,
+							"absent": 1
 						}
 					}
 				}, {
@@ -326,10 +326,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}, {
@@ -339,10 +339,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -367,10 +367,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -381,10 +381,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -395,10 +395,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 6,
+							"against": 0,
+							"abstained": 0,
+							"absent": 5
 						}
 					}
 				},
@@ -409,10 +409,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 3,
+							"against": 0,
+							"abstained": 0,
+							"absent": 3
 						}
 					}
 				},
@@ -423,10 +423,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -437,10 +437,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -451,10 +451,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 22,
+							"against": 0,
+							"abstained": 1,
+							"absent": 4
 						}
 					}
 				},
@@ -465,10 +465,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 3,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -479,10 +479,24 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 1,
+							"abstained": 0,
+							"absent": 1
+						}
+					}
+				},
+				{
+					"id": 16,
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}
