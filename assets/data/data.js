@@ -239,7 +239,7 @@ var data = {
 			"id": 2,
 			"name": "ePrivacy",
 			"title": "Web-Tracking (ePrivacy)",
-			"description": "Anbieter von Websites sollen das Betrachten von Inhalten davon abhängig machen dürfen, ob Nutzende einer Verfolgung, Aufzeichnung und Auswertung ihres Verhaltens (Tracking) für Werbezwecke zustimmen.",
+			"description": "Anbieter von Websites sollen das Betrachten von Inhalten nicht davon abhängig machen dürfen, ob Nutzende einer Verfolgung, Aufzeichnung und Auswertung ihres Verhaltens (Tracking) für Werbezwecke zustimmen.",
 			"terms": [{
 					"term": "ePrivacy",
 					"explanation": "steht kurz für die EU-Verordnung über die Achtung des Privatlebens und den Schutz personenbezogener Daten in der elektronischen Kommunikation. Diese soll unter anderem Chat-Dienste, Instant Messenger, Tracking, Verschlüsselung sowie Vorgaben für Browser und Software regulieren.",
@@ -252,16 +252,10 @@ var data = {
 				}
 			],
 			"votewatch": [{
-					"title": null,
-					"link": "https://www.votewatch.eu/en/term8-european-electronic-communications-code-draft-legislative-resolution-provisional-agreement-amendment.html",
-					"date": null
-				},
-				{
-					"title": null,
-					"link": "https://www.votewatch.eu/en/term8-body-of-european-regulators-for-electronic-communications-draft-legislative-resolution-provisional-a.html",
-					"date": null
-				}
-			],
+				"title": null,
+				"link": "https://www.votewatch.eu/en/term8-respect-for-private-life-and-the-protection-of-personal-data-in-electronic-communications-and-repeal.html",
+				"date": null
+			}],
 			"background": [{
 					"title": "EDRi: \"e-Privacy: What happened and what happens next\"",
 					"link": "https://edri.org/e-privacy-what-happened-and-what-happens-next/",
@@ -285,10 +279,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 0,
+							"abstained": 0,
+							"absent": 1
 						}
 					}
 				},
@@ -299,10 +293,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 28,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -313,10 +307,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 4,
+							"abstained": 0,
+							"absent": 1
 						}
 					}
 				}, {
@@ -326,10 +320,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}, {
@@ -339,10 +333,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -367,10 +361,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -381,10 +375,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -395,10 +389,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 6,
+							"against": 0,
+							"abstained": 0,
+							"absent": 5
 						}
 					}
 				},
@@ -409,10 +403,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 3,
+							"against": 0,
+							"abstained": 0,
+							"absent": 3
 						}
 					}
 				},
@@ -423,10 +417,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -437,10 +431,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -451,10 +445,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 22,
+							"against": 0,
+							"abstained": 1,
+							"absent": 4
 						}
 					}
 				},
@@ -465,10 +459,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 3,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -479,10 +473,24 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 1,
+							"abstained": 0,
+							"absent": 1
+						}
+					}
+				},
+				{
+					"id": 16,
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				}
@@ -742,7 +750,7 @@ var data = {
 			"id": 4,
 			"name": "Privacy Shield",
 			"title": "US-EU-Datenabkommen (Privacy Shield)",
-			"description": "Persönliche Daten können im Rahmen der „Privacy Shield“-Vereinbarung aus der EU in die USA übermittelt werden, trotz US-Programmen zur anlasslosen Massenüberwachung und fehlenden US-Datenschutzgesetzen.",
+			"description": "Persönliche Daten aus der EU können auf Grundlage der \"Privacy Shield\"-Vereinbarung nicht in die USA übermittelt werden, solange das EU-Datenschutz-Niveau von den USA nicht eingehalten wird.",
 			"terms": [{
 				"term": "Das sogenannte Privacy Shield",
 				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
@@ -1257,10 +1265,10 @@ var data = {
 			"id": 6,
 			"name": "Auswirkungen von Massenüberwachungsprogrammen",
 			"title": "Auswirkungen von Massenüberwachungsprogrammen",
-			"description": "Die Verhandlungen mit den USA über ein Handels- und Investitionsschutz-Abkommen (TTIP) sollten ausgesetzt werden; Mindestens solange, wie die USA an ihren Programmen zur Massenüberwachung (z.B. PRISM, Echelon, etc.) festhalten.",
+			"description": "Die Verhandlungen mit den USA über ein Handels- und Investitionsschutz-Abkommen (TTIP) sollten ausgesetzt werden; mindestens solange, wie die USA an ihren Programmen zur Massenüberwachung (z.B. PRISM, Echelon, etc.) festhalten.",
 			"terms": [{
 					"term": "TTIP",
-					"explanation": "ist eine geplante Transatlantische Handels- und Investitionspartnerschaft  zwischen der Europäischen Union und den USA. Kritik gibt es an der Intransparenz des Verhandlungsprozesses sowie an Umwelt-, Sozial- und Rechtsstaats-Standards.",
+					"explanation": "ist eine geplante Transatlantische Handels- und Investitionspartnerschaft zwischen der Europäischen Union und den USA. Kritik gibt es an der Intransparenz des Verhandlungsprozesses sowie an Umwelt-, Sozial- und Rechtsstaats-Standards.",
 					"link": null
 				},
 				{
@@ -1275,16 +1283,10 @@ var data = {
 				}
 			],
 			"votewatch": [{
-					"title": null,
-					"link": "https://www.votewatch.eu/en/us-nsa-surveillance-programme-surveillance-bodies-in-various-member-states-and-impact-on-eu-citizens-6.html",
-					"date": null
-				},
-				{
-					"title": "Abstimmung auf votewatch",
-					"link": "https://www.votewatch.eu/en/term8-negotiations-for-the-transatlantic-trade-and-investment-partnership-ttip-motion-for-resolution-vote-.html",
-					"date": "08.07.2015"
-				}
-			],
+				"title": null,
+				"link": "https://www.votewatch.eu/en/term8-follow-up-to-the-european-parliament-resolution-of-12-march-2014-on-the-electronic-mass-surveillance-13.html",
+				"date": null
+			}],
 			"background": [{
 				"title": "Pressemitteilung des Europäischen Parlaments vom 12.03.2014",
 				"link": "http://www.europarl.europa.eu/news/de/press-room/20140307IPR38203/parlament-droht-mit-konsequenzen-falls-usa-massenuberwachung-nicht-einstellt",
@@ -1572,7 +1574,7 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 27,
+							"for": 26,
 							"against": 0,
 							"abstained": 0,
 							"absent": 3
@@ -1586,7 +1588,7 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 4,
+							"for": 5,
 							"against": 0,
 							"abstained": 0,
 							"absent": 0
@@ -2417,10 +2419,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 9,
+							"for": 8,
 							"against": 0,
 							"abstained": 2,
-							"absent": 0
+							"absent": 1
 						}
 					}
 				},
