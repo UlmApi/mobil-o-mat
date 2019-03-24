@@ -1586,7 +1586,7 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 27,
+							"for": 26,
 							"against": 0,
 							"abstained": 0,
 							"absent": 3
@@ -1600,7 +1600,7 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 4,
+							"for": 5,
 							"against": 0,
 							"abstained": 0,
 							"absent": 0
