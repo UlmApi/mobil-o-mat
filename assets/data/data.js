@@ -750,7 +750,7 @@ var data = {
 			"id": 4,
 			"name": "Privacy Shield",
 			"title": "US-EU-Datenabkommen (Privacy Shield)",
-			"description": "Persönliche Daten können im Rahmen der „Privacy Shield“-Vereinbarung aus der EU in die USA übermittelt werden, trotz US-Programmen zur anlasslosen Massenüberwachung und fehlenden US-Datenschutzgesetzen.",
+			"description": "Persönliche Daten aus der EU können auf Grundlage der \"Privacy Shield\"-Vereinbarung nicht in die USA übermittelt werden, solange das EU-Datenschutz-Niveau von den USA nicht eingehalten wird.",
 			"terms": [{
 				"term": "Das sogenannte Privacy Shield",
 				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
