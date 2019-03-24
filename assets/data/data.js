@@ -1005,7 +1005,7 @@ var data = {
 			"id": 5,
 			"name": "Netzneutralität (Telekommunikationsbinnenmarktordnung)",
 			"title": "Netzneutralität / Telekommunikationsbinnenmarktordnung",
-			"description": "Telekommunikationsanbieter dürfen bestimmte Kategorien von Datenströmen (z.B. Musik-, Video- und Gaming-Dienste, Nachrichten-Plattformen, Messanger etc.) bevorzugen oder benachteiligen.",
+			"description": "Telekommunikationsanbieter dürfen bestimmte Daten (z.B. Musik-, Video- und Gaming-Dienste, Nachrichten-Plattformen, Messenger etc.) nicht bevorzugen oder benachteiligen.",
 			"terms": [{
 				"term": "Netzneutralität",
 				"explanation": "bedeutet die Gleichbehandlung aller Daten. Internetanbieter stehen vor der Frage, wie sie mit immer größeren Datenmengen umgehen sollen. Es gibt grundsätzlich zwei Möglichkeiten: Werden alle Daten bei der Übertragung gleich behandelt, kann von Netzneutralität gesprochen werden. Werden die Daten bestimmter Dienste schneller und/oder in besserer Qualität übertragen, werden dabei andere Datenströme diskriminiert.",
