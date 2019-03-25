@@ -785,7 +785,7 @@ var data = {
 						"explanation": null,
 						"results": {
 							"for": 1,
-							"against": 1,
+							"against": 0,
 							"abstained": 1,
 							"absent": 0
 						}
@@ -798,8 +798,8 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 2,
-							"against": 18,
+							"for": 1,
+							"against": 20,
 							"abstained": 4,
 							"absent": 3
 						}
@@ -812,8 +812,8 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 1,
-							"against": 4,
+							"for": 0,
+							"against": 5,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -838,8 +838,8 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 0,
-							"against": 1,
+							"for": 1,
+							"against": 0,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -866,7 +866,7 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 1,
+							"for": 2,
 							"against": 0,
 							"abstained": 1,
 							"absent": 0
@@ -894,10 +894,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 8,
-							"against": 2,
+							"for": 7,
+							"against": 0,
 							"abstained": 2,
-							"absent": 1
+							"absent": 2
 						}
 					}
 				},
@@ -909,7 +909,7 @@ var data = {
 						"explanation": null,
 						"results": {
 							"for": 3,
-							"against": 1,
+							"against": 0,
 							"abstained": 2,
 							"absent": 2
 						}
@@ -950,7 +950,7 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 22,
+							"for": 23,
 							"against": 1,
 							"abstained": 4,
 							"absent": 0
@@ -967,7 +967,7 @@ var data = {
 							"for": 0,
 							"against": 3,
 							"abstained": 0,
-							"absent": 1
+							"absent": 0
 						}
 					}
 				},
@@ -979,7 +979,7 @@ var data = {
 						"explanation": null,
 						"results": {
 							"for": 1,
-							"against": 0,
+							"against": 2,
 							"abstained": 0,
 							"absent": 0
 						}
