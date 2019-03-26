@@ -47,6 +47,10 @@ body {
 	line-height: 20px;
 }
 
+.margin-backgroundinfo {
+	margin-top: 2em !important;
+}
+
 #app ul {
 	margin: 2em 0;
 	padding-left: 0em;
