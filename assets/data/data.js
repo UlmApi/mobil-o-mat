@@ -753,7 +753,7 @@ var data = {
 			"description": "Persönliche Daten aus der EU können auf Grundlage der \"Privacy Shield\"-Vereinbarung nicht in die USA übermittelt werden, solange das EU-Datenschutz-Niveau von den USA nicht eingehalten wird.",
 			"terms": [{
 				"term": "Das sogenannte Privacy Shield",
-				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
+				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (<a taget='_blank' href='https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782'>https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782</a>) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
 				"link": null
 			}],
 			"votewatch": [{
@@ -1273,7 +1273,7 @@ var data = {
 				},
 				{
 					"term": "PRISM",
-					"explanation": "ist ein US-Programm zur Überwachung und Auswertung von Daten. Die Abkürzung steht für: Planning tool for Resource Integration, Synchronization, and Management (deutsch: \"Planungswerkzeug für Ressourcenintegration, Synchronisation und Management\").",
+					"explanation": "ist ein US-Programm zur Überwachung und Auswertung von Daten. Die Abkürzung steht für: <b>P</b>lanning tool for <b>R</b>esource <b>I</b>ntegration, <b>S</b>ynchronization, and <b>M</b>anagement (deutsch: \"Planungswerkzeug für Ressourcenintegration, Synchronisation und Management\").",
 					"link": null
 				},
 				{
@@ -1527,12 +1527,12 @@ var data = {
 					"link": null
 				},
 				{
-					"term": null,
+					"term": "Datenbanken:",
 					"explanation": "Die im ETIAS-Antrag gemachten Angaben werden mit diversen behördlichen Datenbanken abgeglichen. Darunter auch eine extra für das ETIAS geschaffene Europol-Watchlist.",
 					"link": null
 				},
 				{
-					"term": null,
+					"term": "Risikoindikatoren:",
 					"explanation": "Die Genehmigung zur Einreise wird nicht ausschließlich Kriminellen verwehrt werden. Sie kann beispielsweise auch dann verweigert werden, wenn man einer Gruppe (Alter, Geschlecht, Nationalität, etc.) angehört, die für den entsprechenden Reisezeitraum bereits viele Genehmigungen erhalten hat.",
 					"link": null
 				}
@@ -2039,7 +2039,7 @@ var data = {
 			"description": "Die Möglichkeit, mit E-Geld auf Guthabenkarten anonym im Internet einkaufen zu können, wird auf Kleinbeträge bis 150 Euro begrenzt.",
 			"terms": [{
 				"term": "Elektronisches Geld, beziehungsweise E-Geld",
-				"explanation": "wird definiert in Richtlinie 2009/110/EG (https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110) als elektronisch, auch magnetisch, gespeicherten monetären Wert, der gegen Zahlung eines Geldbetrags ausgestellt wird, um damit Zahlungsvorgänge durchzuführen. In der Praxis sind damit Prepaid-Karten und Prepaid-Guthaben gemeint. Mit der Änderung der EU-Richtlinie 849 von 2015 (https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849) wurde 2018 mit der 5. Richtlinie zu Geldwäsche und Terrorismusfinanzierung (AMLD 5) (https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843) der Schwellwert zur Ermittlung der Inhaber von Prepaid-Karten von 250 auf 150 Euro herabgesetzt.",
+				"explanation": "wird definiert in Richtlinie 2009/110/EG (<a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110'>https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110</a>) als elektronisch, auch magnetisch, gespeicherten monetären Wert, der gegen Zahlung eines Geldbetrags ausgestellt wird, um damit Zahlungsvorgänge durchzuführen. In der Praxis sind damit Prepaid-Karten und Prepaid-Guthaben gemeint. Mit der Änderung der EU-Richtlinie 849 von 2015 (<a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849'>https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849</a>) wurde 2018 mit der 5. Richtlinie zu Geldwäsche und Terrorismusfinanzierung (AMLD 5) (<a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843'>https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843</a>) der Schwellwert zur Ermittlung der Inhaber von Prepaid-Karten von 250 auf 150 Euro herabgesetzt.",
 				"link": null
 			}],
 			"votewatch": [{
