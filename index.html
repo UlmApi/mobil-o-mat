@@ -2,6 +2,7 @@
 <html lang="de">
 	<head>
 		<meta charset="utf-8">
+		<!-- TODO -->
 		<!-- <title>Digital-O-Mat</title> -->
 		<title>TESTSEITE</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -19,6 +20,7 @@
 
 		<link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
+		<!-- TODO -->
 		<!-- <link type="image/png" rel="icon" href="favicon.png"> -->
 		<link type="image/png" rel="icon" href="https://jengeb.gitlab.io/digital-o-mat/favicon.png">
 	</head>
@@ -60,7 +62,7 @@
 						<button id="activate">Jetzt Parteien vergleichen!</button>
 						<p>
 							Der Digital-O-Mat zur Europawahl 2019 lässt euch auswählen, wie ihr bei zehn
-							Schlüssel-Abstimmungen im Europäischen Parlament zwischen 2014 und 2018 abgestimmt hättet, und vergleicht dies mit
+							Schlüssel-Abstimmungen im Europäischen Parlament zwischen 2014 und 2019 abgestimmt hättet, und vergleicht dies mit
 							dem tatsächlichen Abstimmungsverhalten der in Deutschland bei der Europawahl 2019 wählbaren Parteien.
 						</p>
 						<p>
@@ -87,13 +89,14 @@
 
 				<div class="app-item" id="orgs">
 					<h2>Warum gibt es auch zur Europawahl den Digital-O-Maten?</h2>
+					<p style="color: red">TODO: Text anpassen bzw. neu schreiben</p>
 					<p>
 						Digitale Themen kommen in der allgemeinen Wahlberichterstattung oft zu kurz. Hier setzt der Digital-O-Mat als
 						zusätzliche Informationsquelle für die Wahlberechtigten an. Zur Landtagswahl in Nordrhein-Westfalen im Mai 2017 gab
 						es bereits eine Pilotausgabe des Digital-O-Maten.
 					</p>
 					<p>
-						Im Sommer 2017 haben wir uns dann an alle Parteien gewandt, die zur Europawahl antreten und die in allen Umfragen
+						Im Sommer 2017 haben wir uns dann an alle Parteien gewandt, die zur Wahl antreten und die in allen Umfragen
 						seit letztem Jahr durchgängig die 5%-Schwelle überschritten haben (alle antretenden Parteien abzufragen war für uns
 						vom Aufwand her nicht möglich). Zurückgemeldet haben sich alle Parteien außer der AfD.
 					</p>
@@ -113,7 +116,7 @@
 						Ablehnung erkennen lassen.
 					</p>
 					<p>
-						Abschließend wurden die 12 von den Parteien beantworteten Fragen in Aussageform umformuliert, damit im
+						Abschließend wurden die 10 von den Parteien beantworteten Fragen in Aussageform umformuliert, damit im
 						Digital-O-Maten dann "stimme zu", "neutral" oder "stimme nicht zu" (oder auch gar nichts) angeklickt werden kann.
 						Dabei haben wir bewusst dafür gesorgt, dass das positiv besetzte "stimme zu" nicht durchweg auf der Option liegt,
 						die uns als Koalition Freies Wissen am liebsten wäre. Dadurch wollen wir eine inhaltliche Beeinflussung vermeiden
@@ -383,9 +386,10 @@
 				<h3><span>{{num}}</span> {{label}}</h3>
 				<p>{{question}}
 					{{#anyInfo}}
-						<br>
-						<button class="more-info-button">Mehr Info</button>
-						<button class="less-info-button">Info zuklappen</button>
+						<p>
+							<button class="more-info-button">Mehr Info</button>
+							<button class="less-info-button">Info zuklappen</button>
+						</p>
 						
 						<div class="questions-info">
 							{{#terms}}
@@ -393,39 +397,35 @@
 							{{/terms}}
 
 							{{#links}}
-								<!-- TODO -->
 								{{#link}}
-								<a class="questions-info-link" href="{{link}}" target="_blank">
-									{{#title}}{{title}}{{/title}}
-									{{^title}}Abstimmung auf votewatch{{/title}}
-									{{#date}}({{date}}){{/date}}
-								</a>
-								<br>
+									<p>
+										<a class="questions-info-link" href="{{link}}" target="_blank">
+											{{#title}}{{title}}{{/title}}
+											{{^title}}Abstimmung auf votewatch{{/title}}
+											{{#date}}({{date}}){{/date}}
+										</a>
+									</p>
 								{{/link}}
 							{{/links}}
 
 							{{#hasInfotext}}
-								<br>
 								<p><b>Hintergrundinfo:</b></p>
 							{{/hasInfotext}}
 
 							{{#infotext}}
 								{{#link}}
-									<a class="questions-info-link" href="{{link}}" target="_blank">
+									<p><a class="questions-info-link" href="{{link}}" target="_blank">
 										{{#title}}{{title}}{{/title}}
 										{{^title}}{{link}}{{/title}}
 										{{#date}}({{date}}){{/date}}
-									</a>
-									<br>
+									</a></p>
 								{{/link}}
 								{{^link}}
 									{{#title}}
 										<p>{{title}}</p>
 									{{/title}}
 								{{/link}}
-								<br>
 							{{/infotext}}
-
 						</div>
 
 					{{/anyInfo}}
