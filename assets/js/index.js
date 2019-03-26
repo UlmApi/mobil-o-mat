@@ -55,7 +55,7 @@ $(document).ready(function () {
 	});
 
 	// logo to home
-	$("#logo").click(function (evt) {
+	$("#logo").bind("keypress click", function (evt) {
 		evt.preventDefault();
 		$("#header").removeClass("show-menu");
 		$("#app").attr("class", "show-intro");
@@ -241,7 +241,7 @@ $(document).ready(function () {
 		$("#result").html(Mustache.render(tmpl.result, result));
 
 		// activate detail
-		$(".party.explanation h5", "#detail").click(function (evt) {
+		$(".party.explanation h5", "#detail").bind("keypress click", function (evt) {
 			evt.preventDefault();
 			$(this).parent().toggleClass("show-explanation");
 

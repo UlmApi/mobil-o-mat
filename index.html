@@ -28,7 +28,7 @@
 		<header id="header">
 			<a href="javascript:;" id="burger"><i class="icon-menu"></i></a>
 			<div class="logo">
-				<div id="logo"></div>
+				<div tabindex="0" id="logo"></div>
 			</div>
 			<div id="menu">
 				<ul>
@@ -481,7 +481,7 @@
 								<ul class="parties">
 									{{#parties}}
 										<li class="party {{#has_data}}explanation{{/has_data}}">
-											<h5 title="{{party_long}}">{{party_short}}{{#has_data}} <i class="icon-down" title="Erläuterung"></i>{{/has_data}}</h5>
+											<h5 title="{{party_long}}">{{party_short}}{{#has_data}} <i tabindex="0" class="icon-down" title="Erläuterung"></i>{{/has_data}}</h5>
 											{{#has_data}}
 
 											<blockquote style="color: gray">
