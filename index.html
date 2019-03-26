@@ -335,7 +335,7 @@
 					<h3>Log-Files</h3>
 					<p>
 						Bei der Nutzung dieses Angebots werden die von Ihrem Browser an den Server übermittelten Daten erfasst und in
-						Log-Files gespeichert. Dies umfasst üblichweise Informationen über den Typ und die Version des von Ihnen verwendeten
+						Log-Files gespeichert. Dies umfasst üblicherweise Informationen über den Typ und die Version des von Ihnen verwendeten
 						Browsers, das verwendete Betriebssystem, die Referrer URL (die Webseite, von der aus Sie zu dieser Website gelangt
 						sind), den Hostnamen des zugreifenden Rechners (die IP Adresse) sowie die Uhrzeit der Serveranfrage. In der Regel
 						lassen sich diese Daten nicht bestimmten Personen – und damit auch nicht Ihnen – zuordnen. Weder wird zu diesem
@@ -396,29 +396,31 @@
 								<p><b>{{#term}}{{term}} {{/term}}</b>{{&explanation}}</p>
 							{{/terms}}
 
+							{{#hasInfotext}}
+								<p class="margin-backgroundinfo"><b>Weitere Hintergrundinformationen</b></p>
+							{{/hasInfotext}}
+
 							{{#links}}
+								{{#link}}
+								<p>
+									<a class="questions-info-link" href="{{link}}" target="_blank">
+										{{#title}}{{title}}{{/title}}
+										{{^title}}Abstimmung auf votewatch{{/title}}
+										{{#date}}({{date}}){{/date}}
+									</a>
+								</p>
+								{{/link}}
+							{{/links}}
+
+							{{#infotext}}
 								{{#link}}
 									<p>
 										<a class="questions-info-link" href="{{link}}" target="_blank">
 											{{#title}}{{title}}{{/title}}
-											{{^title}}Abstimmung auf votewatch{{/title}}
+											{{^title}}{{link}}{{/title}}
 											{{#date}}({{date}}){{/date}}
 										</a>
 									</p>
-								{{/link}}
-							{{/links}}
-
-							{{#hasInfotext}}
-								<p class="margin-backgroundinfo"><b>Hintergrundinfo:</b></p>
-							{{/hasInfotext}}
-
-							{{#infotext}}
-								{{#link}}
-									<p><a class="questions-info-link" href="{{link}}" target="_blank">
-										{{#title}}{{title}}{{/title}}
-										{{^title}}{{link}}{{/title}}
-										{{#date}}({{date}}){{/date}}
-									</a></p>
 								{{/link}}
 								{{^link}}
 									{{#title}}
