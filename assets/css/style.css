@@ -489,6 +489,7 @@ footer {
 					background-repeat: no-repeat;
 					background-image: url(../images/radio_grau.svg);
 					transition: background-image .5s;
+					filter: brightness(0.8);
 				}
 			
 				#questions ul li input:checked[value="2"]+label {
@@ -1158,6 +1159,7 @@ footer {
 						background-repeat: no-repeat;
 						background-image: url(../images/radio_grau.svg);
 						transition: background-image .5s;
+						filter: brightness(0.8);
 					}
 				
 					#questions ul li input:checked[value="2"]+label {
