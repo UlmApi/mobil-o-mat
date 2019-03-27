@@ -131,8 +131,6 @@ $(document).ready(function () {
 				// calc result of votings
 				var answer_party = calcResult(answer.voting.results);
 
-				console.log(`Party: ${answer.name}, Answer: ${answer_party}`)
-
 				// if no valid answer from party, use max divergence
 				// TODO check if needed
 				if (typeof answer_party !== "number" || answer_party < 0 || answer_party > MAXDIV) {
@@ -184,9 +182,6 @@ $(document).ready(function () {
 						parties: data.questions.map(function (question) {
 								return question.answers
 							})[i].map(function (party) {
-
-								console.log('test')
-
 								var votes_for = party.voting.results.for;
 								var votes_against = party.voting.results.against;
 								var abstained = party.voting.results.abstained;
