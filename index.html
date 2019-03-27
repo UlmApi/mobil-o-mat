@@ -494,68 +494,30 @@
 							<li class="answer{{#selected}} selected{{/selected}}">
 								<h4 class="type-{{answer_type}}">{{answer_label}}</h4>
 								{{#selected}}
-								<span class="you">Deine Meinung</span>
+									<span class="you">Deine Meinung</span>
 								{{/selected}}
 								<ul class="parties">
 									{{#parties}}
 										<li class="party {{#has_data}}explanation{{/has_data}}">
 											<h5 title="{{party_long}}">{{party_short}}{{#has_data}} <i tabindex="0" class="icon-down" title="Erläuterung"></i>{{/has_data}}</h5>
 											{{#has_data}}
-
-											<blockquote style="color: gray">
-											<canvas class="chart"
-												data-for={{results.for}}
-												data-against={{results.against}}
-												data-abstained={{results.abstained}}
-												data-absent={{results.absent}}
-												style="margin-bottom: 1.5em"
-											></canvas>
-
-												<svg width='100%' height='60px' role='img'>
-													<g>
-														<rect fill='darkgrey' x='0%' y='0' width='1' height='27'></rect>
-														<rect fill='darkgrey' x='25%' y='0' width='1' height='27'></rect>
-														<rect fill='darkgrey' x='50%' y='0' width='1' height='27'></rect>
-														<rect fill='darkgrey' x='75%' y='0' width='1' height='27'></rect>
-														<rect fill='darkgrey' x='100%' y='0' width='1' height='27' transform="translate(-1, 0)"></rect>
-													</g>
-													<g>
-														<rect fill='#e2e2e2' width={{abstained}} height='20'>
-															<title>
-																Enthalten: {{results.abstained}}
-															</title>
-														</rect>
-														<rect fill='#a5a5a5' width={{absent}} height='20'>
-															<title>
-																Nicht beteiligt: {{results.absent}}
-															</title>
-														</rect>
-														<rect fill='#cc6c5b' width={{against}} height='20'>
-															<title>
-																Dagegen gestimmt: {{results.against}}
-															</title>
-														</rect>
-														<rect fill='#9fd773' width={{pro}} height='20'>
-															<title>
-																Dafür gestimmt: {{results.for}}
-															</titl>
-														</rect>
-													</g>
-													<g style="font-size:12px">
-														<text fill='darkgrey' x='0' y='44'>0%</text>
-														<text fill='darkgrey' x='50%' y='44'>50%</text>
-														<text text-anchor='end' fill='darkgrey' x='100%' y='44'>100%</text>
-													</g>
-												</svg>
-												Abgeordnete: {{delegates}}
-											</blockquote>
+												<blockquote style="color: gray">
+													Abgeordnete: {{delegates}}
+													<canvas class="chart"
+														data-for={{results.for}}
+														data-against={{results.against}}
+														data-abstained={{results.abstained}}
+														data-absent={{results.absent}}
+														style="margin: 1.5em 0 1.5em 0;"
+													></canvas>
+												</blockquote>
 											{{/has_data}}
 										</li>
 									{{/parties}}
 									{{^parties}}
-									<li class="party no-party">
-										<em>Keine Partei vertrat mehrheitlich diese Position.</em>
-									</li>
+										<li class="party no-party">
+											<em>Keine Partei vertrat mehrheitlich diese Position.</em>
+										</li>
 									{{/parties}}
 								</ul>
 							</li>

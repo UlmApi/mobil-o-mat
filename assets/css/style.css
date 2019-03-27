@@ -6,6 +6,7 @@
 	--footer-color: #1E448A;
 	--social: #fff;
 	--social-hover: #1E448A;
+	--results-bar: #D3D3D3;
 }
 
 body {
@@ -569,7 +570,7 @@ footer {
 			padding: 0;
 			line-height: 18px;
 			font-size: 18px;
-			background-color: #e9ebed;
+			background-color: var(--results-bar);
 		}
 	
 		#comparison ol li p .percentage-bar {
@@ -687,14 +688,17 @@ footer {
 	
 		#detail .answers .answer h4.type-2 {
 			background-image: url(../images/radio_x.svg);
+			filter: brightness(0.8);
 		}
 		
 		#detail .answers .answer h4.type-1 {
 			background-image: url(../images/radio_x.svg);
+			filter: brightness(0.8);
 		}
 		
 		#detail .answers .answer h4.type-0 {
 			background-image: url(../images/radio_x.svg);
+			filter: brightness(0.8);
 		}
 
 		#detail .answers .answer blockquote,
@@ -1241,7 +1245,7 @@ footer {
 				padding: 0;
 				line-height: 18px;
 				font-size: 18px;
-				background-color: #e9ebed;
+				background-color: var(--results-bar);
 			}
 		
 			#comparison ol li p .percentage-bar {
@@ -1353,14 +1357,17 @@ footer {
 		
 			#detail .answers .answer h4.type-2 {
 				background-image: url(../images/radio_x.svg);
+				filter: brightness(0.8);
 			}
 			
 			#detail .answers .answer h4.type-1 {
 				background-image: url(../images/radio_x.svg);
+				filter: brightness(0.8);
 			}
 			
 			#detail .answers .answer h4.type-0 {
 				background-image: url(../images/radio_x.svg);
+				filter: brightness(0.8);
 			}
 			
 			#detail .answers .answer blockquote,
