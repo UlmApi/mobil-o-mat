@@ -15,12 +15,12 @@ var data = {
 				"date": null
 			}],
 			"background": [{
-					"title": "iRights.info: \"Webschau: EU-Urheberrechtsreform und Artikel 13 – pro und kontra\"",
+					"title": "iRights.info: „Webschau: EU-Urheberrechtsreform und Artikel 13 – pro und kontra“",
 					"link": "https://irights.info/webschau/webschau-eu-urheberrechtsreform-und-artikel-13-pro-und-kontra/29417",
 					"date": null
 				},
 				{
-					"title": "Wikipedia-Artikel: \"YouTube\"-Abschnitt über das dortige Filtersystem \"Content-ID\"",
+					"title": "Wikipedia-Artikel: „YouTube“-Abschnitt über das dortige Filtersystem „Content-ID“",
 					"link": "https://de.wikipedia.org/wiki/YouTube#Content-ID",
 					"date": null
 				}
@@ -273,12 +273,12 @@ var data = {
 				"date": null
 			}],
 			"background": [{
-					"title": "EDRi: \"e-Privacy: What happened and what happens next\"",
+					"title": "EDRi: „e-Privacy: What happened and what happens next“",
 					"link": "https://edri.org/e-privacy-what-happened-and-what-happens-next/",
 					"date": "27.11.2017"
 				},
 				{
-					"title": "Frauenhofer Gesellschaft: \"Was bedeutet Web-Tracking?\"",
+					"title": "Frauenhofer Gesellschaft: „Was bedeutet Web-Tracking?“",
 					"link": "https://www.sit.fraunhofer.de/de/track-your-tracker/worum-gehts/was-bedeutet-web-tracking/",
 					"date": null
 				},
@@ -766,7 +766,7 @@ var data = {
 			"id": 4,
 			"name": "Privacy Shield",
 			"title": "US-EU-Datenabkommen (Privacy Shield)",
-			"description": "Persönliche Daten aus der EU können auf Grundlage der \"Privacy Shield\"-Vereinbarung nicht in die USA übermittelt werden, solange das EU-Datenschutz-Niveau von den USA nicht eingehalten wird.",
+			"description": "Persönliche Daten aus der EU <b>dürfen nicht</b> auf Grundlage der „Privacy Shield“-Vereinbarung in die USA übermittelt werden, weil die USA das EU-Datenschutz-Niveau nicht einhalten.",
 			"terms": [{
 				"term": "Das sogenannte Privacy Shield",
 				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (<a taget='_blank' href='https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782'>https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782</a>) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
@@ -783,12 +783,12 @@ var data = {
 					"date": null
 				},
 				{
-					"title": "netzpolitik.org: \"EU-Parlament stellt sich gegen Mechanismus zum transatlantischen Datenaustausch\"",
+					"title": "netzpolitik.org: „EU-Parlament stellt sich gegen Mechanismus zum transatlantischen Datenaustausch“",
 					"link": "https://netzpolitik.org/2018/eu-parlament-stellt-sich-gegen-mechanismus-zum-transatlantischen-datenaustausch/",
 					"date": null
 				},
 				{
-					"title": "Wikipedia-Eintrag zu \"Privacy Shield\"",
+					"title": "Wikipedia-Eintrag zu „Privacy Shield“",
 					"link": "https://de.wikipedia.org/wiki/EU-US_Privacy_Shield",
 					"date": null
 				}
@@ -1020,8 +1020,8 @@ var data = {
 		{
 			"id": 5,
 			"name": "Netzneutralität (Telekommunikationsbinnenmarktordnung)",
-			"title": "Netzneutralität / Telekommunikationsbinnenmarktordnung",
-			"description": "Telekommunikationsanbieter dürfen bestimmte Daten (z.B. Musik-, Video- und Gaming-Dienste, Nachrichten-Plattformen, Messenger etc.) nicht bevorzugen oder benachteiligen.",
+			"title": "Netzneutralität",
+			"description": "Telekommunikationsanbieter dürfen bestimmte Daten (z.B. Musik-, Video- und Gaming-Dienste, Nachrichten-Plattformen, Messenger etc.) <b>nicht</b> bevorzugen oder benachteiligen.",
 			"terms": [{
 				"term": "Netzneutralität",
 				"explanation": "bedeutet die Gleichbehandlung aller Daten. Internetanbieter stehen vor der Frage, wie sie mit immer größeren Datenmengen umgehen sollen. Es gibt grundsätzlich zwei Möglichkeiten: Werden alle Daten bei der Übertragung gleich behandelt, kann von Netzneutralität gesprochen werden. Werden die Daten bestimmter Dienste schneller und/oder in besserer Qualität übertragen, werden dabei andere Datenströme diskriminiert.",
@@ -1048,7 +1048,7 @@ var data = {
 					"date": null
 				},
 				{
-					"title": "European Digital Rights: \"A system you never heard of undermined net neutrality\"",
+					"title": "European Digital Rights: „A system you never heard of undermined net neutrality“",
 					"link": "https://edri.org/system-you-never-heard-of-undermined-net-neutrality/",
 					"date": null
 				}
@@ -1289,7 +1289,7 @@ var data = {
 				},
 				{
 					"term": "PRISM",
-					"explanation": "ist ein US-Programm zur Überwachung und Auswertung von Daten. Die Abkürzung steht für: <b>P</b>lanning tool for <b>R</b>esource <b>I</b>ntegration, <b>S</b>ynchronization, and <b>M</b>anagement (deutsch: \"Planungswerkzeug für Ressourcenintegration, Synchronisation und Management\").",
+					"explanation": "ist ein US-Programm zur Überwachung und Auswertung von Daten. Die Abkürzung steht für: <b>P</b>lanning tool for <b>R</b>esource <b>I</b>ntegration, <b>S</b>ynchronization, and <b>M</b>anagement (deutsch: „Planungswerkzeug für Ressourcenintegration, Synchronisation und Management“).",
 					"link": null
 				},
 				{
@@ -1559,12 +1559,12 @@ var data = {
 				"date": "05.07.2018"
 			}],
 			"background": [{
-					"title": "EU Law Analysis: \"Brave new world? the new EU law on travel authorisation for non-EU citizens\"",
+					"title": "EU Law Analysis: „Brave new world? the new EU law on travel authorisation for non-EU citizens“",
 					"link": "https://eulawanalysis.blogspot.com/2018/04/brave-new-world-new-eu-law-on-travel.html",
 					"date": "26.04.2018"
 				},
 				{
-					"title": "Wikipedia: \"Europäisches Reiseinformations- und ‑genehmigungssystem\"",
+					"title": "Wikipedia: „Europäisches Reiseinformations- und ‑genehmigungssystem“",
 					"link": "https://de.wikipedia.org/wiki/Europ%C3%A4isches_Reiseinformations-_und_%E2%80%91genehmigungssystem",
 					"date": null
 				}
@@ -2308,7 +2308,7 @@ var data = {
 				"date": "11.12.2018"
 			}],
 			"background": [{
-					"title": "Bericht über das Thema \"Bildung im digitalen Zeitalter: Herausforderungen, Chancen und Erkenntnisse für die Gestaltung der EU-Politik\"",
+					"title": "Bericht über das Thema „Bildung im digitalen Zeitalter: Herausforderungen, Chancen und Erkenntnisse für die Gestaltung der EU-Politik“",
 					"link": "http://www.europarl.europa.eu/doceo/document/A-8-2018-0400_EN.html?redirect",
 					"date": null
 				},
