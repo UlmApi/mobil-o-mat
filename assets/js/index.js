@@ -158,10 +158,6 @@ $(document).ready(function () {
 				party_long: data.parties[i].long_name
 			};
 		}).sort(function (a, b) {
-			return a.party_short.localeCompare(b.party_short, 'de', {
-				ignorePunctuation: true
-			})
-		}).sort(function (a, b) {
 			return (b.score - a.score);
 		});
 
@@ -181,7 +177,7 @@ $(document).ready(function () {
 						answer_type: a,
 						parties: data.questions.map(function (question) {
 								return question.answers
-							})[i].map(function (party) {
+							})[i].map(function (party, i) {
 								var votes_for = party.voting.results.for;
 								var votes_against = party.voting.results.against;
 								var abstained = party.voting.results.abstained;
@@ -207,8 +203,8 @@ $(document).ready(function () {
 										explanation: party.voting.explanation,
 										results: party.voting.results,
 										party: party.name,
-										party_short: data.parties[party.id - 1].short_name, // TODO
-										party_long: data.parties[party.id - 1].long_name, // TODO
+										party_short: data.parties[i].short_name, // TODO
+										party_long: data.parties[i].long_name, // TODO
 										// calculate for bar chart visualization
 										pro: pro + '%',
 										against: against + pro + '%',
@@ -217,12 +213,7 @@ $(document).ready(function () {
 										delegates: delegates_total
 									};
 								}
-							}).sort(function (a, b) {
-								return a.party_short.localeCompare(b.party_short, 'de', {
-									ignorePunctuation: true
-								})
-							})
-							.filter(function (party) { // TODO runs too often
+							}).filter(function (party) { // TODO runs too often
 								if (!party) return;
 								return party.result == a
 							})
