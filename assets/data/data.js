@@ -769,7 +769,7 @@ var data = {
 			"description": "Persönliche Daten aus der EU <b>dürfen nicht</b> auf Grundlage der „Privacy Shield“-Vereinbarung in die USA übermittelt werden, weil die USA das EU-Datenschutz-Niveau nicht einhalten.",
 			"terms": [{
 				"term": "Das sogenannte Privacy Shield",
-				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (<a taget='_blank' href='https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782'>https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782</a>) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
+				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (siehe <a taget='_blank' href='https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782'>PDF</a>) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
 				"link": null
 			}],
 			"votewatch": [{
@@ -1281,7 +1281,7 @@ var data = {
 			"id": 6,
 			"name": "Auswirkungen von Massenüberwachungsprogrammen",
 			"title": "Auswirkungen von Massenüberwachungsprogrammen",
-			"description": "Die Verhandlungen mit den USA über ein Handels- und Investitionsschutz-Abkommen (TTIP) sollten ausgesetzt werden; mindestens solange, wie die USA an ihren Programmen zur Massenüberwachung (z.B. PRISM, Echelon, etc.) festhalten.",
+			"description": "Die Verhandlungen mit den USA über ein Handels- und Investitionsschutz-Abkommen (TTIP) sollten ausgesetzt werden; mindestens solange, wie die USA an ihren Programmen zur Massenüberwachung (z.B. PRISM, Echelon etc.) festhalten.",
 			"terms": [{
 					"term": "TTIP",
 					"explanation": "ist eine geplante Transatlantische Handels- und Investitionspartnerschaft zwischen der Europäischen Union und den USA. Kritik gibt es an der Intransparenz des Verhandlungsprozesses sowie an Umwelt-, Sozial- und Rechtsstaats-Standards.",
@@ -1549,7 +1549,7 @@ var data = {
 				},
 				{
 					"term": "Risikoindikatoren:",
-					"explanation": "Die Genehmigung zur Einreise wird nicht ausschließlich Kriminellen verwehrt werden. Sie kann beispielsweise auch dann verweigert werden, wenn man einer Gruppe (Alter, Geschlecht, Nationalität, etc.) angehört, die für den entsprechenden Reisezeitraum bereits viele Genehmigungen erhalten hat.",
+					"explanation": "Die Genehmigung zur Einreise wird nicht ausschließlich Kriminellen verwehrt werden. Sie kann beispielsweise auch dann verweigert werden, wenn man einer Gruppe (Alter, Geschlecht, Nationalität etc.) angehört, die für den entsprechenden Reisezeitraum bereits viele Genehmigungen erhalten hat.",
 					"link": null
 				}
 			],
@@ -2055,7 +2055,7 @@ var data = {
 			"description": "Die Möglichkeit, mit E-Geld auf Guthabenkarten anonym im Internet einkaufen zu können, wird auf Kleinbeträge bis 150 Euro begrenzt.",
 			"terms": [{
 				"term": "Elektronisches Geld, beziehungsweise E-Geld",
-				"explanation": "wird definiert in Richtlinie 2009/110/EG (<a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110'>https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110</a>) als elektronisch, auch magnetisch, gespeicherten monetären Wert, der gegen Zahlung eines Geldbetrags ausgestellt wird, um damit Zahlungsvorgänge durchzuführen. In der Praxis sind damit Prepaid-Karten und Prepaid-Guthaben gemeint. Mit der Änderung der EU-Richtlinie 849 von 2015 (<a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849'>https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849</a>) wurde 2018 mit der 5. Richtlinie zu Geldwäsche und Terrorismusfinanzierung (AMLD 5) (<a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843'>https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843</a>) der Schwellwert zur Ermittlung der Inhaber von Prepaid-Karten von 250 auf 150 Euro herabgesetzt.",
+				"explanation": "wird definiert in <a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110'>Richtlinie 2009/110/EG</a> als elektronisch, auch magnetisch, gespeicherten monetären Wert, der gegen Zahlung eines Geldbetrags ausgestellt wird, um damit Zahlungsvorgänge durchzuführen. In der Praxis sind damit Prepaid-Karten und Prepaid-Guthaben gemeint. Mit der Änderung der <a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849'>EU-Richtlinie 849</a> von 2015 wurde 2018 mit der <a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843'>5. Richtlinie zu Geldwäsche und Terrorismusfinanzierung (AMLD 5)</a> der Schwellwert zur Ermittlung der Inhaber von Prepaid-Karten von 250 auf 150 Euro herabgesetzt.",
 				"link": null
 			}],
 			"votewatch": [{
