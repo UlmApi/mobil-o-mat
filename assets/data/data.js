@@ -169,19 +169,6 @@ var data = {
 					}
 				},
 				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
 					"name": "freie",
 					"voting": {
 						"result": null,
@@ -416,19 +403,6 @@ var data = {
 					}
 				},
 				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
 					"name": "freie",
 					"voting": {
 						"result": null,
@@ -648,19 +622,6 @@ var data = {
 							"against": 1,
 							"abstained": 0,
 							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
 						}
 					}
 				},
@@ -889,19 +850,6 @@ var data = {
 							"against": 1,
 							"abstained": 0,
 							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
 						}
 					}
 				},
@@ -1139,19 +1087,6 @@ var data = {
 					}
 				},
 				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
 					"name": "freie",
 					"voting": {
 						"result": null,
@@ -1376,19 +1311,6 @@ var data = {
 							"against": 1,
 							"abstained": 0,
 							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
 						}
 					}
 				},
@@ -1627,19 +1549,6 @@ var data = {
 					}
 				},
 				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
 					"name": "freie",
 					"voting": {
 						"result": null,
@@ -1868,19 +1777,6 @@ var data = {
 					}
 				},
 				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
 					"name": "freie",
 					"voting": {
 						"result": null,
@@ -2086,19 +1982,6 @@ var data = {
 				},
 				{
 					"name": "partei",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
-					"name": "familien",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -2334,19 +2217,6 @@ var data = {
 					}
 				},
 				{
-					"name": "familien",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
 					"name": "freie",
 					"voting": {
 						"result": null,
@@ -2454,11 +2324,6 @@ var data = {
 			"name": "partei",
 			"short_name": "Die PARTEI",
 			"long_name": "Die PARTEI"
-		},
-		{
-			"name": "familien",
-			"short_name": "Familien-Partei",
-			"long_name": "Familien-Partei Deutschlands"
 		},
 		{
 			"name": "freie",
