@@ -117,46 +117,7 @@ var data = {
 					}
 				},
 				{
-					"name": "lkr",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 2,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "independent",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 2,
-							"against": 2,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "buendnis",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 0,
-							"abstained": 1,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "partei",
+					"name": "freie",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -169,7 +130,7 @@ var data = {
 					}
 				},
 				{
-					"name": "freie",
+					"name": "piraten",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -195,6 +156,19 @@ var data = {
 					}
 				},
 				{
+					"name": "lkr",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 2,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
 					"name": "oedp",
 					"voting": {
 						"result": null,
@@ -208,13 +182,39 @@ var data = {
 					}
 				},
 				{
-					"name": "piraten",
+					"name": "partei",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
 							"for": 0,
 							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "independent",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 2,
+							"against": 2,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -351,59 +351,20 @@ var data = {
 					}
 				},
 				{
-					"name": "lkr",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 3,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "independent",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 1,
-							"abstained": 0,
-							"absent": 1
-						}
-					}
-				},
-				{
-					"name": "buendnis",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "partei",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
 					"name": "freie",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "piraten",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -429,6 +390,19 @@ var data = {
 					}
 				},
 				{
+					"name": "lkr",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 3,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
 					"name": "oedp",
 					"voting": {
 						"result": null,
@@ -442,7 +416,7 @@ var data = {
 					}
 				},
 				{
-					"name": "piraten",
+					"name": "partei",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -451,6 +425,32 @@ var data = {
 							"against": 0,
 							"abstained": 0,
 							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "independent",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 1,
+							"abstained": 0,
+							"absent": 1
 						}
 					}
 				}
@@ -574,6 +574,45 @@ var data = {
 					}
 				},
 				{
+					"name": "freie",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "piraten",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "npd",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
 					"name": "lkr",
 					"voting": {
 						"result": null,
@@ -587,7 +626,20 @@ var data = {
 					}
 				},
 				{
-					"name": "independent",
+					"name": "oedp",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "partei",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -613,59 +665,7 @@ var data = {
 					}
 				},
 				{
-					"name": "partei",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "freie",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "npd",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "oedp",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "piraten",
+					"name": "independent",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -748,7 +748,8 @@ var data = {
 							"absent": 2
 						}
 					}
-				}, {
+				},
+				{
 					"name": "linke",
 					"voting": {
 						"result": null,
@@ -800,61 +801,21 @@ var data = {
 						}
 					}
 				},
-
 				{
-					"name": "lkr",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 3,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "independent",
+					"name": "freie",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
 							"for": 1,
-							"against": 2,
+							"against": 0,
 							"abstained": 0,
 							"absent": 0
 						}
 					}
 				},
 				{
-					"name": "buendnis",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "partei",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "freie",
+					"name": "piraten",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -880,6 +841,19 @@ var data = {
 					}
 				},
 				{
+					"name": "lkr",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 3,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
 					"name": "oedp",
 					"voting": {
 						"result": null,
@@ -893,13 +867,39 @@ var data = {
 					}
 				},
 				{
-					"name": "piraten",
+					"name": "partei",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "independent",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
 							"for": 1,
-							"against": 0,
+							"against": 2,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -1035,58 +1035,6 @@ var data = {
 					}
 				},
 				{
-					"name": "lkr",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
-					"name": "independent",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "buendnis",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "partei",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 0,
-							"abstained": 0,
-							"absent": 1
-						}
-					}
-				},
-				{
 					"name": "freie",
 					"voting": {
 						"result": null,
@@ -1094,6 +1042,19 @@ var data = {
 						"results": {
 							"for": 0,
 							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "piraten",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -1113,6 +1074,19 @@ var data = {
 					}
 				},
 				{
+					"name": "lkr",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": null,
+							"against": null,
+							"abstained": null,
+							"absent": null
+						}
+					}
+				},
+				{
 					"name": "oedp",
 					"voting": {
 						"result": null,
@@ -1126,7 +1100,33 @@ var data = {
 					}
 				},
 				{
-					"name": "piraten",
+					"name": "partei",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 0,
+							"abstained": 0,
+							"absent": 1
+						}
+					}
+				},
+				{
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "independent",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -1263,6 +1263,45 @@ var data = {
 					}
 				},
 				{
+					"name": "freie",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "piraten",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "npd",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
 					"name": "lkr",
 					"voting": {
 						"result": null,
@@ -1276,7 +1315,20 @@ var data = {
 					}
 				},
 				{
-					"name": "independent",
+					"name": "oedp",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "partei",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -1302,7 +1354,7 @@ var data = {
 					}
 				},
 				{
-					"name": "partei",
+					"name": "independent",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -1313,59 +1365,7 @@ var data = {
 							"absent": 0
 						}
 					}
-				},
-				{
-					"name": "freie",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "npd",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "oedp",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "piraten",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				}
+				}				
 			]
 		},
 		{
@@ -1497,6 +1497,45 @@ var data = {
 					}
 				},
 				{
+					"name": "freie",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "piraten",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "npd",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
 					"name": "lkr",
 					"voting": {
 						"result": null,
@@ -1510,12 +1549,25 @@ var data = {
 					}
 				},
 				{
-					"name": "independent",
+					"name": "oedp",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 2,
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "partei",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
 							"against": 1,
 							"abstained": 0,
 							"absent": 0
@@ -1536,70 +1588,18 @@ var data = {
 					}
 				},
 				{
-					"name": "partei",
+					"name": "independent",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 0,
+							"for": 2,
 							"against": 1,
 							"abstained": 0,
 							"absent": 0
 						}
 					}
-				},
-				{
-					"name": "freie",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "npd",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "oedp",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "piraten",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				}
+				}				
 			]
 		},
 		{
@@ -1725,59 +1725,20 @@ var data = {
 					}
 				},
 				{
-					"name": "lkr",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 3,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "independent",
+					"name": "freie",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
 							"for": 1,
-							"against": 2,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "buendnis",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "partei",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
 							"against": 0,
 							"abstained": 0,
-							"absent": 1
+							"absent": 0
 						}
 					}
 				},
 				{
-					"name": "freie",
+					"name": "piraten",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -1803,6 +1764,19 @@ var data = {
 					}
 				},
 				{
+					"name": "lkr",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 3,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
 					"name": "oedp",
 					"voting": {
 						"result": null,
@@ -1816,18 +1790,44 @@ var data = {
 					}
 				},
 				{
-					"name": "piraten",
+					"name": "partei",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 0,
+							"abstained": 0,
+							"absent": 1
+						}
+					}
+				},
+				{
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "independent",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
 							"for": 1,
-							"against": 0,
+							"against": 2,
 							"abstained": 0,
 							"absent": 0
 						}
 					}
-				}
+				}				
 			]
 		},
 		{
@@ -1856,10 +1856,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 27,
+							"against": 0,
+							"abstained": 0,
+							"absent": 2
 						}
 					}
 				},
@@ -1869,10 +1869,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 22,
+							"against": 0,
+							"abstained": 2,
+							"absent": 3
 						}
 					}
 				},
@@ -1882,10 +1882,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 11,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1895,10 +1895,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 0,
+							"abstained": 6,
+							"absent": 1
 						}
 					}
 				},
@@ -1908,10 +1908,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 2,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1921,10 +1921,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 4,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -1934,62 +1934,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
-					"name": "lkr",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
-					"name": "independent",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
-					"name": "buendnis",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
-					"name": "partei",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 3,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
 				},
@@ -1999,36 +1947,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
-					"name": "npd",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
-						}
-					}
-				},
-				{
-					"name": "oedp",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 0,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
 						}
 					}
 				},
@@ -2038,13 +1960,91 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": null,
-							"against": null,
-							"abstained": null,
-							"absent": null
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
 						}
 					}
-				}
+				},
+				{
+					"name": "npd",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 0,
+							"abstained": 0,
+							"absent": 1
+						}
+					}
+				},
+				{
+					"name": "lkr",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "oedp",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "partei",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "independent",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 3,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
+						}
+					}
+				}			
 			]
 		},
 		{
@@ -2165,58 +2165,6 @@ var data = {
 					}
 				},
 				{
-					"name": "lkr",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "independent",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 3,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "buendnis",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
-					"name": "partei",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 1,
-							"against": 0,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
 					"name": "freie",
 					"voting": {
 						"result": null,
@@ -2230,6 +2178,19 @@ var data = {
 					}
 				},
 				{
+					"name": "piraten",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 0,
+							"abstained": 1,
+							"absent": 0
+						}
+					}
+				},
+				{
 					"name": "npd",
 					"voting": {
 						"result": null,
@@ -2237,6 +2198,19 @@ var data = {
 						"results": {
 							"for": 1,
 							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "lkr",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -2256,14 +2230,40 @@ var data = {
 					}
 				},
 				{
-					"name": "piraten",
+					"name": "partei",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 0,
+							"for": 1,
 							"against": 0,
-							"abstained": 1,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "buendnis",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 1,
+							"against": 0,
+							"abstained": 0,
+							"absent": 0
+						}
+					}
+				},
+				{
+					"name": "independent",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 3,
+							"against": 1,
+							"abstained": 0,
 							"absent": 0
 						}
 					}
@@ -2306,29 +2306,14 @@ var data = {
 			"long_name": "Freie Demokratische Partei"
 		},
 		{
-			"name": "lkr",
-			"short_name": "LKR",
-			"long_name": "Liberal-Konservative Reformer"
-		},
-		{
-			"name": "independent",
-			"short_name": "Parteilos",
-			"long_name": "Parteilos"
-		},
-		{
-			"name": "buendnis",
-			"short_name": "Bündnis C",
-			"long_name": "Bündnis C - Christen für Deutschland"
-		},
-		{
-			"name": "partei",
-			"short_name": "Die PARTEI",
-			"long_name": "Die PARTEI"
-		},
-		{
 			"name": "freie",
 			"short_name": "Freie Wähler",
 			"long_name": "Freie Wähler"
+		},
+		{
+			"name": "piraten",
+			"short_name": "Piraten",
+			"long_name": "Piratenpartei Deutschland"
 		},
 		{
 			"name": "npd",
@@ -2336,14 +2321,29 @@ var data = {
 			"long_name": "Nationaldemokratische Partei Deutschlands"
 		},
 		{
+			"name": "lkr",
+			"short_name": "LKR",
+			"long_name": "Liberal-Konservative Reformer"
+		},
+		{
 			"name": "oedp",
 			"short_name": "ÖDP",
 			"long_name": "Ökologisch-Demokratische Partei"
 		},
 		{
-			"name": "piraten",
-			"short_name": "Piraten",
-			"long_name": "Piratenpartei Deutschland"
+			"name": "partei",
+			"short_name": "Die PARTEI",
+			"long_name": "Die PARTEI"
+		},
+		{
+			"name": "buendnis",
+			"short_name": "Bündnis C",
+			"long_name": "Bündnis C - Christen für Deutschland"
+		},
+		{
+			"name": "independent",
+			"short_name": "Parteilos",
+			"long_name": "Parteilos"
 		}
 	]
 }
