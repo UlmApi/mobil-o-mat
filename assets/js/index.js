@@ -3,6 +3,7 @@ $(document).ready(function () {
 	// number of maximum divergence
 	var MAXDIV = 2;
 
+	// consent, neutral, dissent
 	var keys = ["abgelehnt", "neutral/nicht eindeutig", "zugestimmt"]; // 0, 1, 2
 
 	var $window = $(window);
@@ -11,6 +12,7 @@ $(document).ready(function () {
 	// check view
 	var mobile = ($window.width() >= 960) ? false : true;
 	$body.toggleClass("mobile", mobile);
+	// check view after resizing
 	$window.resize(function () {
 		if (mobile && $window.width() >= 960) mobile = false, $body.toggleClass("mobile", mobile);
 		if (!mobile && $window.width() < 960) mobile = true, $body.toggleClass("mobile", mobile);
@@ -22,7 +24,7 @@ $(document).ready(function () {
 		result: $("#tmpl-result").html(),
 	};
 
-	// render questions
+	// render questions/statements
 	$("#questions").html(Mustache.render(tmpl.questions, {
 		question: data.questions.map(function (question, id) {
 			return {
@@ -38,13 +40,6 @@ $(document).ready(function () {
 			};
 		})
 	}));
-
-	// activate more-links
-	// TODO
-	$("a.more", "#questions").click(function (evt) {
-		window.open($(this).attr("href"), '_blank');
-		evt.preventDefault();
-	});
 
 	// menu
 	$("#menu .sub-pages a").click(function (evt) {
@@ -71,6 +66,7 @@ $(document).ready(function () {
 
 	// calculate button
 	$("#calculate").click(function (evt) {
+		// calculate result and scroll to it afterwards 
 		calculate(function () {
 			scroll(($("#result").offset().top - 70), 200);
 		});
@@ -95,7 +91,8 @@ $(document).ready(function () {
 	});
 
 
-	function calculate(fn) {
+// main function
+	function calculate(callback) {
 		// prepare result object
 		var result = {
 			// flatten answers
@@ -103,13 +100,13 @@ $(document).ready(function () {
 				p[parseInt(c.name.replace(/[^0-9]+/g, ''), 10)] = parseInt(c.value, 10);
 				return p;
 			}, Array.apply(null, Array(data.questions.length)).map(function () {
-				return null
+				return null;
 			})),
 
 			// empty comparison array
 			// TODO
 			comparison: Array.apply(null, Array(data.parties.length)).map(function () {
-				return 0
+				return 0;
 			}),
 
 			// transform answer data to templatable data structure
@@ -162,7 +159,6 @@ $(document).ready(function () {
 		});
 
 		// prepare detailed answers
-		// TODO use only parties that have voted
 		// TODO check calculation
 		result.detail = data.questions.map(function (question, i) {
 			return {
@@ -176,46 +172,32 @@ $(document).ready(function () {
 						answer_label: keys[a],
 						answer_type: a,
 						parties: data.questions.map(function (question) {
-								return question.answers
-							})[i].map(function (party, i) {
+								return question.answers;
+							})[i].map(function (party, i) { // TODO
 								var votes_for = party.voting.results.for;
 								var votes_against = party.voting.results.against;
 								var abstained = party.voting.results.abstained;
 								var abstentions = party.voting.results.absent;
 
 								var delegates_total = votes_for + votes_against + abstained + abstentions;
-								var delegates_present = votes_for + votes_against + abstained;
 
 								var isEmpty = Object.values(party.voting.results).every(x => (x === null || x === ''));
 								if (!isEmpty) {
-									var pro = votes_for / delegates_total * 100;
-									pro = Math.round(pro * 100) / 100;
-									var absent = abstentions / delegates_total * 100;
-									absent = Math.round(absent * 100) / 100;
-									var abstained = abstained / delegates_total * 100;
-									abstained = Math.round(abstained * 100) / 100;
-									var against = votes_against / delegates_total * 100;
-									against = Math.round(against * 100) / 100;
-									// TODO calc once
 									return {
 										result: calcResult(party.voting.results),
 										has_data: !Object.values(party.voting.results).every(x => (x === null || x === '')),
 										explanation: party.voting.explanation,
 										results: party.voting.results,
 										party: party.name,
-										party_short: data.parties[i].short_name, // TODO
-										party_long: data.parties[i].long_name, // TODO
-										// calculate for bar chart visualization
-										pro: pro + '%',
-										against: against + pro + '%',
-										absent: against + pro + absent + '%',
-										abstained: against + pro + absent + abstained + '%',
+										party_short: data.parties[i].short_name,
+										party_long: data.parties[i].long_name,
 										delegates: delegates_total
 									};
 								}
-							}).filter(function (party) { // TODO runs too often
+							// filter out null values (use only parties that have voted)
+							}).filter(function (party) {
 								if (!party) return;
-								return party.result == a
+								return party.result === a
 							})
 					};
 				})
@@ -270,9 +252,11 @@ $(document).ready(function () {
 				}
 			});
 		});
-		if (typeof fn === "function") fn();
-	};
+		if (typeof callback === "function") callback();
+	}
 
+
+// utility functions
 	function scroll(to, duration) {
 		if (duration < 0) return;
 
@@ -285,7 +269,7 @@ $(document).ready(function () {
 				scroll(to, duration - 10);
 			}
 		}.bind(this), 10);
-	};
+	}
 
 	function calcResult(results) {
 		var voters = results.for + results.against + results.abstained;
@@ -310,7 +294,6 @@ $(document).ready(function () {
 				return null;
 				break;
 		}
-
 	}
 
 });
