@@ -120,11 +120,15 @@ $(document).ready(function () {
 			// ignore not-given answers
 			if (answer_user === null) return
 
-			var answers = data.questions.map(question => question.answers)
+			var answers = data.questions.map(function (question) {
+				return question.answers
+			})
 
 			answers[i].forEach(function (answer, j) {
 				// check if results are present for corresponding answer
-				var isEmpty = Object.values(answer.voting.results).every(x => (x === null || x === ''))
+				var isEmpty = Object.values(answer.voting.results).every(function (result) {
+					return result === null || result === ''
+				})
 				if (isEmpty) return
 
 				// calc result of votings
@@ -188,7 +192,7 @@ $(document).ready(function () {
 									delegates: delegates_total
 								}
 							}
-						// filter out null values (use only parties that have voted)
+							// filter out null values: use only parties that have voted
 						}).filter(function (party) {
 							if (!party) return
 							return party.result === a
