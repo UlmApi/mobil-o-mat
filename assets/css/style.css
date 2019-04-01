@@ -774,6 +774,16 @@ footer {
 			-o-transform: rotate(-180deg);
 			transform: rotate(-180deg);
 		}	
+
+
+	#dom {
+		margin: 5em 2em;
+	}
+
+		#dom a {
+			color: var(--main-color);
+			text-decoration: none;
+		}
 		
 	#orgs {
 		margin: 5em 2em;
@@ -1045,6 +1055,7 @@ footer {
 	
 		#app .app-item { display: none; }
 		#app.show-intro #intro,
+		#app.show-dom #dom,
 		#app.show-orgs #orgs,
 		#app.show-impressum #impressum,
 		#app.show-privacy #privacy,
@@ -1430,6 +1441,13 @@ footer {
 				-ms-transform: rotate(-180deg);
 				-o-transform: rotate(-180deg);
 				transform: rotate(-180deg);
+			}
+
+		#dom {}
+
+			#dom a {
+				color: var(--main-color);
+				text-decoration: none;
 			}
 
 		#orgs {}
