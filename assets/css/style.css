@@ -226,8 +226,6 @@ footer {
 		right: 0;
 		z-index: 20;
 		height: 3em;
-		/* background-color: var(--main-color); */
-		/* border-bottom: 3px solid var(--header-color); */
 	}
 	
 	#logo {
@@ -319,10 +317,6 @@ footer {
 			transition: background-color .5s;
 		}
 		
-		#menu ul li a:hover {
-			text-decoration: underline;
-		}
-		
 	#social {
 		display: block;
 		position: absolute;
@@ -360,10 +354,6 @@ footer {
 					font-size: .7em;
 					top: -.1em;
 				}
-
-	header p {
-		/* display: none; */
-	}
 	
 	#intro {
 		display: block;
@@ -389,20 +379,14 @@ footer {
 	#questions {}
 	
 		#questions .question {
-			/* display: block; */
-			/* position: relative; */
 			width: 100%;
 			margin: 2em -10px;
 			padding: 10px 10px;
-			/* height: 60vh; */
-			/* max-height: 500px; */
 			min-height: 300px;
 			background-color: rgba(0, 0, 0, 0.04);
 		}
 	
 		#questions .label {
-			/* display: block; */
-			/* position: absolute; */
 			left: 20px;
 			right: 20px;
 			bottom: 40%;
@@ -413,8 +397,6 @@ footer {
 		}
 	
 		#questions .label h3 {
-			/* display: block; */
-			/* position: relative; */
 			font-family: "Raleway", sans-serif;
 			font-weight: 300;
 			font-size: 20px;
@@ -434,12 +416,6 @@ footer {
 			margin-right: .25em;
 		}
 		
-		#questions .label p {
-			/* font-size: 12px;
-			margin: .4em 0;
-			padding: 0; */
-		}
-		
 		#questions .label p a {
 			color: var(--footer-color);
 			text-decoration: none;
@@ -450,15 +426,6 @@ footer {
 		}
 		
 		#questions ul {
-			/* display: block; */
-			/* position: absolute; */
-			/* top: 70%;
-			left: 10px;
-			right: 10px;
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			text-align: center; */
 			margin-top: 2em;
 		}
 	
@@ -820,7 +787,7 @@ footer {
 		#orgs .org img {
 			display: block;
 			position: relative;
-			max-width: 75%;
+			max-width: 50%;
 			margin: 1em 0;
 		}
 	
@@ -834,7 +801,7 @@ footer {
 		}
 	
 	#privacy {
-		margin: 3em 2em;
+		margin: 5em 2em;
 	}
 	
 		#privacy h3 {
@@ -899,10 +866,7 @@ footer {
 }
 
 @media (min-width: 960px) {
-	header {
-		/* display: block;
-		position: relative; */
-	}
+	header {}
 	
 		header p {
 			display: none;
@@ -1053,7 +1017,7 @@ footer {
 			margin-top: 3em;
 		}
 	
-		#app .app-item { display: none; }
+		#app.app-item { display: none; }
 		#app.show-intro #intro,
 		#app.show-dom #dom,
 		#app.show-orgs #orgs,
