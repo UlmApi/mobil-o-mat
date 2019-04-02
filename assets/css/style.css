@@ -1122,16 +1122,8 @@ footer {
 				}
 			
 					#questions form li input {
-						/* opacity: 0; */
+						opacity: 0;
 					}	
-					
-					#questions form li input:focus {
-
-						#questions form li label {
-							background-image: url(../images/radio_grau.svg);
-						}
-					}
-
 
 					#questions form li label {
 						display: block;
