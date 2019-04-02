@@ -90,7 +90,6 @@ $(document).ready(function () {
 		$(this).css("display", "none")
 	})
 
-
 	// main function
 	function calculate(callback) {
 
@@ -270,7 +269,7 @@ $(document).ready(function () {
 	}
 
 	function calcResult(results) {
-		var voters = results.for+results.against + results.abstained
+		var voters = results.for + results.against + results.abstained
 		// if more delegates were absent than participated at the election return 1 ("no position")
 		if (results.absent > voters) return 1
 
@@ -279,7 +278,9 @@ $(document).ready(function () {
 		var proportion_abstained = results.abstained / voters
 
 		switch (true) {
-			case (proportion_against + proportion_for <= proportion_abstained) || (proportion_against === proportion_for):
+			case (proportion_against + proportion_for <= proportion_abstained) 
+				|| (proportion_against === proportion_for) 
+				|| (results.absent + results.abstained > results.for + results.against):
 				return 1
 				break
 			case proportion_for > proportion_against:
