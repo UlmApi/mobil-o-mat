@@ -1123,7 +1123,12 @@ footer {
 			
 					#questions form li input {
 						opacity: 0;
-					}	
+					}
+
+					/*Adding focus styles on the outer-box of the custom radio button*/
+					#questions form li input:focus+label {
+					    outline: -webkit-focus-ring-color auto 5px;
+					}
 
 					#questions form li label {
 						display: block;
