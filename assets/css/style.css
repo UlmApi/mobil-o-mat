@@ -132,7 +132,7 @@ footer {
 			position: relative;
 			list-style: none;
 			margin: 0;
-			padding: 0 2em 0 2em;
+			padding: 0 1em 0 1em;
 		}
 
 		footer .orgs a {
@@ -159,6 +159,7 @@ footer {
 		}
 
 		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
+		footer .orgs a[title^='Chaos'] { background-image: url(../images/orgs/logo_ccc_weiss.svg); }
 		footer .orgs a[title^='digitalcourage'] { background-image: url(../images/orgs/logo_dc_weiss.png); }
 		footer .orgs a[title^='Digitale'] { background-image: url(../images/orgs/logo_digiges_weiss.svg); }
 		footer .orgs a[title^='Freifunk'] { background-image: url(../images/orgs/logo_freifunk_weiss.svg); }
