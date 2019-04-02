@@ -90,7 +90,6 @@ $(document).ready(function () {
 		$(this).css("display", "none")
 	})
 
-
 	// main function
 	function calculate(callback) {
 

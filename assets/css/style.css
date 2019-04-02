@@ -425,11 +425,11 @@ footer {
 			color: var(--main-color);
 		}
 		
-		#questions ul {
+		#questions form {
 			margin-top: 2em;
 		}
 	
-			#questions ul li {
+			#questions form li {
 				display: inline-block;
 				position: relative;
 				width: 32%;
@@ -440,11 +440,11 @@ footer {
 				list-style: none;
 			}
 		
-				#questions ul li input {
+				#questions form li input {
 					display: none;
 				}
 
-				#questions ul li label {
+				#questions form li label {
 					display: block;
 					position: absolute;
 					top: 0;
@@ -460,19 +460,19 @@ footer {
 					filter: brightness(0.8);
 				}
 			
-				#questions ul li input:checked[value="2"]+label {
+				#questions form li input:checked[value="2"]+label {
 					background-image: url(../images/radio_x.svg);
 				}
 			
-				#questions ul li input:checked[value="1"]+label {
+				#questions form li input:checked[value="1"]+label {
 					background-image: url(../images/radio_x.svg);
 				}
 			
-				#questions ul li input:checked[value="0"]+label {
+				#questions form li input:checked[value="0"]+label {
 					background-image: url(../images/radio_x.svg);
 				}
 			
-				#questions ul li label span {
+				#questions form li label span {
 					display: block;
 					position: absolute;
 					left: 0;
@@ -1099,7 +1099,7 @@ footer {
 				color: var(--main-color);
 			}
 
-			#questions ul {
+			#questions form {
 				display: block;
 				position: absolute;
 				right: 0;
@@ -1110,7 +1110,7 @@ footer {
 				width: 300px;
 			}
 		
-				#questions ul li {
+				#questions form li {
 					display: block;
 					position: relative;
 					width: 100px;
@@ -1121,11 +1121,19 @@ footer {
 					float: left;
 				}
 			
-					#questions ul li input {
-						display: none;
+					#questions form li input {
+						/* opacity: 0; */
+					}	
+					
+					#questions form li input:focus {
+
+						#questions form li label {
+							background-image: url(../images/radio_grau.svg);
+						}
 					}
 
-					#questions ul li label {
+
+					#questions form li label {
 						display: block;
 						position: absolute;
 						top: 0;
@@ -1141,19 +1149,19 @@ footer {
 						filter: brightness(0.8);
 					}
 				
-					#questions ul li input:checked[value="2"]+label {
+					#questions form li input:checked[value="2"]+label {
 						background-image: url(../images/radio_x.svg);
 					}
 				
-					#questions ul li input:checked[value="1"]+label {
+					#questions form li input:checked[value="1"]+label {
 						background-image: url(../images/radio_x.svg);
 					}
 				
-					#questions ul li input:checked[value="0"]+label {
+					#questions form li input:checked[value="0"]+label {
 						background-image: url(../images/radio_x.svg);
 					}
 				
-					#questions ul li label span {
+					#questions form li label span {
 						display: block;
 						position: absolute;
 						left: 0;
