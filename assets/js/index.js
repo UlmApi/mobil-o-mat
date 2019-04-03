@@ -80,19 +80,25 @@ $(document).ready(function () {
 
 	// show more/less info
 	$(".more-info-button, .less-info-button").click(function (evt) {
+		// check if element is focused 
+		// in order to prevent receiving events from radio-buttons when using keyboard navigation
+		var hasFocus = $(this).is(':focus')
+		if (!hasFocus) return
+
 		evt.preventDefault()
 		$(this).parent().next().toggleClass("show-more-info")
 		if ($(this).attr("class") === 'more-info-button') {
 			$(this).next().css("display", "inline")
+			$(this).next().focus()
 		} else {
 			$(this).prev().css("display", "inline")
+			$(this).prev().focus()
 		}
 		$(this).css("display", "none")
 	})
 
 	// main function
 	function calculate(callback) {
-
 		// prepare result object
 		var result = {
 			// flatten answers
@@ -100,12 +106,11 @@ $(document).ready(function () {
 				// assemble array with selected values 
 				user_selection[parseInt(question.name.replace(/[^0-9]+/g, ''), 10)] = parseInt(question.value, 10)
 				return user_selection
-			}, Array.apply(null, Array(data.questions.length)).map(function () { //TODO
+			}, Array.apply(null, Array(data.questions.length)).map(function () {
 				return null
 			})),
 
 			// empty comparison array
-			// TODO
 			comparison: Array.apply(null, Array(data.parties.length)).map(function () {
 				return 0
 			}),
@@ -173,9 +178,9 @@ $(document).ready(function () {
 						answer_type: a,
 						parties: data.questions.map(function (question) {
 							return question.answers
-						})[i].map(function (party, i) { // TODO
+						})[i].map(function (party, i) { 
 							var results = party.voting.results
-							var delegates_total = results.for+results.against + results.abstained + results.absent
+							var delegates_total = results.for + results.against + results.abstained + results.absent
 
 							var isEmpty = Object.values(results).every(function (result) {
 								return result === null || result === ''
@@ -191,7 +196,7 @@ $(document).ready(function () {
 									delegates: delegates_total
 								}
 							}
-							// filter out null values: use only parties that have voted
+						// filter out null values: use only parties that have voted
 						}).filter(function (party) {
 							if (!party) return
 							return party.result === a
@@ -278,9 +283,9 @@ $(document).ready(function () {
 		var proportion_abstained = results.abstained / voters
 
 		switch (true) {
-			case (proportion_against + proportion_for <= proportion_abstained) 
-				|| (proportion_against === proportion_for) 
-				|| (results.absent + results.abstained > results.for + results.against):
+			case (proportion_against + proportion_for <= proportion_abstained) ||
+			(proportion_against === proportion_for) ||
+			(results.absent + results.abstained > results.for+results.against):
 				return 1
 				break
 			case proportion_for > proportion_against:
