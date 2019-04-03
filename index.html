@@ -414,10 +414,11 @@
 	</body>
 	<script id="tmpl-questions" type="x-tmpl-mustache">
 		{{#question}}
-		<div class="question" data-q="{{id}}" id="q{{id}}">
-			<div class="label">
-				<span>{{num}}</span>
-				<h3><span>{{num}}</span> {{label}}</h3>
+		<div class="question-wrapper" data-q="{{id}}" id="q{{id}}">
+			<div class="question-title">
+				<span class="question-big-number">{{num}}</span>
+				<h3 class="question-label"><span class="question-small-number">{{num}}</span> {{label}}</h3>
+
 				<p>{{&question}}
 					{{#anyInfo}}
 						<p>
@@ -463,28 +464,35 @@
 								{{/link}}
 							{{/infotext}}
 						</div>
-
 					{{/anyInfo}}
 				</p>
 			</div>
 
-			<ul>
-				<li>
+			<div id="radio-button-wrapper" class="radio-button-wrapper">
+				<div class="radio-button-group">
 					<input type="radio" id="q{{id}}a0" name="q{{id}}a" value="2">
-					<label for="q{{id}}a0"><span>stimme zu</span></label>
-				</li>
-				<li>
+					<label for="q{{id}}a0">
+						<span class="radio-button-group-label">stimme zu</span>
+					</label>
+				</div>
+				<div class="radio-button-group">
 					<input type="radio" id="q{{id}}a1" name="q{{id}}a" value="1">
-					<label for="q{{id}}a1"><span>neutral</span></label>
-				</li>
-				<li>
+					<label for="q{{id}}a1">
+						<span class="radio-button-group-label">neutral</span>
+					</label>
+				</div>
+				<div class="radio-button-group">
 					<input type="radio" id="q{{id}}a2" name="q{{id}}a" value="0">
-					<label for="q{{id}}a2"><span>stimme nicht zu</span></label>
-				</li>
-			</ul>
+					<label for="q{{id}}a2">
+						<span class="radio-button-group-label">stimme nicht zu</span>
+					</label>
+				</div>
+			</div>
+
 		</div>
 		{{/question}}
 	</script>
+
 	<script id="tmpl-result" type="x-tmpl-mustache">
 		<div id="comparison">
 			<h2>Dein Ergebnis im Überblick</h2>
@@ -545,4 +553,5 @@
 			</ul>
 		</div>
 	</script>
+
 </html>
