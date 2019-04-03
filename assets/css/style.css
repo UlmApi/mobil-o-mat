@@ -456,21 +456,20 @@ footer {
 					background-position: top center;
 					background-size: 30px;
 					background-repeat: no-repeat;
-					background-image: url(../images/radio_grau.svg);
+					background-image: url(../images/radio_darkgray.svg);
 					transition: background-image .5s;
-					filter: brightness(0.7);
 				}
 			
 				#questions ul li input:checked[value="2"]+label {
-					background-image: url(../images/radio_x.svg);
+					background-image: url(../images/radio_darkgray_x.svg);
 				}
 			
 				#questions ul li input:checked[value="1"]+label {
-					background-image: url(../images/radio_x.svg);
+					background-image: url(../images/radio_darkgray_x.svg);
 				}
 			
 				#questions ul li input:checked[value="0"]+label {
-					background-image: url(../images/radio_x.svg);
+					background-image: url(../images/radio_darkgray_x.svg);
 				}
 			
 				#questions ul li label span {
@@ -655,18 +654,15 @@ footer {
 		}
 	
 		#detail .answers .answer h4.type-2 {
-			background-image: url(../images/radio_x.svg);
-			filter: brightness(0.8);
+			background-image: url(../images/radio_darkgray_x.svg);
 		}
 		
 		#detail .answers .answer h4.type-1 {
-			background-image: url(../images/radio_x.svg);
-			filter: brightness(0.8);
+			background-image: url(../images/radio_darkgray_x.svg);
 		}
 		
 		#detail .answers .answer h4.type-0 {
-			background-image: url(../images/radio_x.svg);
-			filter: brightness(0.8);
+			background-image: url(../images/radio_darkgray_x.svg);
 		}
 
 		#detail .answers .answer blockquote,
@@ -1141,21 +1137,20 @@ footer {
 						background-position: top center;
 						background-size: 30px;
 						background-repeat: no-repeat;
-						background-image: url(../images/radio_grau.svg);
+						background-image: url(../images/radio_darkgray.svg);
 						transition: background-image .5s;
-						filter: brightness(0.7);
 					}
 				
 					#questions ul li input:checked[value="2"]+label {
-						background-image: url(../images/radio_x.svg);
+						background-image: url(../images/radio_darkgray_x.svg);
 					}
 				
 					#questions ul li input:checked[value="1"]+label {
-						background-image: url(../images/radio_x.svg);
+						background-image: url(../images/radio_darkgray_x.svg);
 					}
 				
 					#questions ul li input:checked[value="0"]+label {
-						background-image: url(../images/radio_x.svg);
+						background-image: url(../images/radio_darkgray_x.svg);
 					}
 				
 					#questions ul li label span {
@@ -1336,18 +1331,15 @@ footer {
 			}
 		
 			#detail .answers .answer h4.type-2 {
-				background-image: url(../images/radio_x.svg);
-				filter: brightness(0.8);
+				background-image: url(../images/radio_darkgray_x.svg);
 			}
 			
 			#detail .answers .answer h4.type-1 {
-				background-image: url(../images/radio_x.svg);
-				filter: brightness(0.8);
+				background-image: url(../images/radio_darkgray_x.svg);
 			}
 			
 			#detail .answers .answer h4.type-0 {
-				background-image: url(../images/radio_x.svg);
-				filter: brightness(0.8);
+				background-image: url(../images/radio_darkgray_x.svg);
 			}
 			
 			#detail .answers .answer blockquote,
