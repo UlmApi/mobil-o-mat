@@ -426,11 +426,11 @@ footer {
 			color: var(--main-color);
 		}
 		
-		#questions form {
+		#questions ul {
 			margin-top: 2em;
 		}
 	
-			#questions form li {
+			#questions ul li {
 				display: inline-block;
 				position: relative;
 				width: 32%;
@@ -441,11 +441,11 @@ footer {
 				list-style: none;
 			}
 		
-				#questions form li input {
+				#questions ul li input {
 					display: none;
 				}
 
-				#questions form li label {
+				#questions ul li label {
 					display: block;
 					position: absolute;
 					top: 0;
@@ -458,22 +458,22 @@ footer {
 					background-repeat: no-repeat;
 					background-image: url(../images/radio_grau.svg);
 					transition: background-image .5s;
-					filter: brightness(0.8);
+					filter: brightness(0.7);
 				}
 			
-				#questions form li input:checked[value="2"]+label {
+				#questions ul li input:checked[value="2"]+label {
 					background-image: url(../images/radio_x.svg);
 				}
 			
-				#questions form li input:checked[value="1"]+label {
+				#questions ul li input:checked[value="1"]+label {
 					background-image: url(../images/radio_x.svg);
 				}
 			
-				#questions form li input:checked[value="0"]+label {
+				#questions ul li input:checked[value="0"]+label {
 					background-image: url(../images/radio_x.svg);
 				}
 			
-				#questions form li label span {
+				#questions ul li label span {
 					display: block;
 					position: absolute;
 					left: 0;
@@ -741,8 +741,7 @@ footer {
 			-ms-transform: rotate(-180deg);
 			-o-transform: rotate(-180deg);
 			transform: rotate(-180deg);
-		}	
-
+		}
 
 	#dom {
 		margin: 5em 2em;
@@ -1100,7 +1099,7 @@ footer {
 				color: var(--main-color);
 			}
 
-			#questions form {
+			#questions ul {
 				display: block;
 				position: absolute;
 				right: 0;
@@ -1111,7 +1110,7 @@ footer {
 				width: 300px;
 			}
 		
-				#questions form li {
+				#questions ul li {
 					display: block;
 					position: relative;
 					width: 100px;
@@ -1122,16 +1121,16 @@ footer {
 					float: left;
 				}
 			
-					#questions form li input {
+					#questions ul li input {
 						opacity: 0;
 					}
 
 					/*Adding focus styles on the outer-box of the custom radio button*/
-					#questions form li input:focus+label {
+					#questions ul li input:focus+label {
 					    outline: -webkit-focus-ring-color auto 5px;
 					}
 
-					#questions form li label {
+					#questions ul li label {
 						display: block;
 						position: absolute;
 						top: 0;
@@ -1144,22 +1143,22 @@ footer {
 						background-repeat: no-repeat;
 						background-image: url(../images/radio_grau.svg);
 						transition: background-image .5s;
-						filter: brightness(0.8);
+						filter: brightness(0.7);
 					}
 				
-					#questions form li input:checked[value="2"]+label {
+					#questions ul li input:checked[value="2"]+label {
 						background-image: url(../images/radio_x.svg);
 					}
 				
-					#questions form li input:checked[value="1"]+label {
+					#questions ul li input:checked[value="1"]+label {
 						background-image: url(../images/radio_x.svg);
 					}
 				
-					#questions form li input:checked[value="0"]+label {
+					#questions ul li input:checked[value="0"]+label {
 						background-image: url(../images/radio_x.svg);
 					}
 				
-					#questions form li label span {
+					#questions ul li label span {
 						display: block;
 						position: absolute;
 						left: 0;
