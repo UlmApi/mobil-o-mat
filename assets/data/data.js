@@ -1177,8 +1177,8 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 27,
-							"against": 0,
+							"for": 0,
+							"against": 27,
 							"abstained": 1,
 							"absent": 1
 						}
@@ -1190,10 +1190,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 23,
-							"against": 3,
-							"abstained": 0,
-							"absent": 1
+							"for": 0,
+							"against": 19,
+							"abstained": 8,
+							"absent": 0
 						}
 					}
 				},
@@ -1203,10 +1203,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 0,
-							"against": 10,
+							"for": 8,
+							"against": 0,
 							"abstained": 0,
-							"absent": 1
+							"absent": 3
 						}
 					}
 				},
@@ -1216,10 +1216,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 0,
-							"against": 7,
+							"for": 6,
+							"against": 0,
 							"abstained": 0,
-							"absent": 0
+							"absent": 1
 						}
 					}
 				},
@@ -1242,10 +1242,10 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 5,
-							"against": 0,
+							"for": 0,
+							"against": 3,
 							"abstained": 0,
-							"absent": 0
+							"absent": 2
 						}
 					}
 				},
@@ -1255,15 +1255,28 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 3,
-							"against": 0,
+							"for": 0,
+							"against": 2,
+							"abstained": 0,
+							"absent": 1
+						}
+					}
+				},
+				{
+					"name": "freie",
+					"voting": {
+						"result": null,
+						"explanation": null,
+						"results": {
+							"for": 0,
+							"against": 1,
 							"abstained": 0,
 							"absent": 0
 						}
 					}
 				},
 				{
-					"name": "freie",
+					"name": "piraten",
 					"voting": {
 						"result": null,
 						"explanation": null,
@@ -1276,26 +1289,13 @@ var data = {
 					}
 				},
 				{
-					"name": "piraten",
-					"voting": {
-						"result": null,
-						"explanation": null,
-						"results": {
-							"for": 0,
-							"against": 1,
-							"abstained": 0,
-							"absent": 0
-						}
-					}
-				},
-				{
 					"name": "npd",
 					"voting": {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 0,
-							"against": 1,
+							"for": 1,
+							"against": 0,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -1307,8 +1307,8 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 3,
-							"against": 0,
+							"for": 0,
+							"against": 2,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -1320,8 +1320,8 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 0,
-							"against": 1,
+							"for": 1,
+							"against": 0,
 							"abstained": 0,
 							"absent": 0
 						}
@@ -1334,9 +1334,9 @@ var data = {
 						"explanation": null,
 						"results": {
 							"for": 0,
-							"against": 1,
+							"against": 0,
 							"abstained": 0,
-							"absent": 0
+							"absent": 1
 						}
 					}
 				},
@@ -1347,8 +1347,8 @@ var data = {
 						"explanation": null,
 						"results": {
 							"for": 0,
-							"against": 0,
-							"abstained": 1,
+							"against": 1,
+							"abstained": 0,
 							"absent": 0
 						}
 					}
@@ -1359,7 +1359,7 @@ var data = {
 						"result": null,
 						"explanation": null,
 						"results": {
-							"for": 0,
+							"for": 1,
 							"against": 1,
 							"abstained": 0,
 							"absent": 0
