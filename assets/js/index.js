@@ -130,9 +130,11 @@ $(document).ready(function () {
 
 			answers[i].forEach(function (answer, j) {
 				// check if results are present for corresponding answer
-				var isEmpty = Object.values(answer.voting.results).every(function (result) {
-					return result === null || result === ''
+				var results = answer.voting.results
+				var isEmpty = Object.keys(results).every(function (elem) {
+					return results[elem] === null || results[elem] === ''
 				})
+
 				if (isEmpty) return
 
 				// calc result of votings
@@ -182,9 +184,10 @@ $(document).ready(function () {
 							var results = party.voting.results
 							var delegates_total = results.for + results.against + results.abstained + results.absent
 
-							var isEmpty = Object.values(results).every(function (result) {
-								return result === null || result === ''
+							var isEmpty = Object.keys(results).every(function (elem) {
+								return results[elem] === null || results[elem] === ''
 							})
+
 							if (!isEmpty) {
 								return {
 									result: calcResult(results),
