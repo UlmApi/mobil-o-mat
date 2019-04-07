@@ -99,6 +99,21 @@ $(document).ready(function () {
 
 	// main function
 	function calculate(callback) {
+
+		// data.parties determines the order of party results 
+		// (especially relevant when scores are equal)
+		// form an array of party names
+		var orderOfParties = data.parties.map(function (party) {
+			return party.name
+		})
+
+		// sort party answers by defined order of parties (see data.js) 
+		data.questions.map(function (question) {
+			question.answers.sort(function (a, b) {
+				return orderOfParties.indexOf(a.name) - orderOfParties.indexOf(b.name)
+			})
+		})
+
 		// prepare result object
 		var result = {
 			// flatten answers
@@ -145,14 +160,13 @@ $(document).ready(function () {
 			})
 		})
 
-		// calculate maximum score of statements selected by a user
+		// calculate maximum score for all statements a user has selected
 		var max = result.answers.filter(function (answer) {
 			return answer !== null
 		}).length * MAXDIV
 
 		// transform comparison into templatable data structure and sort by score
 		result.comparison = result.comparison.map(function (score, party_id) {
-			// TODO check mapping to party
 			return {
 				score: score,
 				percent: (Math.round((score / max) * 100) || 0).toString(),
@@ -166,7 +180,6 @@ $(document).ready(function () {
 		})
 
 		// prepare detailed answers
-		// TODO check calculation
 		result.detail = data.questions.map(function (question, i) {
 			return {
 				id: i,
@@ -276,6 +289,7 @@ $(document).ready(function () {
 		}.bind(this), 10)
 	}
 
+	// calc end result of party member votes
 	function calcResult(results) {
 		var voters = results.for + results.against + results.abstained
 		// if more delegates were absent than participated at the election return 1 ("no position")
