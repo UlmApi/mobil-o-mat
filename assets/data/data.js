@@ -2271,7 +2271,11 @@ var data = {
 			]
 		}
 	],
-	"parties": [{
+	// determines the order of displayed parties 
+	// especially relevant if users have the same score with multiple parties
+	// in this case: ordered by amount of the 2014 election result
+	"parties": [
+		{
 			"name": "cdu",
 			"short_name": "CDU",
 			"long_name": "Christlich Demokratische Union Deutschland"
@@ -2285,7 +2289,8 @@ var data = {
 			"name": "gruene",
 			"short_name": "Grüne",
 			"long_name": "Bündnis 90/Die Grünen"
-		}, {
+		},
+		{
 			"name": "linke",
 			"short_name": "Linke",
 			"long_name": "DIE LINKE."
