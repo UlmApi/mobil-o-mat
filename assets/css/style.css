@@ -203,6 +203,26 @@ footer {
 		opacity: 1;
 	}
 
+.noscript-message {
+	color: #f00;
+}
+
+.comparison-wrapper {
+	margin-top: 1.5em;
+}
+
+.blockquote-color {
+	color: gray;
+}
+
+.image-margin {
+	margin: 2em 0em 0em 2em;
+}
+
+.donut-chart-margin {
+	margin: 1.5em 0 1.5em 0;
+}
+
 @media (max-width: 959px) { 
 	.wrapper {
 		margin-top: 3em;
@@ -432,14 +452,7 @@ footer {
 				font-size: 11px;
 				text-align: center;
 				line-height: 1em;
-			}
-
-	/* #questions .question::after {
-		display: block;
-		content: " ";
-		clear: both;
-	} */
-	
+			}	
 
 	#comparison {}
 
@@ -1062,16 +1075,6 @@ footer {
 					text-align: center;
 					line-height: 1.5em;
 				}
-/* 	
-		#questions .question::after {
-			display: block;
-			content: " ";
-			clear: both;
-		} */
-
-
-
-
 		
 		#comparison {
 			margin: 5em 0;
