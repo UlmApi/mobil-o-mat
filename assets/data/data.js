@@ -1372,7 +1372,7 @@ var data = {
 			"id": 7,
 			"name": "ETIAS (Europäisches Reiseinformations- und Autorisierungssystem)",
 			"title": "ETIAS (Europäisches Reiseinformations- und Autorisierungssystem)",
-			"description": "Menschen, die aus  Nicht-EU-Staaten einreisen möchten, sollen, sofern sie kein Visum  benötigen, eine Reisegenehmigung (ETIAS Genehmigung) einholen müssen. Die erhobenen Daten sollen auf Risikoindikatoren, darunter Angaben wie Alter, Geschlecht, Nationalität, Gesundheitszustand und vorherige  Reisen, untersucht und gegen diverse Datenbanken abgeglichen werden.",
+			"description": "Menschen, die aus  Nicht-EU-Staaten einreisen möchten, sollen, sofern sie kein Visum  benötigen, eine Reisegenehmigung (ETIAS Genehmigung) einholen müssen. Die erhobenen Daten sollen durch einen Algorithmus auf Risikoindikatoren, darunter Angaben wie Alter, Geschlecht, Nationalität, Gesundheitszustand und vorherige  Reisen, untersucht und gegen diverse Datenbanken abgeglichen werden.",
 			"terms": [{
 					"term": "EITIAS (Reise-)Genehmigung",
 					"explanation": "ist das Antragsformular zur Einreise in die Europäische Union umfasst Vorname, Familienname, Geburtsname, -datum und -ort, Staatsangehörigkeit, Adresse, E-Mailadresse und Telefonnummer, Ausbildung und Arbeitserfahrung, Fragen zu Berechtigung und Hintergrund, die auf den Gesundheitszustand, Reisen in Kriegsgebiete oder Regionen, in denen der Antragsteller  abgeschoben oder ausgewiesen wurde, oder Strafregister abzielen. Außerdem müssen Familienmitglieder von EU-Bürgern aus einem anderen Land Beweise für die Beziehung, die Aufenthaltsgenehmigung und weitere Hintergrundinformationen einreichen.",
