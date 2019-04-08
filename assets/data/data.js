@@ -226,7 +226,7 @@ var data = {
 			"id": 2,
 			"name": "ePrivacy",
 			"title": "Web-Tracking (ePrivacy)",
-			"description": "Anbieter von Websites sollen das Betrachten von Inhalten nicht davon abhängig machen dürfen, ob Nutzende einer Verfolgung, Aufzeichnung und Auswertung ihres Verhaltens (Tracking) für Werbezwecke zustimmen.",
+			"description": "Anbieter von Websites sollen das Betrachten von Inhalten <b>nicht</b> davon abhängig machen dürfen, ob Nutzende einer Verfolgung, Aufzeichnung und Auswertung ihres Verhaltens (Tracking) für Werbezwecke zustimmen.",
 			"terms": [{
 					"term": "ePrivacy",
 					"explanation": "steht kurz für die EU-Verordnung über die Achtung des Privatlebens und den Schutz personenbezogener Daten in der elektronischen Kommunikation. Diese soll unter anderem Chat-Dienste, Instant Messenger, Tracking, Verschlüsselung sowie Vorgaben für Browser und Software regulieren.",
