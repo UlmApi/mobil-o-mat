@@ -153,7 +153,7 @@ $(document).ready(function () {
 				if (isEmpty) return
 
 				// calc result of votings
-				var answer_party = calcMajority(answer.voting.results)
+				var answer_party = calcResult(answer.voting.results)
 
 				// calculate divergence
 				result.comparison[j] += (MAXDIV - Math.abs(answer_party - answer_user))
@@ -203,7 +203,7 @@ $(document).ready(function () {
 
 							if (!isEmpty) {
 								return {
-									result: calcMajority(results),
+									result: calcResult(results),
 									explanation: party.voting.explanation,
 									results: results,
 									party: party.name,
@@ -292,7 +292,7 @@ $(document).ready(function () {
 	// calc statement/result for party
 	// determine if an absolute majority for 'in favor' or 'against' exists
 	// otherwise: return 'neutral'/'ambiguous'
-	function calcMajority(results) {
+	function calcResult(results) {
 		var voters = results.for + results.against + results.abstained
 		var party_members = voters + results.absent
 		var proportion_for = results.for / party_members
