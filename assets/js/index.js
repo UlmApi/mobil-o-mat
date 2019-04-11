@@ -153,7 +153,7 @@ $(document).ready(function () {
 				if (isEmpty) return
 
 				// calc result of votings
-				var answer_party = calcResult(answer.voting.results)
+				var answer_party = calcMajority(answer.voting.results)
 
 				// calculate divergence
 				result.comparison[j] += (MAXDIV - Math.abs(answer_party - answer_user))
@@ -203,7 +203,7 @@ $(document).ready(function () {
 
 							if (!isEmpty) {
 								return {
-									result: calcResult(results),
+									result: calcMajority(results),
 									explanation: party.voting.explanation,
 									results: results,
 									party: party.name,
@@ -289,30 +289,23 @@ $(document).ready(function () {
 		}.bind(this), 10)
 	}
 
-	// calc end result of party member votes
-	function calcResult(results) {
+	// calc statement/result for party
+	// determine if an absolute majority for 'in favor' or 'against' exists
+	// otherwise: return 'neutral'/'ambiguous'
+	function calcMajority(results) {
 		var voters = results.for + results.against + results.abstained
-		// if more delegates were absent than participated at the election return 1 ("no position")
-		if (results.absent > voters) return 1
-
-		var proportion_for = results.for / voters
-		var proportion_against = results.against / voters
-		var proportion_abstained = results.abstained / voters
-
+		var party_members = voters + results.absent
+		var proportion_for = results.for / party_members
+		var proportion_against = results.against / party_members
 		switch (true) {
-			case (proportion_against + proportion_for <= proportion_abstained) ||
-			(proportion_against === proportion_for) ||
-			(results.absent + results.abstained > results.for+results.against):
-				return 1
-				break
-			case proportion_for > proportion_against:
+			case proportion_for > 0.5:
 				return 2
 				break
-			case proportion_against > proportion_for:
+			case proportion_against > 0.5:
 				return 0
 				break
 			default:
-				return null
+				return 1
 				break
 		}
 	}
