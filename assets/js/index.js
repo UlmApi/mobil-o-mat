@@ -195,7 +195,7 @@ $(document).ready(function () {
 							return question.answers
 						})[i].map(function (party, i) { 
 							var results = party.voting.results
-							var delegates_total = results.for + results.against + results.abstained + results.absent
+							var delegates_total = results.for + results.against + results.abstained + results.absent + results.didntvote
 
 							var isEmpty = Object.keys(results).every(function (elem) {
 								return results[elem] === null || results[elem] === ''
@@ -242,14 +242,15 @@ $(document).ready(function () {
 			new Chart(ctx, {
 				type: 'doughnut',
 				data: {
-					labels: [' Dafür gestimmt', ' Dagegen gestimmt', ' Nicht beteiligt', ' Enthalten'],
+					labels: [' Dafür gestimmt', ' Dagegen gestimmt', ' Abwesent', ' Enthalten', ' Nicht gewählt'],
 					datasets: [{
-						data: [el.dataset.for, el.dataset.against, el.dataset.absent, el.dataset.abstained],
+						data: [el.dataset.for, el.dataset.against, el.dataset.absent, el.dataset.abstained, el.dataset.didntvote],
 						backgroundColor: [
-							'#9fd773',
-							'#cc6c5b',
-							'#a5a5a5',
-							'#e2e2e2'
+							'#9fd773', // greenish for 'for'
+							'#cc6c5b', // reddish for 'against'
+							'#D8D8D8', // light gray for 'absent'
+							'#787878', // dark gray 'abstained'
+							'#A0A0A0' // gray for 'didn't vote'
 						],
 						borderWidth: 0
 					}]
@@ -294,7 +295,7 @@ $(document).ready(function () {
 	// otherwise: return 'neutral'/'ambiguous'
 	function calcResult(results) {
 		var voters = results.for + results.against + results.abstained
-		var party_members = voters + results.absent
+		var party_members = voters + results.absent + results.didntvote
 		var proportion_for = results.for / party_members
 		var proportion_against = results.against / party_members
 		switch (true) {
