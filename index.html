@@ -54,7 +54,7 @@
 						</p>
 						<noscript>
 							<h2>Bitte JavaScript aktivieren</h2>
-							<p style="color:#f00;">
+							<p class="noscript-message">
 								Der Digital-O-Mat benötigt JavaScript.
 							</p>
 						</noscript>
@@ -70,7 +70,7 @@
 						</p>
 					</div>
 					<div class="row">
-						<img style="margin: 2em 0em 0em 2em;" src="assets/images/Digital-o-Mat_Europakarte_v03.svg" alt="Europakarte">
+						<img class="image-margin" src="assets/images/Digital-o-Mat_Europakarte_v03.svg" alt="Europakarte">
 					</div>
 				</div>
 
@@ -500,7 +500,7 @@
 		<div id="comparison">
 			<h2>Ihr Ergebnis im Überblick</h2>
 			<p>Die folgenden Prozentzahlen geben an, zu wieviel Prozent Ihre Position mit dem Abstimmungsverhalten der jeweiligen Partei übereinstimmt.</p>
-			<ol style="margin-top: 1.5em;">
+			<ol class="comparison-wrapper">
 			{{#comparison}}
 				<li>
 					<h4 title="{{party_long}}">{{party_short}}</h4>
@@ -530,14 +530,14 @@
 									{{#parties}}
 										<li class="party explanation">
 											<h5 title="{{party_long}}">{{party_short}} <i tabindex="0" class="icon-down" title="Erläuterung"></i></h5>
-											<blockquote style="color: gray">
+											<blockquote class="blockquote-color">
 												Abgeordnete: {{delegates}}
-												<canvas class="chart"
+												<canvas class="donut-chart-margin"
 													data-for={{results.for}}
 													data-against={{results.against}}
 													data-abstained={{results.abstained}}
 													data-absent={{results.absent}}
-													style="margin: 1.5em 0 1.5em 0;"
+													data-didntvote={{results.didntvote}}
 												></canvas>
 											</blockquote>
 										</li>
