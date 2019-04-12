@@ -242,7 +242,7 @@ $(document).ready(function () {
 			new Chart(ctx, {
 				type: 'doughnut',
 				data: {
-					labels: [' Dafür gestimmt', ' Dagegen gestimmt', ' Abwesent', ' Enthalten', ' Nicht gewählt'],
+					labels: [' Dafür gestimmt', ' Dagegen gestimmt', ' Abwesent', ' Enthalten', ' Nicht abgestimmt'],
 					datasets: [{
 						data: [el.dataset.for, el.dataset.against, el.dataset.absent, el.dataset.abstained, el.dataset.didntvote],
 						backgroundColor: [
