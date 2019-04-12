@@ -1630,7 +1630,8 @@ var data = {
 							"for": 0,
 							"against": 1,
 							"abstained": 0,
-							"absent": 0
+							"absent": 0,
+							"didntvote": 0
 						}
 					}
 				},
