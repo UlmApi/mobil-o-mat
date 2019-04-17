@@ -80,20 +80,26 @@ $(document).ready(function () {
 
 	// show more/less info
 	$(".more-info-button, .less-info-button").click(function (evt) {
+		console.log('a')
 		// check if element is focused 
 		// in order to prevent receiving events from radio-buttons when using keyboard navigation
 		var hasFocus = $(this).is(':focus')
+		console.log('hasFocus', hasFocus)
 		if (!hasFocus) return
+		console.log('b')
 
 		evt.preventDefault()
 		$(this).parent().next().toggleClass("show-more-info")
 		if ($(this).attr("class") === 'more-info-button') {
+			console.log('c')
 			$(this).next().css("display", "inline")
 			$(this).next().focus()
 		} else {
+			console.log('d')
 			$(this).prev().css("display", "inline")
 			$(this).prev().focus()
 		}
+		console.log('e')
 		$(this).css("display", "none")
 	})
 
