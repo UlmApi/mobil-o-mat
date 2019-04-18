@@ -80,11 +80,6 @@ $(document).ready(function () {
 
 	// show more/less info
 	$(".more-info-button, .less-info-button").click(function (evt) {
-		// check if element is focused 
-		// in order to prevent receiving events from radio-buttons when using keyboard navigation
-		// var hasFocus = $(this).is(':focus')
-		// if (!hasFocus) return
-
 		evt.preventDefault()
 		$(this).parent().next().toggleClass("show-more-info")
 		if ($(this).attr("class") === 'more-info-button') {
@@ -96,6 +91,15 @@ $(document).ready(function () {
 		}
 		$(this).css("display", "none")
 	})
+
+	// cmp. https://www.jotform.com/answers/261641-When-Radio-Buttons-have-the-focus-ENTER-submits-form
+	// fixes radio button bug (pressing enter is received by the first more-info button and toggles it unexpectedly)
+	function stopRKey(evt) {
+		if ((evt.keyCode === 13) && (evt.srcElement.type === "radio")) {
+			return false
+		}
+ 	}
+ 	document.onkeypress = stopRKey
 
 	// main function
 	function calculate(callback) {
