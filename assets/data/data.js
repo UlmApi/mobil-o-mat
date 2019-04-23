@@ -1,7 +1,7 @@
 var data = {
 	"questions": [{
 			"id": 1,
-			"name": "Uploadfilter in der Urheberrechtsreform",
+			"name": "Parkräume",
 			"title": "Parkräume",
 			"description": "Um Freiraum für Rad- und Fußverkehr zu ermöglichen, müssen Parkräume zurück gebaut werden.",
 			"terms": [{
@@ -234,9 +234,9 @@ var data = {
 		},
 		{
 			"id": 2,
-			"name": "ePrivacy",
-			"title": "Web-Tracking (ePrivacy)",
-			"description": "",
+			"name": "Parksituation",
+			"title": "",
+			"description": "Um die Parksituation in Ulm zu verbessern, muss der Radverkehr weiterhin zurückstecken und Gehwege zurückgebaut werden.",
 			"terms": [{
 					"term": "ePrivacy",
 					"explanation": "steht kurz für die EU-Verordnung über die Achtung des Privatlebens und den Schutz personenbezogener Daten in der elektronischen Kommunikation. Diese soll unter anderem Chat-Dienste, Instant Messenger, Tracking, Verschlüsselung sowie Vorgaben für Browser und Software regulieren.",
@@ -478,9 +478,9 @@ var data = {
 		},
 		{
 			"id": 3,
-			"name": "Passenger Name Record (PNR), zu deutsch: Fluggastdatensatz",
-			"title": "Fluggastdatensatz (Passenger Name Record (PNR))",
-			"description": "Umfangreiche Informationen (z. B. Name, Adressdaten, Zahlungsdetails, Reisebüro und Sachbearbeiter, Buchungsverhalten, Essenswünsche und Sitzplatz) über die Passagiere jedes Flugs in die EU und aus der EU sollen fünf Jahre lang auf Vorrat gespeichert werden.",
+			"name": "Parkkosten",
+			"title": "Parkkosten",
+			"description": "Um den Autoverkehr in der Innenstadt zu reduzieren, müssen Parkkosten spürbar angehoben werden.",
 			"terms": [{
 				"term": "PNR ",
 				"explanation": "steht für Passenger Name Record, deutsch: Fluggastdatensatz. Es umfasst, anders als der Name vermuten lässt, nicht nur die Namen und Stammdaten der Fluggäste, sondern auch viele weitere Daten – etwa welche Tickets zusammen gebucht wurden, mit welcher Kreditkarte sie bezahlt wurden, und ob bestimmte Essenswünsche angegeben wurden.",
@@ -711,9 +711,9 @@ var data = {
 		},
 		{
 			"id": 4,
-			"name": "Privacy Shield",
-			"title": "US-EU-Datenabkommen (Privacy Shield)",
-			"description": "Persönliche Daten aus der EU <b>dürfen nicht</b> auf Grundlage der „Privacy Shield“-Vereinbarung in die USA übermittelt werden, weil die USA das EU-Datenschutz-Niveau nicht einhalten.",
+			"name": "ÖPNV-Kosten",
+			"title": "",
+			"description": "Um den Autoverkehr in der Innenstadt zu reduzieren, müssen die Kosten für den ÖPNV stark gesenkt werden.",
 			"terms": [{
 				"term": "Das sogenannte Privacy Shield",
 				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (siehe <a taget='_blank' href='https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782'>PDF</a>) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
@@ -949,9 +949,9 @@ var data = {
 		},
 		{
 			"id": 5,
-			"name": "Netzneutralität (Telekommunikationsbinnenmarktordnung)",
-			"title": "Netzneutralität",
-			"description": "Telekommunikationsanbieter dürfen bestimmte Daten (z.B. Musik-, Video- und Gaming-Dienste, Nachrichten-Plattformen, Messenger etc.) <b>nicht</b> bevorzugen oder benachteiligen.",
+			"name": "Parkhausticket",
+			"title": "",
+			"description": "Ein 2-Stunden-Ticket für ein Parkhaus in Ulm sollte günstiger sein als eine Tageskarte (Single) für den ÖPNV.",
 			"terms": [{
 				"term": "Netzneutralität",
 				"explanation": "bedeutet die Gleichbehandlung aller Daten. Internetanbieter stehen vor der Frage, wie sie mit immer größeren Datenmengen umgehen sollen. Es gibt grundsätzlich zwei Möglichkeiten: Werden alle Daten bei der Übertragung gleich behandelt, kann von Netzneutralität gesprochen werden. Werden die Daten bestimmter Dienste schneller und/oder in besserer Qualität übertragen, werden dabei andere Datenströme diskriminiert.",
