@@ -2,17 +2,12 @@ var data = {
 	"questions": [{
 			"id": 1,
 			"name": "Uploadfilter in der Urheberrechtsreform",
-			"title": "Uploadfilter",
+			"title": "Parkräume",
 			"description": "Um Freiraum für Rad- und Fußverkehr zu ermöglichen, müssen Parkräume zurück gebaut werden.",
 			"terms": [{
 				"term": "Uploadfilter",
 				"explanation": "meint in der gegenwärtigen polistischen Debatte üblicherweise automatische Systeme, die sämtliche auf eine Plattform durch User hochgeladene Mediendateien mit einer Referenzdatenbank vergleichen. In einer solchen Referenzdatenbank sind Erkennungsmerkmale urheberrechtlich geschützter Werke gespeichert. Findet das System bei der Durchleuchtung hochgeladener Mediendateien in einer davon ausreichend viele Merkmale eines Werkes aus der Referenzdatenbank wieder, meldet es dies als positiven Fund. Für diesen Fall können verschiedene Folgen im System vordefiniert sein: Die Mediendatei kann etwa mit einer Lizenzdatenbank abgeglichen und bei Vorliegen einer Lizenz normal durchgelassen werden. Ebenso ist definierbar, dass sie gelöscht oder zunächst nur ihr Upload blockiert und sie zur händischen Prüfung jemandem vorgelegt wird. Zu beachten ist: Um mittels eines solchen Uploadfilter-Systems das Hochladen spezifischer Werke sicher zu unterbinden, ist stets ein Durchleuchten sämtlicher Uploads der betreffenden Plattform erforderlich und reicht eine Stichprobenkontrolle nicht aus. Zudem sind bislang keine Uploadfilter-Systeme bekannt, die über die Erkennung von Werken in Uploads hinaus auch bewerten könnten, ob ein bestimmtes Werk im konkreten Nutzungskontext auch ohne Erlaubnis der jeweiligen Rechteinhaber genutzt werden darf, etwa aufgrund einer gesetzlichen Regelung zugunsten von Zitaten, Parodien, Berichterstattung usw.",
 				"link": null
-			}],
-			"votewatch": [{
-				"title": null,
-				"link": null,
-				"date": null
 			}],
 			"background": [{
 					"title": "iRights.info: „Webschau: EU-Urheberrechtsreform und Artikel 13 – pro und kontra“",
@@ -253,11 +248,6 @@ var data = {
 					"link": null
 				}
 			],
-			"votewatch": [{
-				"title": null,
-				"link": "https://www.votewatch.eu/en/term8-respect-for-private-life-and-the-protection-of-personal-data-in-electronic-communications-and-repeal.html",
-				"date": null
-			}],
 			"background": [{
 					"title": "EDRi: „e-Privacy: What happened and what happens next“",
 					"link": "https://edri.org/e-privacy-what-happened-and-what-happens-next/",
@@ -496,11 +486,6 @@ var data = {
 				"explanation": "steht für Passenger Name Record, deutsch: Fluggastdatensatz. Es umfasst, anders als der Name vermuten lässt, nicht nur die Namen und Stammdaten der Fluggäste, sondern auch viele weitere Daten – etwa welche Tickets zusammen gebucht wurden, mit welcher Kreditkarte sie bezahlt wurden, und ob bestimmte Essenswünsche angegeben wurden.",
 				"link": null
 			}],
-			"votewatch": [{
-				"title": "Abstimmung auf votewatch",
-				"link": "https://www.votewatch.eu/en/term8-use-of-passenger-name-record-data-eu-pnr-draft-legislative-resolution-vote-commission-proposal-ordin.html",
-				"date": "14.04.2016"
-			}],
 			"background": [{
 					"title": null,
 					"link": "https://edri.org/ep-pushes-for-more-surveillance-and-profiling-of-eu-citizens/",
@@ -733,11 +718,6 @@ var data = {
 				"term": "Das sogenannte Privacy Shield",
 				"explanation": "ist ein Abkommen zwischen der EU und den USA, das bei Datentransfer aus den EU-Mitgliedsstaaten in die USA einen Datenschutz auf EU-Niveau garantieren soll. Kritik an der Wirksamkeit gibt es unter anderem von der Artikel-29-Datenschutzgruppe (siehe <a taget='_blank' href='https://ec.europa.eu/newsroom/just/document.cfm?doc_id=48782'>PDF</a>) (alle europäischen Datenschutzaufsichtsbehörden), die beispielsweise bemängelt, dass das Abkommen lediglich auf Versprechen der US-Regierung basiert, aber nicht auf US-Recht.",
 				"link": null
-			}],
-			"votewatch": [{
-				"title": null,
-				"link": "https://www.votewatch.eu/en/term8-adequacy-of-the-protection-afforded-by-the-eu-us-privacy-shield-motion-for-resolution-vote-resolutio-2.html",
-				"date": "05.07.2018"
 			}],
 			"background": [{
 					"title": "EU-US Privacy Shield erklärt beim Bayerische Landesbeauftragte für den Datenschutz",
@@ -976,11 +956,6 @@ var data = {
 				"term": "Netzneutralität",
 				"explanation": "bedeutet die Gleichbehandlung aller Daten. Internetanbieter stehen vor der Frage, wie sie mit immer größeren Datenmengen umgehen sollen. Es gibt grundsätzlich zwei Möglichkeiten: Werden alle Daten bei der Übertragung gleich behandelt, kann von Netzneutralität gesprochen werden. Werden die Daten bestimmter Dienste schneller und/oder in besserer Qualität übertragen, werden dabei andere Datenströme diskriminiert.",
 				"link": null
-			}],
-			"votewatch": [{
-				"title": null,
-				"link": "https://www.votewatch.eu/en/term8-european-single-market-for-electronic-communications-draft-legislative-resolution-article-2-paragrap.html",
-				"date": null
 			}],
 			"background": [{
 					"title": "Chaos Computer Club erklärt Netzneutralität",
@@ -1236,11 +1211,6 @@ var data = {
 					"link": null
 				}
 			],
-			"votewatch": [{
-				"title": null,
-				"link": "https://www.votewatch.eu/en/term8-follow-up-to-the-european-parliament-resolution-of-12-march-2014-on-the-electronic-mass-surveillance-13.html",
-				"date": null
-			}],
 			"background": [{
 				"title": "Pressemitteilung des Europäischen Parlaments vom 12.03.2014",
 				"link": "http://www.europarl.europa.eu/news/de/press-room/20140307IPR38203/parlament-droht-mit-konsequenzen-falls-usa-massenuberwachung-nicht-einstellt",
@@ -1479,11 +1449,6 @@ var data = {
 					"link": null
 				}
 			],
-			"votewatch": [{
-				"title": "Abstimmung auf votewatch",
-				"link": "https://www.votewatch.eu/en/term8-european-travel-information-and-authorisation-system-etias-draft-legislative-resolution-provisional-.html",
-				"date": "05.07.2018"
-			}],
 			"background": [{
 					"title": "EU Law Analysis: „Brave new world? the new EU law on travel authorisation for non-EU citizens“",
 					"link": "https://eulawanalysis.blogspot.com/2018/04/brave-new-world-new-eu-law-on-travel.html",
@@ -1716,11 +1681,6 @@ var data = {
 				"term": "Edward Snowden",
 				"explanation": "ist ein ehemaliger CIA-Mitarbeiter. Im Sommer 2013 informierten seine Enthüllungen die Öffentlichkeit über weltweite Überwachung- und Spionage durch Geheimdienste aus den USA, Großbritannien, Australien, Kanada und Neuseeland. Snowden war mehrfach für den Friedensnobelpreis nominiert.",
 				"link": null
-			}],
-			"votewatch": [{
-				"title": "Abstimmung auf votewatch",
-				"link": " https://www.votewatch.eu/en/term8-follow-up-to-the-european-parliament-resolution-of-12-march-2014-on-the-electronic-mass-surveillance.html",
-				"date": "29.10.2015"
 			}],
 			"background": [{
 					"title": null,
@@ -1960,11 +1920,6 @@ var data = {
 				"explanation": "wird definiert in <a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/ALL/?uri=CELEX:32009L0110'>Richtlinie 2009/110/EG</a> als elektronisch, auch magnetisch, gespeicherter monetärer Wert, der gegen Zahlung eines Geldbetrags ausgestellt wird, um damit Zahlungsvorgänge durchzuführen. In der Praxis sind damit Prepaid-Karten und Prepaid-Guthaben gemeint. Mit der Änderung der <a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=celex%3A32015L0849'>EU-Richtlinie 849</a> von 2015 wurde 2018 mit der <a target='_blank' href='https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32018L0843'>5. Richtlinie zu Geldwäsche und Terrorismusfinanzierung (AMLD 5)</a> der Schwellwert zur Ermittlung der Inhaber von Prepaid-Karten von 250 auf 150 Euro herabgesetzt.",
 				"link": null
 			}],
-			"votewatch": [{
-				"title": "Abstimmung auf votewatch",
-				"link": "https://www.votewatch.eu/en/term8-prevention-of-the-use-of-the-financial-system-for-the-purposes-of-money-laundering-or-terrorist-fina.html",
-				"date": null
-			}],
 			"background": [{
 				"title": "Pressemitteilung des Europäischen Parlaments",
 				"link": "http://www.europarl.europa.eu/news/de/press-room/20180411IPR01527/geldwasche-bekampfung-offenlegung-der-wahren-eigentumer-von-unternehmen",
@@ -2191,11 +2146,6 @@ var data = {
 				"term": "Digitale Kompetenzen/Digital Literacies",
 				"explanation": "sind notwendige Voraussetzungen, um in einer digital geprägten Welt souverän zu handeln und teilzuhaben. Sie umfassen Fähigkeiten wie: Daten und Informationen zu finden, zu hinterfragen, zu kontextualisieren oder zu bewerten; sich mit anderen auszutauschen, gemeinsam mit anderen Inhalte zu kreieren und an gesellschaftlichen Diskursen teilzuhaben. Zugleich geht es darum, ein Bewusstsein für die sich konstant ändernden Funktionsweisen digitaler Technologien zu entwickeln und kreativ Lösungen für individuelle Probleme und Herausforderungen zu finden.",
 				"link": null
-			}],
-			"votewatch": [{
-				"title": null,
-				"link": "https://www.votewatch.eu/en/term8-education-in-the-digital-era-challenges-opportunities-and-lessons-for-eu-policy-design-motion-for-re.html",
-				"date": "11.12.2018"
 			}],
 			"background": [{
 					"title": "Bericht über das Thema „Bildung im digitalen Zeitalter: Herausforderungen, Chancen und Erkenntnisse für die Gestaltung der EU-Politik“",

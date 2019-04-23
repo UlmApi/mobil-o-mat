@@ -4,6 +4,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans", sans-serif;
+	background: #072838;
+	color: #fff;
 }
 
 .wrapper {
@@ -25,7 +27,7 @@ body {
 #app h3 {
 	font-family: "Raleway", sans-serif;
 	font-weight: 300;
-	color: #1E448A;
+	color: #ef2f98;
 }
 
 #app p {
@@ -61,7 +63,7 @@ body {
 	position: relative;
 	margin: 1.2em 0;
 	padding: .4em .8em;
-	border: none;
+	border: 1px solid #fff;
 	font-family: "Raleway", sans-serif;
 	font-weight: 500;
 	color: #fff;
@@ -76,6 +78,10 @@ body {
 #app button:hover {
 	background-color: #1E448A;
 	opacity: 1;
+}
+
+#app button .btn-icon {
+	color: orange;
 }
 
 .questions-info-link {
@@ -95,7 +101,7 @@ body {
 }
 
 footer {
-	background-color: #1E448A;
+	background-color: #223645;
 	margin: 0;
 	padding: 0;
 }
@@ -103,32 +109,11 @@ footer {
 	footer p {
 		color: #fff;
 		margin: 0;
-		padding: 1em 40px 0;
+		padding: 1em 40px 1em;
 		font-size: 16px;
 	}
 
-	footer .orgs {
-		display: block;
-		position: relative;
-		list-style: none;
-		margin: 0;
-		padding: 1.5vw;
-		text-align: center;
-	}
-
-		footer .orgs li {
-			display: inline-block;
-			position: relative;
-			list-style: none;
-			margin: 0;
-			padding: 0 1em 0 1em;
-		}
-
-		footer .orgs a {
-			display: block;
-			position: relative;
-			width: 12vw;
-			height: 8vw;
+		footer a {
 			max-width: 120px;
 			max-height: 80px;
 			margin: 0;
@@ -140,23 +125,17 @@ footer {
 			opacity: .9;
 		}
 
-		footer .orgs a:hover {
+		footer a:hover {
 			opacity: 1;
 			transform: scale(0.9);
 			z-index: 5;
 			transition: opacity .5s, transform .5s, background-color .5s, filter .5s;
 		}
 
-		footer .orgs a[title*='Freie Bildung'] { background-image: url(../images/orgs/logo_bfb_weiss.svg); }
-		footer .orgs a[title^='Chaos'] { background-image: url(../images/orgs/logo_ccc_weiss.svg); }
-		footer .orgs a[title^='digitalcourage'] { background-image: url(../images/orgs/logo_dc_weiss.png); }
-		footer .orgs a[title^='Digitale'] { background-image: url(../images/orgs/logo_digiges_weiss.svg); }
-		footer .orgs a[title^='Freifunk'] { background-image: url(../images/orgs/logo_freifunk_weiss.svg); }
-		footer .orgs a[title^='Open'] { background-image: url(../images/orgs/logo_okfde_weiss.svg); }
-		footer .orgs a[title^='Wikimedia'] { background-image: url(../images/orgs/logo_wikimedia_weiss.svg); }
-		footer .orgs a[title^='Mozilla'] { background-image: url(../images/orgs/logo_mozilla_weiss.svg); }
-		footer .orgs a[title^='Whistleblower'] { background-image: url(../images/orgs/logo_WBNW_weiss.png); }
-		footer .orgs a[title^='Wau Holland Stiftung'] { background-image: url(../images/orgs/whs_logo_white.png); }
+		footer img {
+			max-width: 60px;
+			vertical-align: middle;
+		}
 
 	footer .copyright-notice {
 		font-size: 13px;
@@ -256,7 +235,7 @@ footer {
 		left: 0px;
 		height: 3em;
 		width: 60vw;
-		background: url(../images/logo_digitalomat-mobil.svg) left top no-repeat;
+		background: url(../images/logo.png) left top no-repeat;
 		background-size: contain;
 	}
 
@@ -275,10 +254,11 @@ footer {
 	}
 
 	.logo {
-		background-image: url('../images/header.jpg');
 		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-repeat: repeat;
+		background-size: contain;
+		background-color: #072838;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23223645' fill-opacity='0.58' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
 		min-height: 3.5em;
 	}
 
@@ -289,7 +269,7 @@ footer {
 		top: 3.5em;
 		left: 0;
 		right: 0;
-		background-color: #072737;
+		background-color: #223645;
 		height: 0;
 		overflow: hidden;
 		opacity: 0;
@@ -799,7 +779,7 @@ footer {
 		left: 0px;
 		height: 3em;
 		width: 60vw;
-		background: url(../images/logo_digitalomat-mobil.svg) left center no-repeat;
+		background: url(../images/logo.png) left center no-repeat;
 		background-size: contain;
 	}
 }
@@ -816,10 +796,10 @@ footer {
 		}
 
 		.logo {
-			background-image: url('../images/header.jpg');
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
+			background-color: #072838;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%23223645' fill-opacity='0.58' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+			background-repeat: repeat;
+			background-size: contain;
 			min-height: 5em;
 		}
 
@@ -829,7 +809,7 @@ footer {
 			margin: 0;
 			padding: 0px 40px;
 			min-height: 35px;
-			background-color: #072737;
+			background-color: #223645;
 		}
 	
 			#menu p {
@@ -901,7 +881,7 @@ footer {
 			content: "";
 			height: 3em;
 			width: 30vw;
-			background: url(../images/logo_digitalomat-mobil.svg) left top no-repeat;
+			background: url(../images/logo.png) left top no-repeat;
 			background-size: contain;
 		}
 
@@ -916,10 +896,10 @@ footer {
 			margin: 0;
 			padding: 0;
 			font-family: "Raleway", sans-serif;
-			font-size: 24px;
+			font-size: 28px;
 			font-weight: 300; 
 			line-height: 30px;
-			color: #1E448A;
+			color: orange;
 		}
 		
 		#app p+h2 {
@@ -979,7 +959,8 @@ footer {
 			font-weight: 300;
 			font-size: 56px;
 			line-height: .7em;
-			color: #1E448A;
+			color: #fff;
+			opacity: 0.5;
 		}
 	
 		.question-label {
