@@ -65,7 +65,7 @@ body {
 	font-family: "Raleway", sans-serif;
 	font-weight: 500;
 	color: #fff;
-	background-color: #1E448A;
+	background-color: #072737;
 	font-size: 18px;
 	cursor: pointer;
 	text-decoration: none;
@@ -275,7 +275,7 @@ footer {
 	}
 
 	.logo {
-		background-image: url('../images/Digital-o-mat_Europa2019_header.png');
+		background-image: url('../images/header.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -289,7 +289,7 @@ footer {
 		top: 3.5em;
 		left: 0;
 		right: 0;
-		background-color: #1d3671;
+		background-color: #072737;
 		height: 0;
 		overflow: hidden;
 		opacity: 0;
@@ -816,7 +816,7 @@ footer {
 		}
 
 		.logo {
-			background-image: url('../images/Digital-o-mat_Europa2019_header.png');
+			background-image: url('../images/header.jpg');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -829,7 +829,7 @@ footer {
 			margin: 0;
 			padding: 0px 40px;
 			min-height: 35px;
-			background-color: #1d3671;
+			background-color: #072737;
 		}
 	
 			#menu p {

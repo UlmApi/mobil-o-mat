@@ -3,7 +3,7 @@ var data = {
 			"id": 1,
 			"name": "Uploadfilter in der Urheberrechtsreform",
 			"title": "Uploadfilter",
-			"description": "Online-Plattformen sollen auch für die von ihren Usern hochgeladenen Filme, Bilder, Musikstücke und Texte Lizenzen bei den jeweiligen Rechteinhabern erwerben müssen. Wollen sie dies nicht, müssen sie stattdessen auf Wunsch der Rechteinhaber alle rechtswidrigen User-Uploads verhindern, etwa mittels technischer Systeme, die geschützte Werke erkennen und ihren Upload automatisch unterbinden können.",
+			"description": "Um Freiraum für Rad- und Fußverkehr zu ermöglichen, müssen Parkräume zurück gebaut werden.",
 			"terms": [{
 				"term": "Uploadfilter",
 				"explanation": "meint in der gegenwärtigen polistischen Debatte üblicherweise automatische Systeme, die sämtliche auf eine Plattform durch User hochgeladene Mediendateien mit einer Referenzdatenbank vergleichen. In einer solchen Referenzdatenbank sind Erkennungsmerkmale urheberrechtlich geschützter Werke gespeichert. Findet das System bei der Durchleuchtung hochgeladener Mediendateien in einer davon ausreichend viele Merkmale eines Werkes aus der Referenzdatenbank wieder, meldet es dies als positiven Fund. Für diesen Fall können verschiedene Folgen im System vordefiniert sein: Die Mediendatei kann etwa mit einer Lizenzdatenbank abgeglichen und bei Vorliegen einer Lizenz normal durchgelassen werden. Ebenso ist definierbar, dass sie gelöscht oder zunächst nur ihr Upload blockiert und sie zur händischen Prüfung jemandem vorgelegt wird. Zu beachten ist: Um mittels eines solchen Uploadfilter-Systems das Hochladen spezifischer Werke sicher zu unterbinden, ist stets ein Durchleuchten sämtlicher Uploads der betreffenden Plattform erforderlich und reicht eine Stichprobenkontrolle nicht aus. Zudem sind bislang keine Uploadfilter-Systeme bekannt, die über die Erkennung von Werken in Uploads hinaus auch bewerten könnten, ob ein bestimmtes Werk im konkreten Nutzungskontext auch ohne Erlaubnis der jeweiligen Rechteinhaber genutzt werden darf, etwa aufgrund einer gesetzlichen Regelung zugunsten von Zitaten, Parodien, Berichterstattung usw.",
@@ -241,7 +241,7 @@ var data = {
 			"id": 2,
 			"name": "ePrivacy",
 			"title": "Web-Tracking (ePrivacy)",
-			"description": "Anbieter von Websites sollen das Betrachten von Inhalten <b>nicht</b> davon abhängig machen dürfen, ob Nutzende einer Verfolgung, Aufzeichnung und Auswertung ihres Verhaltens (Tracking) für Werbezwecke zustimmen.",
+			"description": "",
 			"terms": [{
 					"term": "ePrivacy",
 					"explanation": "steht kurz für die EU-Verordnung über die Achtung des Privatlebens und den Schutz personenbezogener Daten in der elektronischen Kommunikation. Diese soll unter anderem Chat-Dienste, Instant Messenger, Tracking, Verschlüsselung sowie Vorgaben für Browser und Software regulieren.",
