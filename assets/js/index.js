@@ -31,8 +31,8 @@ $(document).ready(function () {
 				id: id,
 				label: question.title,
 				question: question.description,
-				anyInfo: question.background[0].link,
-				hasInfotext: question.background.length,
+				anyInfo: '', //question.background[0].link,
+				hasInfotext: false, //question.background.length,
 				infotext: question.background,
 				terms: question.terms,
 				num: (id + 1)
