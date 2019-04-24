@@ -21,7 +21,7 @@ body {
 #app h2 {
 	font-family: "Raleway", sans-serif;
 	font-weight: 300; 
-	color: #1E448A;
+	color: orange;
 }
 
 #app h3 {
@@ -687,7 +687,7 @@ footer {
 	}
 
 		#dom a {
-			color: #1E448A;
+			color: #ef2f98;
 			text-decoration: none;
 		}
 		
@@ -714,12 +714,12 @@ footer {
 		}
 	
 		#orgs .org h3 a {
-			color: #1E448A;
+			color: #ef2f98;
 			text-decoration: none;
 		}
 
 		#orgs .org p a {
-			color: #1E448A;
+			color: #ef2f98;
 			text-decoration: none;
 		}
 	
@@ -735,7 +735,7 @@ footer {
 	}
 	
 		#impressum a {
-			color: #1E448A;
+			color: #ef2f98;
 			text-decoration: none;
 		}
 	
@@ -750,7 +750,7 @@ footer {
 			font-weight: 300;
 			font-size: 18px;
 			line-height: 22px;
-			color: #1E448A;
+			color: #ef2f98;
 			margin: 1em 0 .5em;
 			padding: 0;
 		}
@@ -1292,7 +1292,7 @@ footer {
 		#dom {}
 
 			#dom a {
-				color: #1E448A;
+				color: #ef2f98;
 				text-decoration: none;
 			}
 
@@ -1317,12 +1317,12 @@ footer {
 			}
 		
 			#orgs .org h3 a {
-				color: #1E448A;
+				color: #ef2f98;
 				text-decoration: none;
 			}
 
 			#orgs .org p a {
-				color: #1E448A;
+				color: #ef2f98;
 				text-decoration: none;
 			}
 		
@@ -1338,7 +1338,7 @@ footer {
 		#impressum {}
 		
 			#impressum a {
-				color: #1E448A;
+				color: #ef2f98;
 				text-decoration: none;
 			}
 		
@@ -1351,7 +1351,7 @@ footer {
 				font-weight: 300;
 				font-size: 18px;
 				line-height: 22px;
-				color: #1E448A;
+				color: #ef2f98;
 				margin: 1em 0 .5em;
 				padding: 0;
 			}
