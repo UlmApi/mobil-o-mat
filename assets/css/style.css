@@ -235,7 +235,7 @@ footer {
 		left: 0px;
 		height: 3em;
 		width: 60vw;
-		background: url(../images/logo.png) left top no-repeat;
+		background: url(../images/logo.svg) left top no-repeat;
 		background-size: contain;
 	}
 
@@ -779,7 +779,7 @@ footer {
 		left: 0px;
 		height: 3em;
 		width: 60vw;
-		background: url(../images/logo.png) left center no-repeat;
+		background: url(../images/logo.svg) left center no-repeat;
 		background-size: contain;
 	}
 }
@@ -881,7 +881,7 @@ footer {
 			content: "";
 			height: 3em;
 			width: 30vw;
-			background: url(../images/logo.png) left top no-repeat;
+			background: url(../images/logo.svg) left top no-repeat;
 			background-size: contain;
 		}
 
