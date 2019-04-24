@@ -489,7 +489,7 @@ footer {
 			left: 0;
 			top: 0;
 			bottom: 0;
-			background-color: #1E448A;
+			background-color: #ef2f98;
 			line-height: 18px;
 			margin: 0;
 			padding: 0;
@@ -527,7 +527,6 @@ footer {
 			font-weight: 300;
 			font-size: 21px;
 			line-height: 24px;
-			color: #1E448A;
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
@@ -556,7 +555,6 @@ footer {
 		}
 	
 		#detail .answers .answer.selected {
-			background-color: #f5f6f7;
 			box-shadow: 0 0 0 1px #1E448A inset;
 		}
 
@@ -1114,7 +1112,7 @@ footer {
 				left: 0;
 				top: 0;
 				bottom: 0;
-				background-color: #1E448A;
+				background-color: #ef2f98;
 				line-height: 18px;
 				margin: 0;
 				padding: 0;
@@ -1152,7 +1150,6 @@ footer {
 				font-weight: 300;
 				font-size: 21px;
 				line-height: 24px;
-				color: #1E448A;
 				margin: 1.5em 0 0;
 				padding: 0;
 			}
@@ -1177,10 +1174,6 @@ footer {
 				width: 260px;
 				margin: 0;
 				padding: 30px 15px 15px;
-			}
-		
-			#detail .answers .answer.selected {
-				background-color: #f5f6f7;
 			}
 
 			#detail .answers .answer.selected .you {
