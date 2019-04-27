@@ -31,8 +31,8 @@ $(document).ready(function () {
 				id: id,
 				label: question.title,
 				question: question.description,
-				anyInfo: '', //question.background[0].link,
-				hasInfotext: false, //question.background.length,
+				anyInfo: (typeof question.background !== "undefined" && question.background.length) || (typeof question.terms !== "undefined" && question.terms.length), //question.background[0].link,
+				hasInfotext: typeof question.background !== "undefined" && question.background.length,
 				infotext: question.background,
 				terms: question.terms,
 				num: (id + 1)
@@ -199,7 +199,7 @@ $(document).ready(function () {
 							return question.answers
 						})[i].map(function (party, i) { 
 							var results = party.voting.results
-							var delegates_total = results.for + results.against + results.abstained + results.absent + results.didntvote
+							var delegates_total = results.for + results.against + results.abstained
 
 							var isEmpty = Object.keys(results).every(function (elem) {
 								return results[elem] === null || results[elem] === ''
@@ -255,7 +255,7 @@ $(document).ready(function () {
 	// otherwise: return 'neutral'/'ambiguous'
 	function calcResult(results) {
 		var voters = results.for + results.against + results.abstained
-		var party_members = voters + results.absent + results.didntvote
+		var party_members = voters
 		var proportion_for = results.for / party_members
 		var proportion_against = results.against / party_members
 		switch (true) {

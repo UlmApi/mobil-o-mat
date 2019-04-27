@@ -16,9 +16,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -30,9 +28,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -44,9 +40,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -58,9 +52,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -72,9 +64,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -86,9 +76,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -110,9 +98,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -124,9 +110,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -138,9 +122,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -152,9 +134,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -166,9 +146,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -180,9 +158,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -204,9 +180,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 0,
-	            "abstained": 1,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 1
 	          }
 	        }
 	      },
@@ -218,9 +192,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -232,9 +204,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -246,9 +216,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -260,9 +228,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -274,9 +240,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 0,
-	            "abstained": 1,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 1
 	          }
 	        }
 	      }
@@ -287,8 +251,18 @@ var data = {
 	    "name": "Parkkosten",
 	    "title": "",
 	    "description": "Um den Autoverkehr in der Innenstadt zu reduzieren, müssen die Kosten für den ÖPNV stark gesenkt werden",
-	    "terms": [],
-	    "background": [],
+	    "terms": [
+	    	{
+	    		"term": "ÖPNV",
+	    		"explanation": "Als öffentlicher Personennahverkehr (ÖPNV) wird der Personenverkehr als Teil des öffentlichen Verkehrs (ÖV) im Rahmen der Grundversorgung auf Straße, Schiene, Wasser und mittels Luftseilbahn bezeichnet."
+	    	}
+	    ],
+	    "background": [
+	    	{
+	    		"link": "https://de.wikipedia.org/wiki/Öffentlicher_Personennahverkehr",
+	    		"title": "ÖPNV (Wikipedia)"
+	    	}
+	    ],
 	    "answers": [
 	      {
 	        "name": "cdu",
@@ -298,9 +272,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -312,9 +284,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -326,9 +296,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -340,9 +308,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -354,9 +320,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -368,9 +332,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -392,9 +354,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -406,9 +366,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -420,9 +378,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -434,9 +390,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -448,9 +402,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -462,9 +414,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -486,9 +436,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -500,9 +448,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -514,9 +460,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -528,9 +472,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -542,9 +484,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -556,9 +496,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -569,8 +507,18 @@ var data = {
 	    "name": "Radwege und Fahrradstraßen",
 	    "title": "Radwege und Fahrradstraßen",
 	    "description": "Um den Radverkehr zu stärken, müssen erheblich mehr Straßen zu Fahrradstraßen und Fahrradwegen umgewandelt werden",
-	    "terms": [],
-	    "background": [],
+	    "terms": [
+	    	{
+	    		"term": "Fahrradstraße",
+	    		"explanation": "Straßen, welche eigentlich nur für Radfahrer freigeben sind und auf denen nebeneinander gefahren werden darf. In Ulm sind diese auch für Kraftfahrzeuge freigegeben."
+	    	}
+	    ],
+	    "background": [
+	    	{
+	    		"link": "https://de.wikipedia.org/wiki/Fahrradstraße",
+	    		"title": "Fahrradstraße (Wikipedia)"
+	    	}
+	    ],
 	    "answers": [
 	      {
 	        "name": "cdu",
@@ -580,9 +528,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -594,9 +540,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -608,9 +552,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -622,9 +564,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -636,9 +576,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -650,9 +588,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -674,9 +610,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -688,9 +622,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -702,9 +634,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -716,9 +646,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -730,9 +658,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -744,9 +670,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -768,9 +692,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -782,9 +704,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -796,9 +716,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -810,9 +728,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -824,9 +740,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -838,9 +752,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 0,
-	            "abstained": 1,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 1
 	          }
 	        }
 	      }
@@ -862,9 +774,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -876,9 +786,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -890,9 +798,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -904,9 +810,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -918,9 +822,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -932,9 +834,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -945,8 +845,18 @@ var data = {
 	    "name": "Leib und Leben",
 	    "title": "Leib und Leben",
 	    "description": "Um die Zahl tödlicher Verkehrsunfälle auf null zu senken (Vision Zero), müssen schwerwiegende Eingriffe in der Verkehrsplanung vorgenommen werden",
-	    "terms": [],
-	    "background": [],
+	    "terms": [
+	    	{
+	    		"term": "Vision Zero",
+	    		"explanation": "Keine Unfälle im Straßenverkehr (zwischen jeglichen Mobilitätsteilnehmern)"
+	    	}
+	    ],
+	    "background": [
+	    	{
+	    		"link": "https://de.wikipedia.org/wiki/Vision_Zero",
+	    		"title": "Vision Zero (Wikipedia)"
+	    	}
+	    ],
 	    "answers": [
 	      {
 	        "name": "cdu",
@@ -956,9 +866,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -970,9 +878,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -984,9 +890,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -998,9 +902,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1012,9 +914,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1026,9 +926,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1039,8 +937,22 @@ var data = {
 	    "name": "ÖPNV vs Auto",
 	    "title": "ÖPNV vs Auto",
 	    "description": "Der Ausbau des ÖPNV hat Vorrang vor dem motorisierten Individualverkehr in Ulm",
-	    "terms": [],
-	    "background": [],
+	    "terms": [
+	    	{
+	    		"term": "Motorisierter Individualverkehr",
+	    		"explanation": "Kraftfahrzeuge zur individuellen Nutzung wie Pkw und Krafträder (Zweiräder, die zu 100 % durch Motorleistung fahren wie Motorräder, Motorroller, Mopeds und Mofas) werden als „motorisierter Individualverkehr“ (MIV) bezeichnet"
+	    	}
+	    ],
+	    "background": [
+	    	{
+	    		"link": "https://de.wikipedia.org/wiki/Individualverkehr#Motorisierter_Individualverkehr",
+	    		"title": "Motorisierter Individualverkehr (Wikipedia)"
+	    	},
+	    	{
+	    		"link": "http://www.ivv-aachen.de/motorisierter-individualverkehr.html",
+	    		"title": "Motorisierter Individualverkehr (IVV Aachen)"
+	    	}
+	    ],
 	    "answers": [
 	      {
 	        "name": "cdu",
@@ -1050,9 +962,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1064,9 +974,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1078,9 +986,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1092,9 +998,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1106,9 +1010,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1120,9 +1022,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1144,9 +1044,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1158,9 +1056,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1172,9 +1068,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1186,9 +1080,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1200,9 +1092,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1214,9 +1104,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1238,9 +1126,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1252,9 +1138,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1266,9 +1150,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1280,9 +1162,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1294,9 +1174,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1308,9 +1186,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1321,8 +1197,18 @@ var data = {
 	    "name": "Barrierefreier Durchgang Hbf",
 	    "title": "Barrierefreier Durchgang Hbf",
 	    "description": "Zur Erreichung der Innenstadt muss ein barrierefreier Durchgang von den Gleisen am Hauptbahnhof bis zur Innenstadt gewährleistet werden",
-	    "terms": [],
-	    "background": [],
+	    "terms": [
+	    	{
+	    		"term": "Barrierefreiheit",
+	    		"explanation": "Barrierefreiheit bezeichnet eine Gestaltung der baulichen Umwelt sowie von Informationsangeboten, Kommunikation usw. dergestalt, dass sie auch von Menschen mit Beeinträchtigungen ohne zusätzliche Hilfen genutzt und wahrgenommen werden können"
+	    	}
+	    ],
+	    "background": [
+	    	{
+	    		"link": "https://de.wikipedia.org/wiki/Barrierefreiheit",
+	    		"title": "Barrierefreiheit (Wikipedia)"
+	    	}
+	    ],
 	    "answers": [
 	      {
 	        "name": "cdu",
@@ -1332,9 +1218,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1346,9 +1230,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1360,9 +1242,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1374,9 +1254,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1388,9 +1266,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1402,9 +1278,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1426,9 +1300,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1440,9 +1312,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1454,9 +1324,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1468,9 +1336,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1482,9 +1348,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1496,9 +1360,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1520,9 +1382,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1534,9 +1394,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1548,9 +1406,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 0,
-	            "abstained": 1,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 1
 	          }
 	        }
 	      },
@@ -1562,9 +1418,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1576,9 +1430,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1590,9 +1442,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1603,8 +1453,22 @@ var data = {
 	    "name": "Bike-Sharing",
 	    "title": "Bike-Sharing",
 	    "description": "Ein für Nutzer attraktives Bike-Sharing System sollten von Seiten der Stadt Ulm angeboten werden, auch wenn dies dauerhaft bezuschusst werden muss",
-	    "terms": [],
-	    "background": [],
+	    "terms": [
+	    	{
+	    		"term": "Bike-Sharing",
+	    		"explanation": "Öffentliche Fahrradverleihsysteme sind eine Form des Fahrradverleihs, bei dem die Fahrräder in der Regel im öffentlichen Raum oder an öffentlich zugänglichen Stationen zur Verfügung stehen. Diese Systeme werden von Unternehmen, Kommunen und Kommunalverbänden eingerichtet. Die Nutzung dieser Fahrräder ist besonders auf kurzen Strecken im urbanen Raum sinnvoll."
+	    	}
+	    ],
+	    "background": [
+	    	{
+	    		"link": "https://www.adfc.de/artikel/bike-sharing/",
+	    		"title": "Bike-Sharing (ADFC)"
+	    	},
+	    	{
+	    		"link": "https://de.wikipedia.org/wiki/Fahrradverleihsystem",
+	    		"title": "Fahrradverleihsystem (Wikipedia)"
+	    	}
+	    ],
 	    "answers": [
 	      {
 	        "name": "cdu",
@@ -1614,9 +1478,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1628,9 +1490,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1642,9 +1502,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1656,9 +1514,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1670,9 +1526,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1684,9 +1538,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1708,9 +1560,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1722,9 +1572,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1736,9 +1584,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1750,9 +1596,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1764,9 +1608,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1778,9 +1620,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1802,9 +1642,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1816,9 +1654,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1830,9 +1666,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1844,9 +1678,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1858,9 +1690,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1872,9 +1702,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 0,
-	            "abstained": 1,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 1
 	          }
 	        }
 	      }
@@ -1896,9 +1724,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1910,9 +1736,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1924,9 +1748,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1938,9 +1760,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1952,9 +1772,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -1966,9 +1784,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -1990,9 +1806,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -2004,9 +1818,7 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -2018,9 +1830,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -2032,9 +1842,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -2046,9 +1854,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      },
@@ -2060,9 +1866,7 @@ var data = {
 	          "results": {
 	            "for": 1,
 	            "against": 0,
-	            "abstained": 0,
-	            "absent": 0,
-	            "didntvote": 0
+	            "abstained": 0
 	          }
 	        }
 	      }
