@@ -450,7 +450,7 @@ footer {
 			margin: 18px 0;
 			padding: 0;
 			list-style: none;
-			height: 18px;
+			height: 40px;
 			line-height: 18px;
 		}
 	
@@ -480,6 +480,7 @@ footer {
 			padding: 0;
 			line-height: 18px;
 			font-size: 18px;
+			height: 18px;
 			background-color: #D3D3D3;
 		}
 	
@@ -508,6 +509,12 @@ footer {
 			font-weight: 500;
 			margin: 0;
 			padding: 0;
+		}
+
+		#comparison ol li .person {
+			display: block;
+			position: absolute;
+			bottom: 0px;
 		}
 
 	#detail {}
@@ -613,22 +620,6 @@ footer {
 			transition: .5s opacity;
 		}
 		
-		#detail .parties .party.explanation.show-explanation {
-			margin: 0 -10px;
-			padding: 0 10px;
-		}
-		
-		#detail .parties .party.explanation.show-explanation blockquote {
-			display: block;
-			position: relative;
-			margin: 0;
-			padding: .5em 0 2em;
-			font-family: "Open Sans", sans-serif;
-			font-size: 13px;
-			font-weight: 500; 
-			line-height: 18px;
-			opacity: 1;
-		}
 		
 		#detail .parties {
 			display: block;
@@ -661,24 +652,6 @@ footer {
 			font-weight: 500;
 		}
 
-		#detail .parties .party.explanation h5 {
-			cursor: pointer;
-		}
-
-		#detail .parties .party.explanation h5 i {
-			display: inline-block;
-			position: relative;
-			opacity: .7;
-			transition: .5s transform;
-		}
-		
-		#detail .parties .party.explanation.show-explanation h5 i {
-			-webkit-transform: rotate(-180deg);
-			-moz-transform: rotate(-180deg);
-			-ms-transform: rotate(-180deg);
-			-o-transform: rotate(-180deg);
-			transform: rotate(-180deg);
-		}
 
 	#dom {
 		margin: 5em 2em;
@@ -1073,7 +1046,7 @@ footer {
 				margin: 18px 0;
 				padding: 0;
 				list-style: none;
-				height: 18px;
+				height: 40px;
 				line-height: 18px;
 			}
 		
@@ -1103,6 +1076,7 @@ footer {
 				padding: 0;
 				line-height: 18px;
 				font-size: 18px;
+				height: 18px;
 				background-color: #D3D3D3;
 			}
 		
@@ -1131,6 +1105,12 @@ footer {
 				font-weight: 500;
 				margin: 0;
 				padding: 0;
+			}			
+
+			#comparison ol li .person {
+				display: block;
+				position: absolute;
+				bottom: 0px;
 			}
 		
 		#detail {}
@@ -1232,12 +1212,6 @@ footer {
 				line-height: 18px;
 			}
 			
-			#detail .answers .answer .show-explanation blockquote,
-			#detail .answers .answer .show-explanation p {
-				display: block;
-				cursor: auto;
-				margin-bottom: 3em;
-			}
 		
 			#detail .parties {
 				display: block;
@@ -1252,14 +1226,11 @@ footer {
 				position: relative;
 			}
 
-			#detail .parties .party.explanation {
-				cursor: pointer;
-			}
 			
 			#detail .parties .party h5 {
 				display: block;
 				position: relative;
-				margin: .5em 0;
+				margin: .5em 0 0;
 				padding: 0;
 				line-height: 24px;
 				font-size: 18px;
@@ -1267,20 +1238,6 @@ footer {
 				font-weight: 500;
 			}
 			
-			#detail .parties .party.explanation h5 i {
-				display: inline-block;
-				position: relative;
-				opacity: .7;
-				transition: .5s transform;
-			}
-			
-			#detail .parties .party.explanation.show-explanation h5 i {
-				-webkit-transform: rotate(-180deg);
-				-moz-transform: rotate(-180deg);
-				-ms-transform: rotate(-180deg);
-				-o-transform: rotate(-180deg);
-				transform: rotate(-180deg);
-			}
 
 		#dom {}
 

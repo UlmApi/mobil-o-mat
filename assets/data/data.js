@@ -2076,37 +2076,38 @@ var data = {
 		{
 			"name": "cdu",
 			"short_name": "CDU",
-			"long_name": "Christlich Demokratische Union Deutschland"
+			"long_name": "Christlich Demokratische Union Deutschland",
+			"person_name": "Birgit Schäfer-Oelmayer"
 		},
 		{
 			"name": "spd",
 			"short_name": "SPD",
-			"long_name": "Sozialdemokratische Partei Deutschlands"
+			"long_name": "Sozialdemokratische Partei Deutschlands",
+			"person_name": "Martin Ansbach"
 		},
 		{
 			"name": "gruene",
 			"short_name": "Grüne",
-			"long_name": "Bündnis 90/Die Grünen"
+			"long_name": "Bündnis 90/Die Grünen",
+			"person_name": "Michael Joukov-Schwelling"
 		},
 		{
 			"name": "linke",
 			"short_name": "Linke",
-			"long_name": "DIE LINKE."
+			"long_name": "DIE LINKE.",
+			"person_name": "Eva-Maria Glathe-Braun"
 		},
 		{
 			"name": "fdp",
 			"short_name": "FDP",
-			"long_name": "Freie Demokratische Partei"
+			"long_name": "Freie Demokratische Partei",
+			"person_name": "Erik Wischmann"
 		},
 		{
 			"name": "buendnis",
 			"short_name": "Bündnis",
-			"long_name": "Bündnis für Lebenswerte Ortschaften"
-		},
-		{
-			"name": "independent",
-			"short_name": "Parteilos",
-			"long_name": "Parteilos"
+			"long_name": "Bündnis für Lebenswerte Ortschaften",
+			"person_name": "Denise Niggemeier"
 		}
 	]
 }

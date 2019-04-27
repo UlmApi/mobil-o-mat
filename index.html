@@ -42,10 +42,7 @@
 						<h2>Mobil-O-Mat</h2>
 						<h3>zur Kommunalwahl Ulm 2019</h3>
 						<p>
-							Wer macht wirklich welche mobile Politik?
-						</p>
-						<p>
-							Mit dem Mobil-O-Mat kannst Du zum Thema der Mobilität in Ulm Deine eigenen Standpunkte mit denen der Kandidat_innen der Kommunalwahl 2019 abgleichen.
+							Mit dem Mobil-O-Mat kannst Du zum Thema der Mobilität in Ulm Deine eigenen Standpunkte mit denen der Kandidat:innen der Kommunalwahl 2019 abgleichen.
 						</p>
 						<noscript>
 							<h2>Bitte JavaScript aktivieren</h2>
@@ -60,11 +57,11 @@
 						</p>
 
 						<p>
-							Für ihre Stellungnahmen zu den Thesen sind die Kandidat_innen selbst verantwortlich. Alle 22 Thesen wurden von Bürgerinnen und Bürgern der Stadt Ulm generiert.
+							Für ihre Stellungnahmen zu den Thesen sind die Kandidat:innen selbst verantwortlich. Alle 22 Thesen wurden von Bürgerinnen und Bürgern der Stadt Ulm generiert.
 						</p>
 
 						<p>
-							Die Thesen wurden den Kandidat_innen des ersten Listenplatzes zugesendet, sowie an die allgemeine Funktionsmailadresse der Parteien. Der Mobil-O-Mat hat alle bis zum 23.04.2019 eingetroffenen Antworten erfasst. Ob die Antwort für eine Person oder eine gesamte Partei steht, ist entsprechend markiert.
+							Die Thesen wurden den Kandidat:innen des ersten Listenplatzes zugesendet, sowie an die allgemeine Funktionsmailadresse der Parteien. Der Mobil-O-Mat hat alle bis zum 23.04.2019 eingetroffenen Antworten erfasst. Ob die Antwort für eine Person oder eine gesamte Partei steht, ist entsprechend markiert.
 						</p>
 					</div>
 					<div class="row">
@@ -92,7 +89,7 @@
 					</p>
 
 					<p>
-						Interessierte Bürgerinnen und Bürger haben sich daher zusammengesetzt, um im Rahmen des <a href="https://verschwoerhaus.de/mobilitaetsmontag-2-kommunalwahl-edition/">Mobilitätsmontags</a> Thesen  zu formulieren und an die lokalen Politiker_innen auf Listenplatz 1 der jeweiligen Parteien zu senden sowie an die allgemeine Parteien-Mailadresse.
+						Interessierte Bürgerinnen und Bürger haben sich daher zusammengesetzt, um im Rahmen des <a href="https://verschwoerhaus.de/mobilitaetsmontag-2-kommunalwahl-edition/">Mobilitätsmontags</a> Thesen  zu formulieren und an die lokalen Politiker:innen auf Listenplatz 1 der jeweiligen Parteien zu senden sowie an die allgemeine Parteien-Mailadresse.
 					</p>
 
 					<p>
@@ -106,7 +103,7 @@
 					<h3>So funktioniert der Mobil-O-Mat</h3>
 					<p>
 						Sie können sich auf dieser Website per Klick zu Mobilitätsthemen zustimmend, neutral oder ablehnend positionieren.
-						Der Mobil-O-Mat vergleicht anschließend diese von Ihnen gewählten Positionen mit der Meinung der Partei stehen bzw. der eigenen Position der Kandidat_innen. Zusätzlich erklärt die Seite die Streitthemen kurz und bietet weiterführende Informationen.
+						Der Mobil-O-Mat vergleicht anschließend diese von Ihnen gewählten Positionen mit der Meinung der Partei stehen bzw. der eigenen Position der Kandidat:innen. Zusätzlich erklärt die Seite die Streitthemen kurz und bietet weiterführende Informationen.
 					</p>
 				</div>
 
@@ -298,7 +295,7 @@
 	<script id="tmpl-result" type="x-tmpl-mustache">
 		<div id="comparison">
 			<h2>Ihr Ergebnis im Überblick</h2>
-			<p>Die folgenden Prozentzahlen geben an, zu wieviel Prozent Ihre Position mit dem Abstimmungsverhalten der jeweiligen Partei übereinstimmt.</p>
+			<p>Die folgenden Prozentzahlen geben an, zu wieviel Prozent Ihre Position mit den Positionen der Parteivertreter:innen übereinstimmt.</p>
 			<ol class="comparison-wrapper">
 			{{#comparison}}
 				<li>
@@ -307,12 +304,13 @@
 						<span class="percentage-bar" style="width: {{width}}%;"></span>
 						<span class="percentage-label">{{percent}} %</span>
 					</p>
+					<small class="person">{{person_name}}</small>
 				</li>		
 			{{/comparison}}
 			</ol>
 		</div>
 		<div id="detail">
-			<h2>Das Abstimmungsverhalten der Parteien im Detail</h2>
+			<h2>Die Positionen der Parteivertreter:innen im Detail</h2>
 			<ul class="detail-table">
 			{{#detail}}
 				<li id="detail-{{id}}">
@@ -328,22 +326,13 @@
 								<ul class="parties">
 									{{#parties}}
 										<li class="party explanation">
-											<h5 title="{{party_long}}">{{party_short}} <i tabindex="0" class="icon-down" title="Erläuterung"></i></h5>
-											<blockquote class="blockquote-color">
-												Abgeordnete: {{delegates}}
-												<canvas class="donut-chart-margin"
-													data-for={{results.for}}
-													data-against={{results.against}}
-													data-abstained={{results.abstained}}
-													data-absent={{results.absent}}
-													data-didntvote={{results.didntvote}}
-												></canvas>
-											</blockquote>
+											<h5 title="{{party_long}}">{{party_short}}</h5>
+											<small class="person">{{person_name}}</small>
 										</li>
 									{{/parties}}
 									{{^parties}}
 										<li class="party no-party">
-											<em>Keine Partei vertrat mehrheitlich diese Position.</em>
+											<em>Niemand vertrat diese Position.</em>
 										</li>
 									{{/parties}}
 								</ul>

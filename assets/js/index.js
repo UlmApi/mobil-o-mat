@@ -176,7 +176,8 @@ $(document).ready(function () {
 				width: (((score / max) * 100) || 0).toFixed(1),
 				party: data.parties[party_id].name,
 				party_short: data.parties[party_id].short_name,
-				party_long: data.parties[party_id].long_name
+				party_long: data.parties[party_id].long_name,
+				person_name: data.parties[party_id].person_name,
 			}
 		}).sort(function (a, b) {
 			return (b.score - a.score)
@@ -212,6 +213,7 @@ $(document).ready(function () {
 									party: party.name,
 									party_short: data.parties[i].short_name,
 									party_long: data.parties[i].long_name,
+									person_name: data.parties[i].person_name,
 									delegates: delegates_total
 								}
 							}
@@ -228,51 +230,6 @@ $(document).ready(function () {
 		// render result to document
 		$("#result").html(Mustache.render(tmpl.result, result))
 
-		// activate detail
-		$(".party.explanation h5", "#detail").bind("keypress click", function (evt) {
-			evt.preventDefault()
-			$(this).parent().toggleClass("show-explanation")
-
-			// find and render chart using chart.js
-			var el = $(this).next().find('canvas')[0]
-			var ctx = el.getContext('2d')
-
-			// return if chart is already rendered
-			if ($(this).next().find('canvas').hasClass('chartjs-render-monitor')) {
-				return
-			}
-
-			new Chart(ctx, {
-				type: 'doughnut',
-				data: {
-					labels: [' Dafür gestimmt', ' Dagegen gestimmt', ' Abwesent', ' Enthalten', ' Nicht abgestimmt'],
-					datasets: [{
-						data: [el.dataset.for, el.dataset.against, el.dataset.absent, el.dataset.abstained, el.dataset.didntvote],
-						backgroundColor: [
-							'#9fd773', // greenish for 'for'
-							'#cc6c5b', // reddish for 'against'
-							'#D8D8D8', // light gray for 'absent'
-							'#787878', // dark gray 'abstained'
-							'#A0A0A0' // gray for 'didn't vote'
-						],
-						borderWidth: 0
-					}]
-				},
-				options: {
-					legend: {
-						display: false
-					},
-					plugins: {
-						labels: {
-							fontColor: '#000'
-						}
-					},
-					animation: {
-						duration: 0
-					}
-				}
-			})
-		})
 
 		if (typeof callback === "function") callback()
 	}
