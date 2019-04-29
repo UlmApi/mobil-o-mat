@@ -446,16 +446,11 @@ footer {
 			margin: 18px 0;
 			padding: 0;
 			list-style: none;
-			height: 40px;
 			line-height: 18px;
 		}
 	
 		#comparison ol li h4 {
 			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
 			width: 80px;
 			margin: 0;
 			padding: 0;
@@ -474,9 +469,9 @@ footer {
 			left: 80px;
 			margin: 0;
 			padding: 0;
-			line-height: 18px;
-			font-size: 18px;
-			height: 18px;
+			line-height: 14px;
+			font-size: 14px;
+			height: 14px;
 			background-color: #D3D3D3;
 		}
 	
@@ -487,7 +482,7 @@ footer {
 			top: 0;
 			bottom: 0;
 			background-color: #ef2f98;
-			line-height: 18px;
+			line-height: 14px;
 			margin: 0;
 			padding: 0;
 		}
@@ -499,7 +494,7 @@ footer {
 			top: 0;
 			bottom: 0;
 			color: #fff;
-			line-height: 18px;
+			line-height: 14px;
 			font-size: 13px;
 			font-family: "Open Sans";
 			font-weight: 500;
@@ -509,8 +504,6 @@ footer {
 
 		#comparison ol li .person {
 			display: block;
-			position: absolute;
-			bottom: 0px;
 		}
 
 	#detail {}
@@ -656,6 +649,10 @@ footer {
 		#dom a {
 			color: #ef2f98;
 			text-decoration: none;
+		}
+
+		#dom ul {
+		    list-style-position: inside;
 		}
 		
 	#orgs {
@@ -1038,16 +1035,11 @@ footer {
 				margin: 18px 0;
 				padding: 0;
 				list-style: none;
-				height: 40px;
 				line-height: 18px;
 			}
 		
 			#comparison ol li h4 {
 				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
 				width: 145px;
 				margin: 0;
 				padding: 0;
@@ -1101,8 +1093,6 @@ footer {
 
 			#comparison ol li .person {
 				display: block;
-				position: absolute;
-				bottom: 0px;
 			}
 		
 		#detail {}
@@ -1236,6 +1226,10 @@ footer {
 			#dom a {
 				color: #ef2f98;
 				text-decoration: none;
+			}
+
+			#dom ul {
+		    	list-style-position: inside;
 			}
 
 		#orgs {}

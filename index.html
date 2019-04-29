@@ -91,11 +91,25 @@
 					</p>
 
 					<p>
-						Als Antwort bekamen wir sechs unterschiedliche Meinungsbilder, welche entweder für die Meinung der Partei stehen, oder der eigenen Position der Kandidaten.
+						Als Antwort bekamen wir sechs unterschiedliche Meinungsbilder, welche entweder für die Meinung der Partei stehen, oder der eigenen Position der Kandidat:innen.
 					</p>
 
+					<p>Folgende Personen sprechen in Ihrem Namen:</p>
+					<ul>
+						<li>Birgit Schäfer-Oelmayer (eigene Antworten, nicht generalisierte Sichtweise der CDU)</li>
+						<li>Erik Wischmann (eigene Antworten, nicht generalisierte Sichtweise der FDP)</li>
+					</ul>
+ 
+ 					<p>Folgende Personen sprechen im Namen Ihrer Partei:</p>
+ 					<ul>
+						<li>Eva-Maria Glathe-Braun (im Namen der LINKEN Ulm)</li>
+						<li>Martin Ansbach (im Namen der SPD Ulm)</li>
+						<li>Denise Niggemeier (im Namen des Bündnis für lebenswerte Ortschaften Ulm)</li>
+						<li>Michael Joukov-Schwelling (im Namen der GRÜNEN Ulm)</li>
+					</ul>
+
 					<p>
-						Der Mobil-O-Mat soll dabei als Anreiz dienen, sich intensiv mit den Kommunalwahlen zu befassen und sich mit den Positionen der Kandidaten auseinander zu setzen. Er ersetzt keine intensive Auseinandersetzung mit einzelnen Positionen und Vorhaben von Kandidaten oder Parteien.
+						Der Mobil-O-Mat soll dabei als Anreiz dienen, sich intensiv mit den Kommunalwahlen zu befassen und sich mit den Positionen der Kandidat:innen auseinander zu setzen. Er ersetzt keine intensive Auseinandersetzung mit einzelnen Positionen und Vorhaben von Kandidat:innen oder Parteien.
 					</p>
 
 					<h3>So funktioniert der Mobil-O-Mat</h3>
@@ -289,21 +303,33 @@
 		<div id="comparison">
 			<h2>Ihr Ergebnis im Überblick</h2>
 			<p>Die folgenden Prozentzahlen geben an, zu wieviel Prozent Ihre Position mit den Positionen der Parteivertreter:innen übereinstimmt.</p>
+			<p>Nicht bei allen Vertreter:innen steht ihre jeweilige Position für die gesamte Partei. In diesen Fällen wird statt der Parteiname zuerst der Name der Person genannt.</p>
 			<ol class="comparison-wrapper">
 			{{#comparison}}
 				<li>
+					{{#personal_statement}}
+					<h4>{{person_name}}</h4>
+					<p class="percentage">
+						<span class="percentage-bar" style="width: {{width}}%;"></span>
+						<span class="percentage-label">{{percent}} %</span>
+					</p>
+					<small class="person" title="{{party_long}}">{{party_short}}</small>
+					{{/personal_statement}}
+					{{^personal_statement}}
 					<h4 title="{{party_long}}">{{party_short}}</h4>
 					<p class="percentage">
 						<span class="percentage-bar" style="width: {{width}}%;"></span>
 						<span class="percentage-label">{{percent}} %</span>
 					</p>
 					<small class="person">{{person_name}}</small>
+					{{/personal_statement}}
 				</li>		
 			{{/comparison}}
 			</ol>
 		</div>
 		<div id="detail">
 			<h2>Die Positionen der Parteivertreter:innen im Detail</h2>
+			<p>Nicht bei allen Vertreter:innen steht ihre jeweilige Position für die gesamte Partei. In diesen Fällen wird statt der Parteiname zuerst der Name der Person genannt.</p>
 			<ul class="detail-table">
 			{{#detail}}
 				<li id="detail-{{id}}">
@@ -319,8 +345,14 @@
 								<ul class="parties">
 									{{#parties}}
 										<li class="party explanation">
+											{{#personal_statement}}
+											<h5>{{person_name}}</h5>
+											<small class="person">{{party_short}}</small>
+											{{/personal_statement}}
+											{{^personal_statement}}
 											<h5 title="{{party_long}}">{{party_short}}</h5>
 											<small class="person">{{person_name}}</small>
+											{{/personal_statement}}
 										</li>
 									{{/parties}}
 									{{^parties}}

@@ -1891,7 +1891,8 @@ var data = {
 			"name": "cdu",
 			"short_name": "CDU",
 			"long_name": "Christlich Demokratische Union Deutschland",
-			"person_name": "Birgit Schäfer-Oelmayer"
+			"person_name": "Birgit Schäfer-Oelmayer",
+			"personal_statement": true
 		},
 		{
 			"name": "spd",
@@ -1915,7 +1916,8 @@ var data = {
 			"name": "fdp",
 			"short_name": "FDP",
 			"long_name": "Freie Demokratische Partei",
-			"person_name": "Erik Wischmann"
+			"person_name": "Erik Wischmann",
+			"personal_statement": true
 		},
 		{
 			"name": "buendnis",

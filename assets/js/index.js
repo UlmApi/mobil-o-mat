@@ -178,6 +178,7 @@ $(document).ready(function () {
 				party_short: data.parties[party_id].short_name,
 				party_long: data.parties[party_id].long_name,
 				person_name: data.parties[party_id].person_name,
+				personal_statement: !!data.parties[party_id].personal_statement
 			}
 		}).sort(function (a, b) {
 			return (b.score - a.score)
@@ -214,6 +215,7 @@ $(document).ready(function () {
 									party_short: data.parties[i].short_name,
 									party_long: data.parties[i].long_name,
 									person_name: data.parties[i].person_name,
+									personal_statement: !!data.parties[i].personal_statement,
 									delegates: delegates_total
 								}
 							}
