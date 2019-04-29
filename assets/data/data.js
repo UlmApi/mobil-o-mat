@@ -1371,8 +1371,18 @@ var data = {
 	    "name": "intermodale Mobilität",
 	    "title": "intermodale Mobilität",
 	    "description": "Um das Verkehrsaufkommen zu verringern, muss die Stadt intermodale Mobilität (auch finanziell) fördern",
-	    "terms": [],
-	    "background": [],
+	    "terms": [
+	    	{
+	    		"term": "Intermodal",
+	    		"explanation": "Verwendung von verschiedenen Verkehrsmitteln innerhalb einer Reise (bspw. erst Bus, dann Weiterreise mit Bahn, dann Weiterreise mit Leihfahrrad)."
+	    	}
+	    ],
+	    "background": [
+	    	{
+	    		"link": "https://de.wikipedia.org/wiki/Intermodaler_Verkehr",
+	    		"title": "Intermodaler Verkehr (Wikipedia)"
+	    	}
+	    ],
 	    "answers": [
 	      {
 	        "name": "cdu",
