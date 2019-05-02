@@ -4,7 +4,7 @@ var data = {
 	    "id": 1,
 	    "name": "Parkraum",
 	    "title": "Parkraum",
-	    "description": "Um Freiraum für Rad- und Fußverkehr zu ermöglichen, müssen Parkräume zurück gebaut werden",
+	    "description": "Um Freiraum für Rad- und Fußverkehr zu ermöglichen, müssen Parkräume zurückgebaut werden.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -86,7 +86,7 @@ var data = {
 	    "id": 2,
 	    "name": "Parkraum",
 	    "title": "",
-	    "description": "Um die Parksituation in Ulm zu verbessern, muss der Radverkehr weiterhin zurückstecken und Gehwege zurückgebaut werden",
+	    "description": "Um die Parksituation in Ulm zu verbessern, muss der Radverkehr weiterhin zurückstecken und Gehwege zurückgebaut werden.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -168,7 +168,7 @@ var data = {
 	    "id": 3,
 	    "name": "Parkkosten",
 	    "title": "Parkkosten",
-	    "description": "Um den Autoverkehr in der Innenstadt zu reduzieren, müssen Parkkosten spürbar angehoben werden",
+	    "description": "Um den Autoverkehr in der Innenstadt zu reduzieren, müssen Parkkosten spürbar angehoben werden.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -250,7 +250,7 @@ var data = {
 	    "id": 4,
 	    "name": "Parkkosten",
 	    "title": "",
-	    "description": "Um den Autoverkehr in der Innenstadt zu reduzieren, müssen die Kosten für den ÖPNV stark gesenkt werden",
+	    "description": "Um den Autoverkehr in der Innenstadt zu reduzieren, müssen die Kosten für den ÖPNV stark gesenkt werden.",
 	    "terms": [
 	    	{
 	    		"term": "ÖPNV",
@@ -342,7 +342,7 @@ var data = {
 	    "id": 5,
 	    "name": "Parkkosten",
 	    "title": "",
-	    "description": "Ein 2-Stunden-Ticket für ein Parkhaus in Ulm sollte günstiger sein als eine Tageskarte (Single) für den ÖPNV",
+	    "description": "Ein 2-Stunden-Ticket für ein Parkhaus in Ulm sollte günstiger sein als eine Tageskarte (Single) für den ÖPNV.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -424,7 +424,7 @@ var data = {
 	    "id": 6,
 	    "name": "Parkkosten",
 	    "title": "",
-	    "description": "Widerrechtliches Parken darf maximal nur so viel kosten wie ein Tagesticket am Automaten",
+	    "description": "Widerrechtliches Parken darf maximal nur so viel kosten wie ein Tagesticket am Parkticket-Automaten.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -506,7 +506,7 @@ var data = {
 	    "id": 7,
 	    "name": "Radwege und Fahrradstraßen",
 	    "title": "Radwege und Fahrradstraßen",
-	    "description": "Um den Radverkehr zu stärken, müssen erheblich mehr Straßen zu Fahrradstraßen und Fahrradwegen umgewandelt werden",
+	    "description": "Um den Radverkehr zu stärken, müssen erheblich mehr Straßen zu Fahrradstraßen und Fahrradwegen umgewandelt werden.",
 	    "terms": [
 	    	{
 	    		"term": "Fahrradstraße",
@@ -598,7 +598,7 @@ var data = {
 	    "id": 8,
 	    "name": "Radwege und Fahrradstraßen",
 	    "title": "",
-	    "description": "Um den Radverkehr zu erhöhen, müssen Fahrspuren für Automobile durch baulich getrennte Radwege ersetzt werden",
+	    "description": "Um den Radverkehr zu erhöhen, müssen Fahrspuren für Automobile durch baulich getrennte Radwege ersetzt werden.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -680,9 +680,23 @@ var data = {
 	    "id": 9,
 	    "name": "Radwege und Fahrradstraßen",
 	    "title": "",
-	    "description": "Der Ausbau von Fahrradwegen und Radstraßen hat Vorrang vor dem motorisierten Individualverkehr",
-	    "terms": [],
-	    "background": [],
+	    "description": "Der Ausbau von Fahrradwegen und Radstraßen hat Vorrang vor dem motorisierten Individualverkehr.",
+	    "terms": [
+	    	{
+	    		"term": "Motorisierter Individualverkehr",
+	    		"explanation": "Kraftfahrzeuge zur individuellen Nutzung wie Pkw und Krafträder (Zweiräder, die zu 100 % durch Motorleistung fahren wie Motorräder, Motorroller, Mopeds und Mofas) werden als „motorisierter Individualverkehr“ (MIV) bezeichnet"
+	    	}
+	    ],
+	    "background": [
+	    	{
+	    		"link": "https://de.wikipedia.org/wiki/Individualverkehr#Motorisierter_Individualverkehr",
+	    		"title": "Motorisierter Individualverkehr (Wikipedia)"
+	    	},
+	    	{
+	    		"link": "http://www.ivv-aachen.de/motorisierter-individualverkehr.html",
+	    		"title": "Motorisierter Individualverkehr (IVV Aachen)"
+	    	}
+	    ],
 	    "answers": [
 	      {
 	        "name": "cdu",
@@ -762,7 +776,7 @@ var data = {
 	    "id": 10,
 	    "name": "Radwege und Fahrradstraßen",
 	    "title": "",
-	    "description": "Fußgängerzonen sollten weiterhin fahrradfrei bleiben",
+	    "description": "Fußgängerzonen sollten weiterhin fahrradfrei bleiben.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -844,7 +858,7 @@ var data = {
 	    "id": 11,
 	    "name": "Leib und Leben",
 	    "title": "Leib und Leben",
-	    "description": "Um die Zahl tödlicher Verkehrsunfälle auf null zu senken (Vision Zero), müssen schwerwiegende Eingriffe in der Verkehrsplanung vorgenommen werden",
+	    "description": "Um die Zahl tödlicher Verkehrsunfälle auf null zu senken (Vision Zero), müssen schwerwiegende Eingriffe in die Verkehrsplanung vorgenommen werden.",
 	    "terms": [
 	    	{
 	    		"term": "Vision Zero",
@@ -934,25 +948,11 @@ var data = {
 	  },
 	  {
 	    "id": 12,
-	    "name": "ÖPNV vs Auto",
-	    "title": "ÖPNV vs Auto",
-	    "description": "Der Ausbau des ÖPNV hat Vorrang vor dem motorisierten Individualverkehr in Ulm",
-	    "terms": [
-	    	{
-	    		"term": "Motorisierter Individualverkehr",
-	    		"explanation": "Kraftfahrzeuge zur individuellen Nutzung wie Pkw und Krafträder (Zweiräder, die zu 100 % durch Motorleistung fahren wie Motorräder, Motorroller, Mopeds und Mofas) werden als „motorisierter Individualverkehr“ (MIV) bezeichnet"
-	    	}
-	    ],
-	    "background": [
-	    	{
-	    		"link": "https://de.wikipedia.org/wiki/Individualverkehr#Motorisierter_Individualverkehr",
-	    		"title": "Motorisierter Individualverkehr (Wikipedia)"
-	    	},
-	    	{
-	    		"link": "http://www.ivv-aachen.de/motorisierter-individualverkehr.html",
-	    		"title": "Motorisierter Individualverkehr (IVV Aachen)"
-	    	}
-	    ],
+	    "name": "ÖPNV vs. Auto",
+	    "title": "ÖPNV vs. Auto",
+	    "description": "Der Ausbau des ÖPNV hat Vorrang vor dem motorisierten Individualverkehr in Ulm.",
+	    "terms": [],
+	    "background": [],
 	    "answers": [
 	      {
 	        "name": "cdu",
@@ -1032,7 +1032,7 @@ var data = {
 	    "id": 13,
 	    "name": "ÖPNV vs Auto",
 	    "title": "",
-	    "description": "Um den motorisierten Individualverkehr zu verringern, müssen Anreizsysteme für den ÖPNV oder alternative Mobilitätswege geschaffen werden",
+	    "description": "Um den motorisierten Individualverkehr zu verringern, müssen Anreizsysteme für den ÖPNV oder alternative Mobilitätswege geschaffen werden.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -1114,7 +1114,7 @@ var data = {
 	    "id": 14,
 	    "name": "ÖPNV vs Auto",
 	    "title": "",
-	    "description": "Die Nutzung des ÖPNV sollte samstags grundsätzlich kostenfrei sein",
+	    "description": "Die Nutzung des ÖPNV sollte samstags grundsätzlich kostenfrei sein.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -1194,9 +1194,9 @@ var data = {
 	  },
 	  {
 	    "id": 15,
-	    "name": "Barrierefreier Durchgang Hbf",
-	    "title": "Barrierefreier Durchgang Hbf",
-	    "description": "Zur Erreichung der Innenstadt muss ein barrierefreier Durchgang von den Gleisen am Hauptbahnhof bis zur Innenstadt gewährleistet werden",
+	    "name": "Raumkonzept Hauptbahnhof",
+	    "title": "Raumkonzept Hauptbahnhof",
+	    "description": "Zur Erreichung der Innenstadt muss ein barrierefreier Durchgang von den Gleisen am Hauptbahnhof bis zur Innenstadt gewährleistet werden.",
 	    "terms": [
 	    	{
 	    		"term": "Barrierefreiheit",
@@ -1286,9 +1286,9 @@ var data = {
 	  },
 	  {
 	    "id": 16,
-	    "name": "Barrierefreier Durchgang Hbf",
+	    "name": "Raumkonzept Hauptbahnhof",
 	    "title": "",
-	    "description": "Um der Funktion als Mobilitätsdrehscheibe gerecht zu werden, muss der Hauptbahnhof-Vorplatz ein ähnliches Raumkonzept aufweisen wie das Ehinger Tor (mehr als zwei Steige)",
+	    "description": "Um der Funktion als Mobilitätsdrehscheibe gerecht zu werden, muss der Hauptbahnhof-Vorplatz ein ähnliches Raumkonzept aufweisen wie das Ehinger Tor (mehr als zwei Steige).",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -1368,9 +1368,9 @@ var data = {
 	  },
 	  {
 	    "id": 17,
-	    "name": "intermodale Mobilität",
-	    "title": "intermodale Mobilität",
-	    "description": "Um das Verkehrsaufkommen zu verringern, muss die Stadt intermodale Mobilität (auch finanziell) fördern",
+	    "name": "Intermodale Mobilität",
+	    "title": "Intermodale Mobilität",
+	    "description": "Um das Verkehrsaufkommen zu verringern, muss die Stadt intermodale Mobilität (auch finanziell) fördern.",
 	    "terms": [
 	    	{
 	    		"term": "Intermodal",
@@ -1462,11 +1462,11 @@ var data = {
 	    "id": 18,
 	    "name": "Bike-Sharing",
 	    "title": "Bike-Sharing",
-	    "description": "Ein für Nutzer attraktives Bike-Sharing System sollten von Seiten der Stadt Ulm angeboten werden, auch wenn dies dauerhaft bezuschusst werden muss",
+	    "description": "Ein für Nutzer attraktives Bike-Sharing-System sollte von Seiten der Stadt Ulm angeboten werden, auch wenn dies dauerhaft bezuschusst werden muss.",
 	    "terms": [
 	    	{
 	    		"term": "Bike-Sharing",
-	    		"explanation": "Öffentliche Fahrradverleihsysteme sind eine Form des Fahrradverleihs, bei dem die Fahrräder in der Regel im öffentlichen Raum oder an öffentlich zugänglichen Stationen zur Verfügung stehen. Diese Systeme werden von Unternehmen, Kommunen und Kommunalverbänden eingerichtet. Die Nutzung dieser Fahrräder ist besonders auf kurzen Strecken im urbanen Raum sinnvoll."
+	    		"explanation": "Öffentliche Fahrradverleihsysteme sind eine Form des Fahrradverleihs, bei dem die Fahrräder in der Regel im öffentlichen Raum oder an öffentlich zugänglichen Stationen zur Verfügung stehen. Diese Systeme werden von Unternehmen, Kommunen und Kommunalverbänden eingerichtet. Die Nutzung dieser Fahrräder ist besonders auf kurzen Strecken in der Stadt sinnvoll."
 	    	}
 	    ],
 	    "background": [
@@ -1558,7 +1558,7 @@ var data = {
 	    "id": 19,
 	    "name": "E-Mobilität",
 	    "title": "E-Mobilität",
-	    "description": "Um die Klimaziele der Stadt Ulm zu verfolgen, muss die Infrastruktur (Ladesäulen, E-Bike-Säulen, Fahrradständer, E-Roller) verbessert werden",
+	    "description": "Um die Klimaziele der Stadt Ulm zu verfolgen, muss die Infrastruktur (Ladesäulen, E-Bike-Säulen, Fahrradständer, E-Roller) verbessert werden.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -1640,7 +1640,7 @@ var data = {
 	    "id": 20,
 	    "name": "E-Mobilität",
 	    "title": "",
-	    "description": "Nach dem erfolgreichen Bau der Linie 2 muss zeitnah ein Konzept für eine Linie 3 geschaffen werden",
+	    "description": "Nach dem erfolgreichen Bau der Linie 2 muss zeitnah ein Konzept für eine Linie 3 geschaffen werden.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -1722,7 +1722,7 @@ var data = {
 	    "id": 21,
 	    "name": "Donautal + Vororte",
 	    "title": "Donautal + Vororte",
-	    "description": "Der ÖPNV darf nicht nur zentralisiert auf Ulm ausgerichtet sein. Auch Außenbezirke müssen untereinander besser erreichbar sein, z.B. durch eine Ring-Bus-Linie",
+	    "description": "Der ÖPNV darf nicht nur zentralisiert auf Ulm ausgerichtet sein. Auch Außenbezirke müssen untereinander besser erreichbar sein, z.B. durch eine Ring-Bus-Linie.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
@@ -1804,7 +1804,7 @@ var data = {
 	    "id": 22,
 	    "name": "Donautal + Vororte",
 	    "title": "",
-	    "description": "Zur besseren Erreichbarkeit der Vororte per ÖPNV müssen Linien wie bspw. die Linie 15 massiv ausgebaut werden",
+	    "description": "Zur besseren Erreichbarkeit der Vororte per ÖPNV müssen Linien wie bspw. die Linie 15 massiv ausgebaut werden.",
 	    "terms": [],
 	    "background": [],
 	    "answers": [
