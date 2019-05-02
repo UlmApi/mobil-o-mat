@@ -43,10 +43,20 @@ $(document).ready(function () {
 	// menu
 	$("#menu .sub-pages a").click(function (evt) {
 		evt.preventDefault()
+		location.hash = '#' + $(this).attr("data-show");
 		$("#header").removeClass("show-menu")
 		$("#app").attr("class", "show-" + $(this).attr("data-show"))
 		if (mobile) scroll(($("#" + $(this).attr("data-show")).offset().top - 100), 200)
 	})
+
+	if (location.hash !== "") {
+		window.setTimeout(function() { window.scrollTo(0, 1); }, 0);
+		var section = location.hash.replace(/[^a-z]/g, '');
+		if ($('#' + section).length) {
+			$("#app").attr("class", "show-" + section)
+			if (mobile) scroll(($("#" + section).offset().top - 100), 200)
+		}
+	}
 
 	// logo to home
 	$("#logo").bind("keypress click", function (evt) {
