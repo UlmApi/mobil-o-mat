@@ -57,7 +57,7 @@ $(document).ready(function () {
 	})
 
 	// activate button
-	$("#activate").click(function (evt) {
+	$(".activate").click(function (evt) {
 		evt.preventDefault()
 		$("#app").attr("class", "show-questionnaire")
 		if (mobile) scroll(($("#questionnaire").offset().top - 70), 200)
