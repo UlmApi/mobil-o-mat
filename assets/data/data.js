@@ -1898,7 +1898,7 @@ var data = {
 			"name": "spd",
 			"short_name": "SPD",
 			"long_name": "Sozialdemokratische Partei Deutschlands",
-			"person_name": "Martin Ansbach"
+			"person_name": "Martin Ansbacher"
 		},
 		{
 			"name": "gruene",
