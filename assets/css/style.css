@@ -406,15 +406,15 @@ footer {
 			}
 		
 			.radio-button-group input:checked[value="2"]+label {
-				background-image: url(../images/radio_darkgray_x.svg);
+				background-image: url(../images/radio_ja.svg);
 			}
 		
 			.radio-button-group input:checked[value="1"]+label {
-				background-image: url(../images/radio_darkgray_x.svg);
+				background-image: url(../images/radio_teils.svg);
 			}
 		
 			.radio-button-group input:checked[value="0"]+label {
-				background-image: url(../images/radio_darkgray_x.svg);
+				background-image: url(../images/radio_nein.svg);
 			}
 		
 			.radio-button-group-label {
@@ -591,15 +591,15 @@ footer {
 		}
 	
 		#detail .answers .answer h4.type-2 {
-			background-image: url(../images/radio_darkgray_x.svg);
+			background-image: url(../images/radio_ja.svg);
 		}
 		
 		#detail .answers .answer h4.type-1 {
-			background-image: url(../images/radio_darkgray_x.svg);
+			background-image: url(../images/radio_teils.svg);
 		}
 		
 		#detail .answers .answer h4.type-0 {
-			background-image: url(../images/radio_darkgray_x.svg);
+			background-image: url(../images/radio_nein.svg);
 		}
 
 		#detail .answers .answer blockquote,
@@ -993,15 +993,15 @@ footer {
 				}
 			
 				.radio-button-group input:checked[value="2"]+label {
-					background-image: url(../images/radio_darkgray_x.svg);
+					background-image: url(../images/radio_ja.svg);
 				}
 			
 				.radio-button-group input:checked[value="1"]+label {
-					background-image: url(../images/radio_darkgray_x.svg);
+					background-image: url(../images/radio_teils.svg);
 				}
 			
 				.radio-button-group input:checked[value="0"]+label {
-					background-image: url(../images/radio_darkgray_x.svg);
+					background-image: url(../images/radio_nein.svg);
 				}
 			
 				.radio-button-group-label {
@@ -1171,15 +1171,15 @@ footer {
 			}
 		
 			#detail .answers .answer h4.type-2 {
-				background-image: url(../images/radio_darkgray_x.svg);
+				background-image: url(../images/radio_ja.svg);
 			}
 			
 			#detail .answers .answer h4.type-1 {
-				background-image: url(../images/radio_darkgray_x.svg);
+				background-image: url(../images/radio_teils.svg);
 			}
 			
 			#detail .answers .answer h4.type-0 {
-				background-image: url(../images/radio_darkgray_x.svg);
+				background-image: url(../images/radio_nein.svg);
 			}
 			
 			#detail .answers .answer blockquote,
