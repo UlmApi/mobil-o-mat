@@ -79,6 +79,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -152,6 +164,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 0,
+	            "against": 1,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -241,6 +265,18 @@ var data = {
 	            "for": 0,
 	            "against": 0,
 	            "abstained": 1
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
 	          }
 	        }
 	      }
@@ -335,6 +371,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -417,6 +465,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 0,
+	            "against": 1,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -490,6 +550,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 0,
+	            "against": 1,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -591,6 +663,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -664,6 +748,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -769,6 +865,18 @@ var data = {
 	            "abstained": 1
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -842,6 +950,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -943,6 +1063,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -1016,6 +1148,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -1107,6 +1251,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -1180,6 +1336,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -1281,6 +1449,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -1360,6 +1540,18 @@ var data = {
 	          "results": {
 	            "for": 0,
 	            "against": 1,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
 	            "abstained": 0
 	          }
 	        }
@@ -1446,6 +1638,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -1551,6 +1755,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -1624,6 +1840,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -1715,6 +1943,18 @@ var data = {
 	            "abstained": 1
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  },
@@ -1788,6 +2028,18 @@ var data = {
 	      },
 	      {
 	        "name": "buendnis",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
+	      },
+	      {
+	        "name": "piraten",
 	        "voting": {
 	          "result": null,
 	          "explanation": null,
@@ -1879,6 +2131,18 @@ var data = {
 	            "abstained": 0
 	          }
 	        }
+	      },
+	      {
+	        "name": "piraten",
+	        "voting": {
+	          "result": null,
+	          "explanation": null,
+	          "results": {
+	            "for": 1,
+	            "against": 0,
+	            "abstained": 0
+	          }
+	        }
 	      }
 	    ]
 	  }
@@ -1924,6 +2188,12 @@ var data = {
 			"short_name": "Bündnis",
 			"long_name": "Bündnis für Lebenswerte Ortschaften",
 			"person_name": "Denise Niggemeier"
+		},
+		{
+			"name": "piraten",
+			"short_name": "Piraten",
+			"long_name": "Piratenpartei Ulm",
+			"person_name": "Stefan Baur"
 		}
 	]
 }

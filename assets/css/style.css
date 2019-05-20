@@ -319,6 +319,11 @@ footer {
 		margin: 2em auto 0;
 		max-width: 400px;
 	}
+
+	#intro a {
+		color: #ef2f98;
+		text-decoration: none;
+	}
 	
 	#questionnaire {
 		display: block;
@@ -504,6 +509,11 @@ footer {
 
 		#comparison ol li .person {
 			display: block;
+		}
+
+		#comparison a {
+			color: #ef2f98;
+			text-decoration: none;
 		}
 
 	#detail {}
@@ -895,6 +905,12 @@ footer {
 				clear: both;
 			}
 
+			#intro a {
+				color: #ef2f98;
+				text-decoration: none;
+			}
+		
+
 /* Questions */
 		.question-wrapper {
 			display: block;
@@ -1093,6 +1109,11 @@ footer {
 
 			#comparison ol li .person {
 				display: block;
+			}
+
+			#comparison a {
+				color: #ef2f98;
+				text-decoration: none;
 			}
 		
 		#detail {}
